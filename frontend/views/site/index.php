@@ -14,6 +14,9 @@ $this->title = 'My Yii Application';
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
+    <!-- 下面第3行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
+    <!-- 下面第2行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
+    <!-- 下面这行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
     <div id="plague-map" style="height: 540px; width: 100%;">
 
     </div>
