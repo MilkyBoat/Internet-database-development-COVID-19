@@ -13,8 +13,12 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/leaflet.css',
     ];
     public $js = [
+        'js/jquery.min.js',
+        'js/leaflet.js',
+        'js/plague-map.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

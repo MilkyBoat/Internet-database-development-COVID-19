@@ -14,6 +14,10 @@ $this->title = 'My Yii Application';
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
+    <div id="plague-map" style="height: 540px; width: 100%;">
+
+    </div>
+
     <div class="body-content">
 
         <div class="row">
