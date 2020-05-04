@@ -1,10 +1,7 @@
-<p align="center">
-    <h1 align="center">Plague news feed</h1>
-    <h3 align="center">疫情资料站</h3>
-    <h6 align="center">《互联网数据库开发》团队-布利啾啾迪布利多</h6>
-    <br>
-</p>
-
+<h3 align="center">Plague news feed</h3>
+<h3 align="center">疫情资料站</h3>
+<h6 align="center">《互联网数据库开发》团队-布利啾啾迪布利多</h6>
+<br>
 简介--
 
 一键配置脚本 [docs/guide/README.md](docs/guide/README.md).
