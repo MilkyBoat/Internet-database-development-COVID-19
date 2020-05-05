@@ -14,11 +14,14 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/leaflet.css',
+        'css/home.css',
+        'css/comment.css'
     ];
     public $js = [
         'js/jquery.min.js',
         'js/leaflet.js',
         'js/plague-map.js',
+        'js/home.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

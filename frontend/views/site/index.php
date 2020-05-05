@@ -1,18 +1,21 @@
 <?php
 
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by huangjingzhi 1810729,20200505
+ * This is the home page of frontend web
+ */
+
 /* @var $this yii\web\View */
+$this->registerCssFile('css/home.css');
+$this->registerJsFile('js/home.js');
+$url = Yii::getAlias("@web") . '/img/';
 
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
-<!--    <div class="jumbotron">-->
-<!--        <h1>Congratulations!</h1>-->
-<!---->
-<!--        <p class="lead">You have successfully created your Yii-powered application.</p>-->
-<!---->
-<!--        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>-->
-<!--    </div>-->
+
 
     <!-- 下面第3行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
     <!-- 下面第2行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
@@ -21,40 +24,68 @@ $this->title = 'My Yii Application';
 
     </div>
 
-<!--    <div class="body-content">-->
-<!---->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-4">-->
-<!--                <h2>Heading</h2>-->
-<!---->
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et-->
-<!--                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip-->
-<!--                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu-->
-<!--                    fugiat nulla pariatur.</p>-->
-<!---->
-<!--                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4">-->
-<!--                <h2>Heading</h2>-->
-<!---->
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et-->
-<!--                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip-->
-<!--                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu-->
-<!--                    fugiat nulla pariatur.</p>-->
-<!---->
-<!--                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4">-->
-<!--                <h2>Heading</h2>-->
-<!---->
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et-->
-<!--                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip-->
-<!--                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu-->
-<!--                    fugiat nulla pariatur.</p>-->
-<!---->
-<!--                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--    </div>-->
+    <section class="slider"></section>
+    <div class="container">
+        <div class="card-carousel">
+            <div class="card" id="1">
+                <div class="sliderThumb" style=" background:url(<?= $url ?>t.png) 50% 50% no-repeat; background-size:cover;height:60%;width:100%">
+
+                </div>
+                <div class="sliderCaption" style="text-align:center;padding:20px 20px 40px">
+                    <h2 style="font-size: 26px;font-weight:600;color:#4a0d66">covid</h2>
+                    <p>"djaoij"</p>
+                    <p>
+                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="2">
+                <div class="sliderThumb" style=" background:url(<?= $url ?>m.png) 50% 50% no-repeat; background-size:cover;height:60%;width:100%">
+                </div>
+                <div class="sliderCaption">
+                    <h2>covid</h2>
+                    <p>"djaoij"</p>
+                    <p>
+                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="3">
+                <div class="sliderThumb" style=" background:url(<?= $url ?>h.png) 50% 50% no-repeat; background-size:cover;height:60%;width:100%">
+
+                </div>
+                <div class="sliderCaption">
+                    <h2>covid</h2>
+                    <p>"djaoij"</p>
+                    <p>
+                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="4">
+                <div class="sliderThumb" style=" background:url(<?= $url ?>k.png) 50% 50% no-repeat; background-size:cover;height:60%;width:100%">
+
+                </div>
+                <div class="sliderCaption">
+                    <h2>covid</h2>
+                    <p>"djaoij"</p>
+                    <p>
+                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="5">
+                <div class="sliderThumb" style="background: url(<?= $url ?>j.png) 50% 50% no-repeat;background-size:cover;height:60%;width:100%" <div class="sliderCaption">
+                </div>
+                <div class="sliderCaption">
+                    <h2>covid</h2>
+                    <p>"djaoij"</p>
+                    <p>
+                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+    </div>
 </div>
