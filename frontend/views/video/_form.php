@@ -65,7 +65,7 @@ use yii\bootstrap4\ActiveForm;
                 <?php echo $model->video_name ?>
             </div>
 
-            <?= $form->field($model, 'status')->dropDownList($model->getStatusLabels()) ?>
+            
         </div>
     </div>
     <div class="form-group">

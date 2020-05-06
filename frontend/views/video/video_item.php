@@ -13,7 +13,7 @@ use yii\helpers\Url;
 /** @var $model Video */
 ?>
 
-<div class="card m-3" style="width: 24rem;">
+<div class="card m-3" style="width: 20rem;">
     <a href="<?php echo Url::to(['/video/view', 'id' => $model->video_id]) ?>">
         <div class="embed-responsive embed-responsive-16by9">
             <video class="embed-responsive-item"

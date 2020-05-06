@@ -2,8 +2,8 @@
 
 /**
  * Team:布里啾啾迪布里多,NKU
- * coding by huangjingzhi 1810729,20200426
- * This is the home page of blog
+ * coding by huangjingzhi 1810729,20200504
+ * 导航
  */
 
 /* @var $this \yii\web\View */

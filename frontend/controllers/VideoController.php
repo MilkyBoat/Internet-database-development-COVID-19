@@ -175,6 +175,15 @@ class VideoController extends Controller
         ]);
     }
 
+
+
+    public function actionDelete($id)
+    {
+        $this->findModel($id)->delete();
+
+        return $this->redirect(['myvideo']);
+    }
+
     public function actionMyvideo(){
         $this->layout='video';
         $dataProvider = new ActiveDataProvider([
