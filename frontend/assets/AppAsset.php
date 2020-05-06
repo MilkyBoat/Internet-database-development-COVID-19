@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/jquery.min.js',
         'js/leaflet.js',
+        'js/leaflet.ChineseTmsProviders.js',
         'js/plague-map.js',
         'js/home.js',
         'app.js'

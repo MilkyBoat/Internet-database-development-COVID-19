@@ -1,5 +1,32 @@
 $(document).ready(function () {
-    var mymap = L.map('plague-map').setView([25, 150], 2);
+
+    // var normalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
+    //     maxZoom: 18,
+    //     minZoom: 1,
+    //     id: 'google/light-v9'
+    // });
+    // var satelliteMap = L.tileLayer.chinaProvider('Google.Satellite.Map', {
+    //     maxZoom: 18,
+    //     minZoom: 1
+    // });
+    // var routeMap = L.tileLayer.chinaProvider('Google.Satellite.Annotion', {
+    //     maxZoom: 18,
+    //     minZoom: 1
+    // });
+
+    // var baseLayers = {
+    //     "普通地图": normalMap,
+    //     "卫星地图": satelliteMap,
+    //     "标注": routeMap
+    // }
+
+    // var overlayLayers = {
+
+    // }
+
+    var mymap = L.map("plague-map", {
+        layers: [normalMap]
+    }).setView([25, 150], 2);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
@@ -10,6 +37,13 @@ $(document).ready(function () {
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
+
+    // L.control.layers(baseLayers, overlayLayers).addTo(map);
+
+    // L.control.zoom({
+    //     zoomInTitle: '放大',
+    //     zoomOutTitle: '缩小'
+    // }).addTo(map);
 
     // L.marker([51.5, -0.09]).addTo(mymap)
     //     .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
@@ -32,7 +66,7 @@ $(document).ready(function () {
     function onMapClick(e) {
         popup
             .setLatLng(e.latlng)
-            .setContent("You clicked the map at " + e.latlng.toString())
+            .setContent(e.latlng.toString())
             .openOn(mymap);
     }
 
