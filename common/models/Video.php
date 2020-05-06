@@ -17,7 +17,7 @@ use yii\helpers\FileHelper;
 use yii\behaviors\TimestampBehavior;
 use yii\imagine\Image;
 use Imagine\Image\Box;
-
+use yii\helpers\Url;
 /**
  * This is the model class for table "{{%video}}".
  *
@@ -130,6 +130,13 @@ class Video extends \yii\db\ActiveRecord
 
     public function getDislikes(){
         return $this->hasMany(VideoLike::class,['video_id'=>'video_id'])->disliked();
+    }
+
+    public static function channelLink($user, $schema = false)
+    {
+        return \yii\helpers\Html::a($user->username,
+            Url::to(['/channel/view', 'username' => $user->username], $schema),
+            ['class' => 'text-dark']);
     }
 
     /**

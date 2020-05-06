@@ -20,6 +20,7 @@ use yii\helpers\Url;
                value="<?php echo Yii::$app->request->get('keyword') ?>">
         <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
     </form>
+    <div>//分享你的抗疫故事？</div>
 <?php
 echo \yii\widgets\ListView::widget([
     'dataProvider'=>$dataProvider,
