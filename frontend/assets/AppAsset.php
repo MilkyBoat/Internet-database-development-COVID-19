@@ -21,7 +21,8 @@ class AppAsset extends AssetBundle
         'js/jquery.min.js',
         'js/leaflet.js',
         'js/plague-map.js',
-        'js/home.js'
+        'js/home.js',
+        'app.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
