@@ -102,7 +102,10 @@ class VideoController extends Controller
     public function actionIndex(){
         $this->layout='video';
         $dataProvider=new ActiveDataProvider([
-            'query'=>Video::find()->published()->latest()
+            'query'=>Video::find()->published()->latest(),
+            'pagination'=>[
+                'pageSize'=>6
+            ]
         ]);
         return $this->render('index',[
             'dataProvider'=>$dataProvider
