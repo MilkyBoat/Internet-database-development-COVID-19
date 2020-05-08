@@ -1,13 +1,19 @@
 <?php
 
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by huangjingzhi 1810729,20200504
+ * 基本layout
+ */
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use frontend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 AppAsset::register($this);
@@ -15,17 +21,21 @@ AppAsset::register($this);
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
+
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <?php $this->head() ?>
 </head>
-<body>
-<?php $this->beginBody() ?>
 
+<body>
+    <?php $this->beginBody() ?>
+
+<<<<<<< HEAD
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -61,25 +71,25 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
+=======
+    <div class="wrap h-100 d-flex flex-column">
+        <?php echo $this->render('header') ?>
+>>>>>>> f4ad17f0b46ac8bc90252fef9e17cc4933f975b7
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+
+            <div class="content-wrapper p-3">
+                
+                <?= Alert::widget() ?>
+                <?= $content ?>
+            </div>
+
+
     </div>
-</div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+   
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
-
-<?php $this->endBody() ?>
+    <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>

@@ -23,7 +23,8 @@ class AppAsset extends AssetBundle
         'js/leaflet.js',
         'js/leaflet.ChineseTmsProviders.js',
         'js/plague-map.js',
-        'js/home.js'
+        'js/home.js',
+        'app.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
