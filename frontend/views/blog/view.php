@@ -1,12 +1,24 @@
 <?php
-/**
- * Team:布里啾啾迪布里多,NKU
- * coding by huangjingzhi 1810729,20200426
- * This is the view page of blog 
- */
-
 use yii\helpers\Url;
+use yii\helpers\Html;
 ?>
+
+<?= Html::cssFile('@web/public/index.css') ?>
+<?= Html::cssFile('@web/public/css/bootstrap.min.css') ?>
+<?= Html::cssFile('@web/public/css/font-awesome.min.css') ?>
+<?= Html::cssFile('@web/public/css/animate.min.css') ?>
+<?= Html::cssFile('@web/public/css/owl.carousel.css') ?>
+<?= Html::cssFile('@web/public/css/owl.theme.css') ?>
+<?= Html::cssFile('@web/public/css/owl.transitions.css') ?>
+<?= Html::cssFile('@web/public/css/style.css') ?>
+<?= Html::cssFile('@web/public/css/responsive.css') ?>
+<?= Html::jsFile('@web/js/jquery.min.js') ?>
+<?= Html::jsFile('public/js/bootstrap.min.js') ?>
+<?= Html::jsFile('public/js/owl.carousel.min.js') ?>
+<?= Html::jsFile('public/js/jquery.stickit.min.js') ?>
+<?= Html::jsFile('public/js/menu.js') ?>
+<?= Html::jsFile('public/js/scripts.js') ?>
+
 <div class="site-view">
 <div class="main-content">
     <div class="container">
@@ -18,9 +30,9 @@ use yii\helpers\Url;
                     </div>
                     <div class="post-content">
                         <header class="entry-header text-center text-uppercase">
-                            <h6><a href="<?= Url::toRoute(['site/category','id'=>$article->category->id])?>"> <?= $article->category->title?></a></h6>
+                            <h6><a href="<?= Url::toRoute(['blog/category','id'=>$article->category->id])?>"> <?= $article->category->title?></a></h6>
 
-                            <h1 class="entry-title"><a href="<?= Url::toRoute(['site/view','id'=>$article->id])?>"><?= $article->title?></a></h1>
+                            <h1 class="entry-title"><a href="<?= Url::toRoute(['blog/view','id'=>$article->id])?>"><?= $article->title?></a></h1>
 
 
                         </header>
@@ -34,7 +46,7 @@ use yii\helpers\Url;
 
                         <div class="social-share">
 							<span
-                                    class="social-share-title pull-left text-capitalize">By Rubel On <?= $article->getDate();?></span>
+                                    class="social-share-title pull-left text-capitalize">By <?=$article->createdBy->username?> <?= $article->getDate();?></span>
                             <ul class="text-center pull-right">
                                 <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a class="s-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -111,13 +123,13 @@ use yii\helpers\Url;
                         <div class="popular-post">
 
 
-                            <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="popular-img"><img src="<?=Url::to($article->getImage())?>" alt="">
+                            <a href="<?= Url::toRoute(['blog/view','id'=>$article->id]);?>" class="popular-img"><img src="<?=Url::to($article->getImage())?>" alt="">
 
                                 <div class="p-overlay"></div>
                             </a>
 
                             <div class="p-content">
-                                <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="text-uppercase"><?= $article->title?></a>
+                                <a href="<?= Url::toRoute(['blog/view','id'=>$article->id]);?>" class="text-uppercase"><?= $article->title?></a>
                                 <span class="p-date"><?= $article->getDate()?></span>
 
                             </div>
@@ -133,12 +145,12 @@ use yii\helpers\Url;
 
                             <div class="media">
                                 <div class="media-left">
-                                    <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="popular-img"><img src="<?=Url::to($article->getImage())?>" alt="">
+                                    <a href="<?= Url::toRoute(['blog/view','id'=>$article->id]);?>" class="popular-img"><img src="<?=Url::to($article->getImage())?>" alt="">
                                         <div class="p-overlay"></div>
                                     </a>
                                 </div>
                                 <div class="p-content">
-                                    <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="text-uppercase"><?= $article->title?></a>
+                                    <a href="<?= Url::toRoute(['blog/view','id'=>$article->id]);?>" class="text-uppercase"><?= $article->title?></a>
                                     <span class="p-date"><?= $article->getDate();?></span>
                                 </div>
                             </div>
@@ -150,7 +162,7 @@ use yii\helpers\Url;
                         <ul>
                         <?php foreach($categories as $category):?>
                             <li>
-                                <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title?></a>
+                                <a href="<?= Url::toRoute(['blog/category','id'=>$category->id]);?>"><?= $category->title?></a>
                                 <span class="post-count pull-right"> (<?= $category->getArticlesCount(); ?>)</span>
                             </li>
                             <?php endforeach;?>

@@ -21,6 +21,10 @@ echo \yii\bootstrap4\Nav::widget([
         [
             'label' => 'Videos',
             'url' => ['/video/index']
+        ],
+        [
+            'label'=>'Blogs',
+            'url'=>['/article/index']
         ]
     ]
 ])

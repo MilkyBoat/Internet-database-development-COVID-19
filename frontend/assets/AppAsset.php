@@ -16,7 +16,8 @@ class AppAsset extends AssetBundle
         'css/leaflet.css',
         'css/home.css',
         'css/comment.css',
-        'css/news.css'
+        'css/news.css',
+      
     ];
     public $js = [
         'js/jquery.min.js',
@@ -24,6 +25,7 @@ class AppAsset extends AssetBundle
         'js/leaflet.ChineseTmsProviders.js',
         'js/plague-map.js',
         'js/home.js',
+       
         'app.js'
     ];
     public $depends = [
