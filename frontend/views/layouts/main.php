@@ -35,8 +35,46 @@ AppAsset::register($this);
 <body>
     <?php $this->beginBody() ?>
 
+<<<<<<< HEAD
+<div class="wrap">
+    <?php
+    NavBar::begin([
+        'brandLabel' => Yii::$app->name,
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'shadow-sm navbar-expand-lg navbar-light bg-light',
+        ],
+    ]);
+    $menuItems = [
+        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'About', 'url' => ['/site/about']],
+        ['label' => 'Contact', 'url' => ['/site/contact']],
+        ['label' => 'News', 'url' => ['/site/news']],
+		['label' => 'Research', 'url' => ['/site/research']],
+    ];
+    if (Yii::$app->user->isGuest) {
+        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+    } else {
+        $menuItems[] = '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>';
+    }
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav ml-auto'],
+        'items' => $menuItems,
+    ]);
+    NavBar::end();
+    ?>
+=======
     <div class="wrap h-100 d-flex flex-column">
         <?php echo $this->render('header') ?>
+>>>>>>> f4ad17f0b46ac8bc90252fef9e17cc4933f975b7
 
 
             <div class="content-wrapper p-3">

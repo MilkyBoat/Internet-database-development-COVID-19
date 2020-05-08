@@ -15,7 +15,8 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/leaflet.css',
         'css/home.css',
-        'css/comment.css'
+        'css/comment.css',
+        'css/news.css'
     ];
     public $js = [
         'js/jquery.min.js',
