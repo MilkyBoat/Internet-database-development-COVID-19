@@ -1,3 +1,7 @@
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by huangjingzhi 1810729,20200509
+ */
 <div class="admin-default-index">
     <h1><?= $this->context->action->uniqueId ?></h1>
     <p>

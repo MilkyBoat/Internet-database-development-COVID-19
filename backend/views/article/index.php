@@ -19,7 +19,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Article', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php
+    /**
+     * Team:布里啾啾迪布里多,NKU
+     * coding by huangjingzhi 1810729,20200509
+     */
+    // echo $this->render('_search', ['model' => $searchModel]); 
+    ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -27,9 +33,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
             [
-                'attribute'=>'Image',
-                'content'=>function($model){
-                    return $this->render('article_item',['model'=>$model]);
+                'attribute' => 'Image',
+                'content' => function ($model) {
+                    return $this->render('article_item', ['model' => $model]);
                 }
             ],
             //'id',
@@ -41,8 +47,8 @@ $this->params['breadcrumbs'][] = $this->title;
             //'image',
             //'viewed',
             [
-                'attribute'=>'created_by',
-                'content'=>function($model) {
+                'attribute' => 'created_by',
+                'content' => function ($model) {
                     return $model->createdBy->username;
                 }
             ],

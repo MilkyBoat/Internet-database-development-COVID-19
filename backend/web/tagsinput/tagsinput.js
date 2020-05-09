@@ -1,6 +1,6 @@
-/*
- * bootstrap-tagsinput v0.8.0
- * 
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by huangjingzhi 1810729,20200509
  */
 
 (function ($) {
