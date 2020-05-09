@@ -224,4 +224,13 @@ class Video extends \yii\db\ActiveRecord
     public function isDislikedBy($userId){
         return VideoLike::find()->userIdVideoId($userId,$this->video_id)->disliked()->one();
     }
+
+    public function getVideoComments()
+    {
+        return $this->getComments()->where(['status'=>1])->all();
+    }
+
+    public function getComments(){
+        return $this->hasMany(Comment::className(),['video_id'=>'video_id']);
+    }
 }

@@ -5,7 +5,7 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 
-class CommentForm extends Model{
+class CommentFormB extends Model{
     public $comment;
 
     public function rules(){
@@ -21,6 +21,7 @@ class CommentForm extends Model{
         $comment->text = $this->comment;
         $comment->user_id = Yii::$app->user->id;
         $comment->article_id = $article_id;
+        //$comment->video_id='null';
         $comment->status = 0;
         $comment->date = date('Y-m-d');
         return $comment->save();

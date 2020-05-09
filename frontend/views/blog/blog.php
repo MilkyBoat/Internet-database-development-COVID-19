@@ -55,9 +55,9 @@ use yii\helpers\Html;
                                 </div>
                                 <div class="social-share">
                                     <span class="social-share-title pull-left text-capitalize" style="margin">By <a href="#"> <?=$article->createdBy->username?></a><span style="margin-left:10px"><?= $article->getDate() ?></span></span>
-                                    <!-- <ul class="text-center pull-right"></ul>
+                                    <ul class="text-center pull-right">
                                         <li><a class="s-facebook" href="#"><i class="fa fa-eye"></i></a></li><?= (int) $article->viewed ?>
-                                    </ul> -->
+                                    </ul>
                                 </div>
                             </div>
                         </article>

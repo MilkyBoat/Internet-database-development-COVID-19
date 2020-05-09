@@ -222,4 +222,9 @@ class Article extends \yii\db\ActiveRecord
         $this->status = self::STATUS_PUBLISHED;
         return $this->save(false);
     }
+
+    public function viewedCounter(){
+        $this->viewed +=1;
+        return $this->save(false);
+    }
 }

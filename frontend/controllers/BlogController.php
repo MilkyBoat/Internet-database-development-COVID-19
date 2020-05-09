@@ -15,7 +15,7 @@ use common\models\Article;
 use common\models\Category;
 use common\models\ArticleSearch;
 use common\models\ArticleTag;
-use common\models\CommentForm;
+use common\models\CommentFormB;
 use yii\web\UploadedFile;
 use common\models\Tag;
 
@@ -89,7 +89,9 @@ class BlogController extends Controller
         $categories = Category::find()->all();
 
         $comments=$article->getArticleComments();
-        $commentForm= new CommentForm();
+        $commentForm= new CommentFormB();
+
+        $article->viewedCounter();
         
         return $this->render('view', [
             'article' => $article,
@@ -147,6 +149,7 @@ class BlogController extends Controller
      */
     public function actionBlog()
     {
+
         $this->layout='blog';
         $data = Article::getAll(5);
 
@@ -155,6 +158,9 @@ class BlogController extends Controller
         $recent = Article::getRecent();
 
         $categories = Category::find()->all();
+
+ 
+        
 
         return $this->render("blog", [
             'articles' => $data['articles'],
@@ -280,7 +286,7 @@ class BlogController extends Controller
 
     public function actionComment($id)
     {
-        $model = new CommentForm();
+        $model = new CommentFormB();
         
         if(Yii::$app->request->isPost)
         {

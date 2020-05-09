@@ -21,6 +21,7 @@ use common\models\VideoView;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\NotFoundHttpException;
+use common\models\CommentFormV;
 
 class VideoController extends Controller
 {
@@ -123,6 +124,9 @@ class VideoController extends Controller
         $videoView->created_at = time();
         $videoView->save();
 
+        $comments=$video->getVideoComments();
+        $commentForm= new CommentFormV();
+
         $similarVideos = Video::find()
             ->published()
             ->byKeyword($video->title)
@@ -132,7 +136,9 @@ class VideoController extends Controller
 
         return $this->render('view', [
             'model' => $video,
-            'similarVideos' => $similarVideos
+            'similarVideos' => $similarVideos,
+            'comments'=>$comments,
+            'commentForm'=>$commentForm
         ]);
     }
 
@@ -225,5 +231,21 @@ class VideoController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    public function actionComment($id)
+    {
+        $model = new CommentFormV();
+        
+        if(Yii::$app->request->isPost)
+        {
+            $model->load(Yii::$app->request->post());
+            if($model->saveComment($id))
+            {
+                Yii::$app->getSession()->setFlash('comment', 'Your comment will be added soon!');
+                return $this->redirect(['video/view','id'=>$id]);
+            }
+        }
+    }
+    
 
 }
