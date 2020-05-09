@@ -41,4 +41,8 @@ class ArticleQuery extends \yii\db\ActiveQuery
         return $this->andWhere(['status'=>Article::STATUS_PUBLISHED]);
     }
 
+    public function creator($userId){
+        return $this->andWhere(['created_by'=>$userId]);
+    }
+
 }

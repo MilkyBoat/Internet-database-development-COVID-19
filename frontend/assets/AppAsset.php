@@ -25,7 +25,7 @@ class AppAsset extends AssetBundle
         'js/leaflet.ChineseTmsProviders.js',
         'js/plague-map.js',
         'js/home.js',
-       
+
         'app.js'
     ];
     public $depends = [

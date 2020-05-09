@@ -18,6 +18,9 @@ use Yii;
  */
 class Comment extends \yii\db\ActiveRecord
 {
+
+    const STATUS_ALLOW = 1;
+    const STATUS_DISALLOW = 0;
     /**
      * {@inheritdoc}
      */
@@ -80,5 +83,26 @@ class Comment extends \yii\db\ActiveRecord
     public static function find()
     {
         return new CommentQuery(get_called_class());
+    }
+
+    public function getDate(){
+        return Yii::$app->formatter->asDate($this->date); 
+    }
+
+    public function isAllowed()
+    {
+        return $this->status;
+    }
+
+    public function allow()
+    {
+        $this->status = self::STATUS_ALLOW;
+        return $this->save(false);
+    }
+
+    public function disallow()
+    {
+        $this->status = self::STATUS_DISALLOW;
+        return $this->save(false);
     }
 }

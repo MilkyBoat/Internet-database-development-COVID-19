@@ -98,7 +98,7 @@ class Article extends \yii\db\ActiveRecord
     {
         // $imgurl='@web/img/no-image.png';
         // return $imgurl;
-        $imgurl = ($this->image) ? 'http://localhost:8090/frontend/web/uploads/' . $this->image : '@frontend/web/img/no-image.png';
+        $imgurl = ($this->image) ? 'http://localhost:8090/frontend/web/uploads/' . $this->image : 'http://localhost:8090/frontend/web/img/no-image.png';
         // echo $imgurl;die;
         return $imgurl;
     }
@@ -198,6 +198,11 @@ class Article extends \yii\db\ActiveRecord
         return Article::find()->published()->orderBy('date asc')->limit(4)->all();
     }
 
+    public function getArticleComments()
+    {
+        return $this->getComments()->where(['status'=>1])->all();
+    }
+
 
     /**
      * {@inheritdoc}
@@ -206,5 +211,15 @@ class Article extends \yii\db\ActiveRecord
     public static function find()
     {
         return new ArticleQuery(get_called_class());
+    }
+
+    public function getComments(){
+        return $this->hasMany(Comment::className(),['article_id'=>'id']);
+    }
+
+    public function publish()
+    {
+        $this->status = self::STATUS_PUBLISHED;
+        return $this->save(false);
     }
 }

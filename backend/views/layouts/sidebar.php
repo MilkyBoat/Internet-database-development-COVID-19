@@ -25,6 +25,10 @@ echo \yii\bootstrap4\Nav::widget([
         [
             'label'=>'Blogs',
             'url'=>['/article/index']
+        ],
+        [
+            'label'=>'Comments',
+            'url'=>['/comment/index']
         ]
     ]
 ])

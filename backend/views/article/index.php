@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $this->render('article_item',['model'=>$model]);
                 }
             ],
-            'id',
+            //'id',
             'title',
             'description:ntext',
             'content:ntext',

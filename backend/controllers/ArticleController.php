@@ -192,4 +192,13 @@ class ArticleController extends Controller
             'tags' => $tags
         ]);
     }
+
+    public function actionPublish($id){
+        $article = Article::findOne($id);
+        $model = $this->findModel($id);
+        if($article->publish())
+        {
+            return $this->redirect(['index']);
+        }
+    }
 }

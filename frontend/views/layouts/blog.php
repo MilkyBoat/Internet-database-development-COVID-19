@@ -30,6 +30,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <?php $this->head() ?>
+
 </head>
 
 <body>
@@ -53,7 +54,7 @@ AppAsset::register($this);
                         'label' => 'Create',
                         'url' => ['/blog/create']
                     ];
-                    $menuItems[] = ['label' => 'My videos', 'url' => ['/blog/mypost']];
+                    $menuItems[] = ['label' => 'My blogs', 'url' => ['/blog/mypost']];
                 } ?>
                 <?php
                 echo \yii\bootstrap4\Nav::widget([
@@ -77,6 +78,7 @@ AppAsset::register($this);
 
 
     <?php $this->endBody() ?>
+
 </body>
 
 </html>
