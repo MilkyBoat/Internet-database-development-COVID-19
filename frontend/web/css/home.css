@@ -150,3 +150,19 @@ box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
   top: calc(-10% - 3px);
   left: calc(-10% - 3px);
 }
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-pencil:before {
+  content: "\270f";
+}

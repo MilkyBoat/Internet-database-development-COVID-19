@@ -102,10 +102,12 @@ class Article extends \yii\db\ActiveRecord
     {
         // $imgurl='@web/img/no-image.png';
         // return $imgurl;
-        $imgurl = ($this->image) ? 'http://localhost:8090/frontend/web/uploads/' . $this->image : 'http://localhost:8090/frontend/web/img/no-image.png';
+        $imgurl = ($this->image) ? '../../../frontend/web/uploads/' . $this->image : '../../../frontend/web/img/no-image.png';
         // echo $imgurl;die;
         return $imgurl;
     }
+
+
 
     public function getStatusLabels()
     {

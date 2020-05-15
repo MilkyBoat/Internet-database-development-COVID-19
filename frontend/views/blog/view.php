@@ -64,7 +64,7 @@ use yii\helpers\Html;
                     <?php if (!Yii::$app->user->isGuest) : ?>
                         <div class="leave-comment">
                             <!--leave comment-->
-                            <h4>Leave a reply</h4>
+                            <h4>快来评论吧~</h4>
                             <?php if (Yii::$app->session->getFlash('comment')) : ?>
                                 <div class="alert alert-success" role="alert">
                                     <?= Yii::$app->session->getFlash('comment'); ?>
@@ -76,10 +76,10 @@ use yii\helpers\Html;
                             ]) ?>
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <?= $form->field($commentForm, 'comment')->textarea(['class' => 'form-control', 'placeholder' => 'Write Message'])->label(false) ?>
+                                    <?= $form->field($commentForm, 'comment')->textarea(['class' => 'form-control', 'placeholder' => '留下你的足迹'])->label(false) ?>
                                 </div>
                             </div>
-                            <button type="submit" class="btn send-btn">Post Comment</button>
+                            <button type="submit" class="btn send-btn">发送评论</button>
                             <?php \yii\widgets\ActiveForm::end(); ?>
                         </div>
                         <!--end leave comment-->
@@ -96,7 +96,7 @@ use yii\helpers\Html;
                                 </div>
 
                                 <div class="comment-text">
-                                    <a href="#" class="replay btn pull-right"> Replay</a>
+                                    <a href="#" class="replay btn pull-right">回复</a>
                                     <h5><?= $comment->user->username; ?></h5>
 
                                     <p class="comment-date">
@@ -121,7 +121,7 @@ use yii\helpers\Html;
                     <div class="primary-sidebar">
 
                         <aside class="widget">
-                            <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+                            <h3 class="widget-title text-uppercase text-center">最热文章</h3>
                             <?php foreach ($popular as $article) : ?>
                                 <div class="popular-post">
 
@@ -141,7 +141,7 @@ use yii\helpers\Html;
 
                         </aside>
                         <aside class="widget pos-padding">
-                            <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
+                            <h3 class="widget-title text-uppercase text-center">最近文章</h3>
                             <?php foreach ($recent as $article) : ?>
                                 <div class="thumb-latest-posts">
 
@@ -161,7 +161,7 @@ use yii\helpers\Html;
                             <?php endforeach; ?>
                         </aside>
                         <aside class="widget border pos-padding">
-                            <h3 class="widget-title text-uppercase text-center">Categories</h3>
+                            <h3 class="widget-title text-uppercase text-center">分类</h3>
                             <ul>
                                 <?php foreach ($categories as $category) : ?>
                                     <li>

@@ -38,7 +38,7 @@ use yii\helpers\Html;
                                 <a href="<?= Url::toRoute(['blog/view', 'id' => $article->id]); ?>"><img src="<?= Url::to($article->getImage()) ?>" alt=""></a>
 
                                 <a href="<?= Url::toRoute(['blog/view', 'id' => $article->id]); ?>" class="post-thumb-overlay text-center">
-                                    <div class="text-uppercase text-center">View Post</div>
+                                    <div class="text-uppercase text-center">阅读</div>
                                 </a>
                             </div>
                             <div class="post-content">
@@ -54,7 +54,7 @@ use yii\helpers\Html;
                                     </p>
 
                                     <div class="btn-continue-reading text-center text-uppercase">
-                                        <a href="<?= Url::toRoute(['blog/view', 'id' => $article->id]); ?>" class="more-link">Continue Reading</a>
+                                        <a href="<?= Url::toRoute(['blog/view', 'id' => $article->id]); ?>" class="more-link">继续阅读</a>
                                     </div>
                                 </div>
                                 <div class="social-share">
@@ -79,7 +79,7 @@ use yii\helpers\Html;
                     <div class="primary-sidebar">
 
                         <aside class="widget">
-                            <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+                            <h3 class="widget-title text-uppercase text-center">热门文章</h3>
                             <?php foreach ($popular as $article) : ?>
                                 <div class="popular-post">
 
@@ -99,7 +99,7 @@ use yii\helpers\Html;
 
                         </aside>
                         <aside class="widget pos-padding">
-                            <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
+                            <h3 class="widget-title text-uppercase text-center">最近文章</h3>
                             <?php foreach ($recent as $article) : ?>
                                 <div class="thumb-latest-posts">
 
@@ -119,7 +119,7 @@ use yii\helpers\Html;
                             <?php endforeach; ?>
                         </aside>
                         <aside class="widget border pos-padding">
-                            <h3 class="widget-title text-uppercase text-center">Categories</h3>
+                            <h3 class="widget-title text-uppercase text-center">分类</h3>
                             <ul>
                                 <?php foreach ($categories as $category) : ?>
                                     <li>

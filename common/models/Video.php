@@ -195,13 +195,13 @@ class Video extends \yii\db\ActiveRecord
 
     public function getVideoLink()
     {
-        return 'http://localhost:8090/frontend/web/storage/videos/' . $this->video_id . '.mp4';
+        return Yii::getAlias('../../../frontend/web/storage/videos/' . $this->video_id . '.mp4');
     }
 
     public function getThumbnailLink()
     {
         return $this->has_thumbnail ?
-            'http://localhost:8090/frontend/web/storage/thumbs/' . $this->video_id . '.jpg'
+            Yii::getAlias('../../../frontend/web/storage/thumbs/' . $this->video_id . '.jpg')
             : '';
     }
 

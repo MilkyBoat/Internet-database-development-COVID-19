@@ -35,7 +35,7 @@ $this->title = 'My Yii Application';
                     <h2 style="font-size: 26px;font-weight:600;color:#4a0d66">covid</h2>
                     <p>"djaoij"</p>
                     <p>
-                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                        <a href="@web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
                     </p>
                 </div>
             </div>
@@ -46,7 +46,7 @@ $this->title = 'My Yii Application';
                     <h2>covid</h2>
                     <p>"djaoij"</p>
                     <p>
-                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                        <a href="@web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
                     </p>
                 </div>
             </div>
@@ -58,7 +58,7 @@ $this->title = 'My Yii Application';
                     <h2>covid</h2>
                     <p>"djaoij"</p>
                     <p>
-                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                        <a href="@web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
                     </p>
                 </div>
             </div>
@@ -70,7 +70,7 @@ $this->title = 'My Yii Application';
                     <h2>covid</h2>
                     <p>"djaoij"</p>
                     <p>
-                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                        <a href="@web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
                     </p>
                 </div>
             </div>
@@ -81,7 +81,7 @@ $this->title = 'My Yii Application';
                     <h2>covid</h2>
                     <p>"djaoij"</p>
                     <p>
-                        <a href="http://localhost:8090/frontend/web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
+                        <a href="@web/index.php?r=site%2Fcontact" class="btn btn-secondary">covid</a>
                     </p>
                 </div>
             </div>

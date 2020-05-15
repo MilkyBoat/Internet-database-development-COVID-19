@@ -47,7 +47,7 @@ use yii\helpers\Url;
         <?php if (!Yii::$app->user->isGuest) : ?>
             <div class="leave-comment">
                 <!--leave comment-->
-                <h4>Leave a reply</h4>
+                <h4>快来评论吧~</h4>
                 <?php if (Yii::$app->session->getFlash('comment')) : ?>
                     <div class="alert alert-success" role="alert">
                         <?= Yii::$app->session->getFlash('comment'); ?>
@@ -59,10 +59,10 @@ use yii\helpers\Url;
                 ]) ?>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <?= $form->field($commentForm, 'comment')->textarea(['class' => 'form-control', 'placeholder' => 'Write Message'])->label(false) ?>
+                        <?= $form->field($commentForm, 'comment')->textarea(['class' => 'form-control', 'placeholder' => '留下你的足迹'])->label(false) ?>
                     </div>
                 </div>
-                <button type="submit" class="btn send-btn">Post Comment</button>
+                <button type="submit" class="btn send-btn">发表评论</button>
                 <?php \yii\widgets\ActiveForm::end(); ?>
             </div>
             <!--end leave comment-->
@@ -76,7 +76,7 @@ use yii\helpers\Url;
                     </div>
 
                     <div class="comment-text">
-                        <a href="#" class="replay btn pull-right"> Replay</a>
+                        <a href="#" class="replay btn pull-right"> 回复</a>
                         <h5><?= $comment->user->username; ?></h5>
 
                         <p class="comment-date">
