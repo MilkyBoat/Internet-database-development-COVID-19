@@ -1,3 +1,4 @@
+
 /**
  * Team:布里啾啾迪布里多,NKU
  * coding by 徐云凯 1713667
@@ -5,7 +6,7 @@
  */
 
 $(document).ready(function () {
-    var mymap = L.map('plague-map').setView([25, 155], 2);
+    var mymap = L.map('plague-map').setView([30, 5], 2);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
@@ -17,7 +18,54 @@ $(document).ready(function () {
         zoomOffset: -1
     }).addTo(mymap);
 
-    // get color depending on population density value
+    $.ajax({
+        url: "/COVID-19/frontend/web/covid/covid-info",
+        type: "GET",
+        data: { type: 'latest' },
+        async: false,
+        dataType: 'json',
+        error: function (request) {
+            alert("获取疫情数据失败");
+        },
+        success: function (data) {
+            geojson = L.geoJson(data, {
+                style: style,
+                onEachFeature: onEachFeature
+            }).addTo(mymap);
+        }
+    });
+
+    var info = L.control();
+    info.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info');
+        this.update();
+        return this._div;
+    };
+    info.update = function (props) {
+        this._div.innerHTML = '<h4>各国确诊人数</h4>' +
+            (props ? '<b>' + props.namecn + '</b><br />' + props.num + ' 人'
+                : '鼠标置于对应国家以查看');
+    };
+    info.addTo(mymap);
+
+    var legend = L.control({ position: 'bottomleft' });
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend'),
+            grades = [0, 1, 10, 50, 200, 500, 1000, 5000, 10000],
+            labels = [],
+            from, to;
+        for (var i = 0; i < grades.length; i++) {
+            from = grades[i];
+            to = grades[i + 1];
+
+            labels.push('<i style="background:' + getColor(from + 1) + '"></i> ' +
+                from + (to ? '&ndash;' + to : '+'));
+        }
+        div.innerHTML = labels.join('<br>');
+        return div;
+    };
+    legend.addTo(mymap);
+
     function getColor(d) {
         return d > 10000 ? '#800026' :
             d > 5000 ? '#BD0026' :
@@ -26,7 +74,8 @@ $(document).ready(function () {
                         d > 200 ? '#FD8D3C' :
                             d > 50 ? '#FEB24C' :
                                 d > 10 ? '#FED976' :
-                                    '#FFEDA0';
+                                    d > 0 ? '#FFEDA0' :
+                                        '#ECECEC';
     }
 
     function style(feature) {
@@ -40,11 +89,38 @@ $(document).ready(function () {
         };
     }
 
-    // var geojson = L.geoJson(statesData, {
-    //     style: style,
-    // }).addTo(map);
-})
+    function highlightFeature(e) {
+        var layer = e.target;
+        layer.setStyle({
+            weight: 5,
+            color: '#666',
+            dashArray: '',
+            fillOpacity: 0.5
+        });
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+            layer.bringToFront();
+        }
+        info.update(layer.feature.properties);
+    }
 
+    var geojson;
+    function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+        info.update();
+    }
+
+    function zoomToFeature(e) {
+        mymap.fitBounds(e.target.getBounds());
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
+})
 
 // $(document).ready(function () {
 

@@ -3,10 +3,10 @@
 /**
  * Team:布里啾啾迪布里多,NKU
  * coding by 徐云凯 1713667
- * T疫情地图数据实体类
+ * 疫情地图数据实体类
  */
 
-namespace frontend\models;
+namespace common\models;
 
 use Yii;
 
@@ -22,7 +22,7 @@ use Yii;
  * @property int|null $cured
  * @property int|null $death
  */
-class covidMap extends \yii\db\ActiveRecord
+class CovidMap extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
