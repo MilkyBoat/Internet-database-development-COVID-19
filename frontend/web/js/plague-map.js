@@ -18,6 +18,7 @@ $(document).ready(function () {
         zoomOffset: -1
     }).addTo(mymap);
 
+    var latestDate
     $.ajax({
         url: "/COVID-19/frontend/web/covid/covid-info",
         type: "GET",
@@ -28,6 +29,11 @@ $(document).ready(function () {
             alert("获取疫情数据失败");
         },
         success: function (data) {
+            var recdate = data.features[0].properties.date
+            latestDate = recdate.substr(0, 4) + '年' +
+                parseInt(recdate.substr(5, 2).toString()) + '月' +
+                parseInt(recdate.substr(8, 2).toString()) + '日';
+                
             geojson = L.geoJson(data, {
                 style: style,
                 onEachFeature: onEachFeature
@@ -42,8 +48,11 @@ $(document).ready(function () {
         return this._div;
     };
     info.update = function (props) {
-        this._div.innerHTML = '<h4>各国确诊人数</h4>' +
-            (props ? '<b>' + props.namecn + '</b><br />' + props.num + ' 人'
+        latestDate.replace()
+
+        this._div.innerHTML =
+            '<h4>各国确诊人数</h4><p>数据更新于' + latestDate + '</p>' +
+            (props ? '<b>' + props.namecn + '</b><br/>' + props.num + ' 人'
                 : '鼠标置于对应国家以查看');
     };
     info.addTo(mymap);
