@@ -150,6 +150,24 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionAbout1()
+    {
+        return $this->render('about1');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionAbout2()
+    {
+        return $this->render('about2');
+    }
 
     /**
      * Displays news page.

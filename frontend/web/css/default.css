@@ -1,0 +1,136 @@
+a {
+	text-decoration: blink;
+}
+
+a#big {
+	text-align: center; 
+	color: rgb(15, 15, 15);/*COVID的颜色*/
+}
+
+body {
+	background: #FFF ;/*大的背景颜色*/ 
+	text-align: center;
+}
+
+body,.image,h1,p {
+	margin: 0; 
+	padding: 0;
+}
+
+.main {
+	background: #FFF; 
+	width: 1280px; 
+	height: 100%;
+	margin: 0 auto; 
+	border: 10px solid rgb(250, 252, 253);
+	box-shadow:0px 0px 10px 5px #aaa;
+	border-bottom: 0; 
+	border-top: 0; 
+	text-align: left;
+}
+
+.content {
+	float: right;
+	width: 980px;
+	clear: both; 
+	border: 10px solid rgb(250, 252, 253); 
+	box-shadow:0px 0px 10px 5px #aaa;
+	color: #CCC;
+}
+
+.content h1 {
+	font: normal 1.4em sans-serif,Arial;
+	padding: 2px 6px; 
+	background:  rgb(235, 235, 235); 
+	font-weight: bold;
+	color: #FFF;
+	border: 10px solid rgb(250, 252, 253);
+	
+}
+
+.content h1 span {
+	color: rgb(61, 59, 59);/*大字的颜色*/
+}
+
+.content h1 span:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+.content p {
+	font: normal 1.0em Verdana,Arial; 
+	padding: 6px 6px 10px;
+	color: #000;
+}
+
+.content p:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+.footer {
+	height: 10px; 
+	background: #FFF ;
+	border-top: 10px solid rgb(250, 252, 253); 
+	margin: 0 auto; 
+	width: 1280px; 
+	text-align: center; 
+	font: bold 0.7em Verdana,Arial; 
+	color: rgb(117, 113, 113);
+}
+
+.footer a {
+	color: #FFF;
+}
+
+a#big {
+	font: normal 4em sans-serif, Arial;
+	background: rgb(250, 252, 253);
+	display: block;
+	margin-top: 20px;
+}
+.gfx_nav {
+	height: 10px; 
+	width: 260px;
+	background: #FFF ;/*url(/Internet-database19/frontend/web/img/nav.gif);*/
+}
+
+.header_left {
+	float: left; 
+	width: 280px; 
+	height: 500px; 
+	border: 10px solid rgb(250, 252, 253);
+	box-shadow:0px 0px 10px 5px #aaa;
+	background: #FFF;
+}
+
+.header_right {
+	float: left; 
+	width: 980px; 
+	height: 340px; 
+	background: #FFF;/* url(/Internet-database19/frontend/web/img/bgright.png);*/
+}
+
+.menu a {
+	font: normal 1.4em sans-serif,Arial; 
+	color: #000; 
+	background: rgb(250, 252, 253);
+	display: block; 
+	margin-top: 20px; 
+	width: 260px; 
+	height: 100%;
+	position:relative; /* 绝对定位，fixed是相对于浏览器窗口定位。 */
+    top:0; /* 距离窗口顶部距离 */
+}
+
+.menu a span {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	padding-left: 10px; 
+	color: #000;
+}
+
+.menu a:hover {
+	color: rgb(94, 2, 2);
+	font-weight: bold;
+}

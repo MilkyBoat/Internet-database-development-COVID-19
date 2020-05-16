@@ -17,6 +17,7 @@ class AppAsset extends AssetBundle
         'css/home.css',
         'css/comment.css',
         'css/news.css',
+		
       
     ];
     public $js = [
