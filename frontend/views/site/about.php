@@ -76,7 +76,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </head>
 <body>
 	<div class="box">
-		<img id="pic" src="http://localhost/Internet-database19/frontend/web/img/0.jpg" />
+		<img id="pic" src="/Internet-database19/frontend/web/img/0.jpg" />
 	</div>
 	<div>
 		<input type="button" class="btn"  value="上一张"/>
@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			{
 				n=6;
 			}
-			pic.src="http://localhost/Internet-database19/frontend/web/img/"+n+".jpg"
+			pic.src="/Internet-database19/frontend/web/img/"+n+".jpg"
 		}
 		nextBtn.onclick=function(){
 			picLunH();
@@ -106,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			{
 				n=1;
 			}
-			pic.src="http://localhost/Internet-database19/frontend/web/img/"+n+".jpg"
+			pic.src="/Internet-database19/frontend/web/img/"+n+".jpg"
 			
 		}
 		setInterval(picLunH,3000);
@@ -115,9 +115,9 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="header_left">
 		<div class="menu">
 			<div class="gfx_nav"><span></span></div>
-			<a href="/frontend/web/site/about"><span>01</span> 首页</a>
-			<a href="/frontend/web/site/about1"><span>02</span> 预防</a>
-			<a href="/frontend/web/site/about2"><span>03</span> 治疗</a>
+			<a href="/Internet-database19/frontend/web/site/about"><span>01</span> 首页</a>
+			<a href="/Internet-database19/frontend/web/site/about1"><span>02</span> 预防</a>
+			<a href="/Internet-database19/frontend/web/site/about2"><span>03</span> 治疗</a>
 		</div>
 		<a href="/Internet-database19/frontend/web/site/about" id="big">COVID</a>
 	</div>
