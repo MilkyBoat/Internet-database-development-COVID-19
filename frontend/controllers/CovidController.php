@@ -22,21 +22,20 @@ class CovidController extends Controller
         
         if ($type == "latest"){
             $latestDate = CovidMap::find()->max('date');
-            $r = array("latestDate" => $latestDate);
+            $recs = array("latestDate" => $latestDate);
             $results = CovidMap::find()->where(['date' => $latestDate])->all();
-            foreach ($r as $result){
-                if ($r != NULL && isset($result["pid"])){
-                    $rpid = $result["pid"];
-                    $r[$rpid] = $result;
-                }
+
+            foreach ($results as $result){
+                $recs[$result["pid"]] = $result;
             }
 
             foreach ($json_data["features"] as $c){
                 $json_data["features"][$c["id"] - 1]["properties"]["date"] = $latestDate;
-                $rec = isset($r[$c["id"]]) ? $r[$c["id"]] : NULL;
+                $rec = isset($recs[$c["id"]]) ? $recs[$c["id"]] : NULL;
                 $json_data["features"][$c["id"] - 1]["properties"]["num"] = 
                     $rec == NULL ? 0 : $rec["confirm"];
             }
+
         }
 
         Yii::$app->response->format=Response::FORMAT_JSON;
