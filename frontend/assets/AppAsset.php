@@ -14,18 +14,13 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/leaflet.css',
-        'css/home.css',
+        // 'css/home.css',
         'css/comment.css',
-        'css/news.css',
-      
+        'css/news.css'
     ];
     public $js = [
         'js/jquery.min.js',
-        'js/leaflet.js',
-        'js/leaflet.ChineseTmsProviders.js',
-        'js/plague-map.js',
-        'js/home.js',
-
+        // 'js/home.js',
         'app.js'
     ];
     public $depends = [
