@@ -10,6 +10,8 @@
 $this->registerCssFile('@web/css/home.css');
 $this->registerJsFile('@web/js/home.js');
 
+$this->registerCssFile('@web/css/leaflet.css');
+$this->registerCssFile('@web/css/plague-map.css');
 $this->registerJsFile("@web/js/jquery.min.js");
 $this->registerJsFile("@web/js/leaflet.js");
 $this->registerJsFile("@web/js/plague-map.js");
@@ -23,7 +25,7 @@ $this->title = 'My Yii Application';
     <!-- 下面第3行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
     <!-- 下面第2行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
     <!-- 下面这行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
-    <div id="plague-map" style="height: 540px; width: 100%;">
+    <div id="plague-map" >
 
     </div>
 

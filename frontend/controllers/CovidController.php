@@ -11,7 +11,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\web\Controller;
 use yii\web\response;
-use frontend\models\CovidMap;
+use common\models\CovidMap;
 
 class CovidController extends Controller
 {
@@ -22,11 +22,20 @@ class CovidController extends Controller
         
         if ($type == "latest"){
             $latestDate = CovidMap::find()->max('date');
+            $r = array("latestDate" => $latestDate);
+            $results = CovidMap::find()->where(['date' => $latestDate])->all();
+            foreach ($r as $result){
+                if ($r != NULL && isset($result["pid"])){
+                    $rpid = $result["pid"];
+                    $r[$rpid] = $result;
+                }
+            }
 
-            foreach ($json_data["features"]["id"] as $c){
-                $json_data["features"][$c["id"]]["properties"]["date"] = $latestDate;
-                $rec = CovidMap::find()->where(['pid' => $c["id"], 'date' => $latestDate])->one();
-                $json_data["features"][$c["id"]]["properties"]["num"] = $rec["confirm"];
+            foreach ($json_data["features"] as $c){
+                $json_data["features"][$c["id"] - 1]["properties"]["date"] = $latestDate;
+                $rec = isset($r[$c["id"]]) ? $r[$c["id"]] : NULL;
+                $json_data["features"][$c["id"] - 1]["properties"]["num"] = 
+                    $rec == NULL ? 0 : $rec["confirm"];
             }
         }
 

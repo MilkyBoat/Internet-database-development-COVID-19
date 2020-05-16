@@ -6,10 +6,9 @@
  * 疫情地图数据实体类
  */
 
-namespace frontend\models;
+namespace common\models;
 
 use Yii;
-use yii\base\Model;
 
 /**
  * This is the model class for table "covid_map".
@@ -23,7 +22,7 @@ use yii\base\Model;
  * @property int|null $cured
  * @property int|null $death
  */
-class CovidMap extends Model
+class CovidMap extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
