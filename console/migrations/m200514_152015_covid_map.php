@@ -30,7 +30,6 @@ class m200514_152015_covid_map extends Migration
             'date' => $this->date()->notNull(),
             'placename'=> $this->string()->notNull(),
             'confirm'=>$this->integer()->defaultValue(0),
-            'suspect'=>$this->integer()->defaultValue(0),
             'cured'=>$this->integer()->defaultValue(0),
             'death'=>$this->integer()->defaultValue(0),
         ]);

@@ -18,7 +18,6 @@ use Yii;
  * @property string $date
  * @property string $placename
  * @property int|null $confirm
- * @property int|null $suspect
  * @property int|null $cured
  * @property int|null $death
  */
@@ -39,7 +38,7 @@ class CovidMap extends \yii\db\ActiveRecord
     {
         return [
             [['pid', 'date', 'placename'], 'required'],
-            [['pid', 'confirm', 'suspect', 'cured', 'death'], 'integer'],
+            [['pid', 'confirm', 'cured', 'death'], 'integer'],
             [['date'], 'safe'],
             [['placename'], 'string', 'max' => 255],
         ];
@@ -56,7 +55,6 @@ class CovidMap extends \yii\db\ActiveRecord
             'date' => 'Date',
             'placename' => 'Placename',
             'confirm' => 'Confirm',
-            'suspect' => 'Suspect',
             'cured' => 'Cured',
             'death' => 'Death',
         ];

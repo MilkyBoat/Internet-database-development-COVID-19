@@ -51,7 +51,7 @@ $(document).ready(function () {
         latestDate.replace()
 
         this._div.innerHTML =
-            '<h4>各国确诊人数</h4><p>数据更新于' + latestDate + '</p>' +
+            '<h4>各国累计确诊人数</h4><p>数据更新于' + latestDate + '</p>' +
             (props ? '<b>' + props.namecn + '</b><br/>' + props.num + ' 人'
                 : '鼠标置于对应国家以查看');
     };
@@ -60,7 +60,7 @@ $(document).ready(function () {
     var legend = L.control({ position: 'bottomleft' });
     legend.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'info legend'),
-            grades = [0, 1, 10, 50, 200, 500, 1000, 5000, 10000],
+            grades = [0, 10, 100, 500, 1000, 5000, 10000, 10000, 1000000],
             labels = [],
             from, to;
         for (var i = 0; i < grades.length; i++) {
@@ -76,14 +76,14 @@ $(document).ready(function () {
     legend.addTo(mymap);
 
     function getColor(d) {
-        return d > 10000 ? '#800026' :
-            d > 5000 ? '#BD0026' :
-                d > 1000 ? '#E31A1C' :
-                    d > 500 ? '#FC4E2A' :
-                        d > 200 ? '#FD8D3C' :
-                            d > 50 ? '#FEB24C' :
-                                d > 10 ? '#FED976' :
-                                    d > 0 ? '#FFEDA0' :
+        return d > 1000000 ? '#800026' :
+            d > 100000 ? '#BD0026' :
+                d > 10000 ? '#E31A1C' :
+                    d > 1000 ? '#FC4E2A' :
+                        d > 1000 ? '#FD8D3C' :
+                            d > 500 ? '#FEB24C' :
+                                d > 100 ? '#FED976' :
+                                    d > 10 ? '#FFEDA0' :
                                         '#ECECEC';
     }
 
