@@ -37,7 +37,7 @@ for rec in rec_list:
         data_list[c_pid][3] += rec["latest"]["deaths"]
 last_date = rec_list[0]["last_updated"]
 last_date = last_date[: last_date.find('T')]
-print(last_date)
+print('Latest date: ', last_date)
 
 c_list_file = open("id_list.txt", 'r', encoding='utf-8')
 country_name_list = []
@@ -48,15 +48,28 @@ for line in lines:
 
 db = pymysql.connect("49.233.130.58", "db_user_proj", "NiePeng_niubi", "covid19")
 cursor = db.cursor()
-sql0 = """INSERT INTO `covid_map` (`pid`, `date`, `placename`, `confirm`, `cured`, `death`) VALUES ("""
 
-for c in data_list:
-    sql = sql0 + str(c[0]) + ",'" + last_date + "','" + country_name_list[c[0] - 1][2] + "'," + str(c[1]) + "," + str(c[2]) + "," + str(c[3]) + ")"
-    print(sql)
-    try:
-        cursor.execute(sql)  # 执行sql语句
-        db.commit()          # 执行sql语句
-    except:
-        db.rollback()        # 发生错误时回滚
-        print('error in execute sql: ', sql)
+try:
+    cursor.execute("SELECT MAX(`date`) FROM `covid_map`")  # 执行sql语句
+    result_date = cursor.fetchone()
+except:
+    print('error in select latest date')
+
+db_date = str('%04d-%02d-%02d' % (result_date[0].year, result_date[0].month, result_date[0].day))
+
+if last_date <= db_date:
+    print('The data is up to date and will not be updated!')
+else:
+    print('Updated data found, to be written to the database!')
+    sql0 = """INSERT INTO `covid_map` (`pid`, `date`, `placename`, `confirm`, `cured`, `death`) VALUES ("""
+    for c in data_list:
+        sql = sql0 + str(c[0]) + ",'" + last_date + "','" + country_name_list[c[0] - 1][2] + "'," + str(c[1]) + "," + str(c[2]) + "," + str(c[3]) + ")"
+        # print(sql)
+        try:
+            cursor.execute(sql)  # 执行sql语句
+            db.commit()          # 执行sql语句
+        except:
+            db.rollback()        # 发生错误时回滚
+            print('error in execute sql: ', sql)
+    print('Database write complete')
 db.close()

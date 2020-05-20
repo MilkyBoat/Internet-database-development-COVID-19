@@ -60,7 +60,7 @@ $(document).ready(function () {
     var legend = L.control({ position: 'bottomleft' });
     legend.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'info legend'),
-            grades = [0, 10, 100, 500, 1000, 5000, 10000, 10000, 1000000],
+            grades = [0, 10, 100, 500, 1000, 5000, 10000, 100000, 1000000],
             labels = [],
             from, to;
         for (var i = 0; i < grades.length; i++) {
@@ -129,6 +129,17 @@ $(document).ready(function () {
             click: zoomToFeature
         });
     }
+
+    // var popup = L.popup();
+
+    // function onMapClick(e) {
+    //     popup
+    //         .setLatLng(e.latlng)
+    //         .setContent(e.latlng.toString())
+    //         .openOn(mymap);
+    // }
+
+    // mymap.on('click', onMapClick);
 })
 
 // $(document).ready(function () {
@@ -178,16 +189,3 @@ $(document).ready(function () {
 //     [51.503, -0.06],
 //     [51.51, -0.047]
 // ]).addTo(mymap).bindPopup("I am a polygon.");
-
-
-//     var popup = L.popup();
-
-//     function onMapClick(e) {
-//         popup
-//             .setLatLng(e.latlng)
-//             .setContent(e.latlng.toString())
-//             .openOn(mymap);
-//     }
-
-//     mymap.on('click', onMapClick);
-// });

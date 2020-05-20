@@ -4,7 +4,7 @@
 4	United Arab Emirates	阿拉伯联合酋长国
 5	Argentina	阿根廷
 6	Armenia	亚美尼亚
-7	French Southern and Antarctic Lands	法国南部和南极土地
+7	French Southern and Antarctic Lands	法属南部群岛
 8	Australia	澳大利亚
 9	Austria	奥地利
 10	Azerbaijan	阿塞拜疆
@@ -29,7 +29,7 @@
 29	Switzerland	瑞士
 30	Chile	智利
 31	China	中国
-32	Ivory Coast	象牙海岸
+32	Ivory Coast	科特迪瓦
 33	Cameroon	喀麦隆
 34	Democratic Republic of the Congo	刚果民主共和国
 35	Republic of the Congo	刚果共和国
@@ -55,7 +55,7 @@
 55	Falkland Islands	福克兰群岛
 56	France	法国
 57	Gabon	加蓬
-58	United Kingdom	联合王国
+58	United Kingdom	英国
 59	Georgia	乔治亚州
 60	Ghana	加纳
 61	Guinea	几内亚
@@ -162,17 +162,17 @@
 162	Trinidad and Tobago	特立尼达和多巴哥
 163	Tunisia	突尼斯
 164	Turkey	土耳其
-165	Taiwan	台湾
+165	Taiwan	中国台湾
 166	United Republic of Tanzania	坦桑尼亚联合共和国
 167	Uganda	乌干达
 168	Ukraine	乌克兰
 169	Uruguay	乌拉圭
-170	United States of America	美利坚合众国
+170	United States of America	美国
 171	Uzbekistan	乌兹别克斯坦
 172	Venezuela	委内瑞拉
 173	Vietnam	越南
 174	Vanuatu	瓦努阿图
-175	West Bank	西岸
+175	West Bank	约旦河西岸与加沙地区
 176	Yemen	也门
 177	South Africa	南非
 178	Zambia	赞比亚
