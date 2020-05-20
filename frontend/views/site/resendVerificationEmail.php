@@ -9,13 +9,24 @@ use yii\bootstrap4\ActiveForm;
 $this->title = 'Resend verification email';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-resend-verification-email">
-    <h1><?= Html::encode($this->title) ?></h1>
+<?php echo Html::cssFile('@web/css/style.css'); ?>
 
-    <p>Please fill out your email. A verification email will be sent there.</p>
+<div class="site-resend-verification-email">
+    <style>
+        .site-resend-verification-email {
+            height: 450px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+
+            position: center;
+        }
+    </style>
+
+    <p>Verification Email</p>
 
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-12">
             <?php $form = ActiveForm::begin(['id' => 'resend-verification-email-form']); ?>
 
             <?= $form->field($model, 'email')->textInput(['autofocus' => true]) ?>
@@ -23,8 +34,66 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="form-group">
                 <?= Html::submitButton('Send', ['class' => 'btn btn-primary']) ?>
             </div>
+            <style type="text/css">
+                .row {
+                    width: 480px;
+                    height: 480px;
+                    position: relative;
+                    z-index: 9999;
+                    margin: 6% auto;
+                    background: rgba(216, 216, 216, 0.5);
+                    padding: 5px;
+                    overflow: hidden;
+                    border: 10px solid white;
+                    box-shadow: 0px 0px 10px 5px #aaa;
+                }
 
+                .btn {
+                    top: 15px;
+                    left: 150px;
+                    position: relative;
+                    width: 110px;
+                    height: 50px;
+                    background: white;
+                    color: #000;
+                    border: 5px solid white;
+                    box-shadow: 0px 0px 10px 5px #aaa;
+                    border-radius: 30px;
+                    transition: .5s;
+                }
+
+                .btn:hover {
+                    background-color: rgb(135, 135, 135);
+                    color: white;
+                }
+
+                .site-resend-verification-email p {
+                    width: 400px;
+                    color: #000;
+                    background: white;
+                    border: 5px solid white;
+                    box-shadow: 0px 0px 10px 5px #aaa;
+                    font-size: 40px;
+                    top: 18px;
+                    left: 295px;
+                    border-radius: 30px;
+                    transition: .5s;
+                    text-align: center;
+                    font-weight: bolder;
+                    position: relative;
+                }
+            </style>
             <?php ActiveForm::end(); ?>
         </div>
     </div>
+</div>
+<?php echo Html::cssFile('@web/css/bk.css'); ?>
+<div class="foreground"></div>
+
+<div class="midground">
+    <div class="tuna1"></div>
+    <div class="tuna2"></div>
+</div>
+
+<div class="background">
 </div>
