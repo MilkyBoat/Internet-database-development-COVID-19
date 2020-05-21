@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		.box{
 			position:absolute;
 			left:410px;
-			top: 123px;/*框在页面里的位置*/
+			top: 132px;/*框在页面里的位置*/
 			border:10px solid white;
 			box-shadow:0px 0px 10px 5px #aaa;
 			margin:auto;
@@ -46,10 +46,11 @@ $this->params['breadcrumbs'][] = $this->title;
 			background-size: 100% 100%;
 		}
 
-		.btn {
+		.btn1 {
+			position: relative;
 			width: 100px;
 			height: 35px;
-			left:145px;
+			left:165px;
 			top:530px;
 			-webkit-transition-duration: 0.4s;
 			transition-duration: 0.4s;
@@ -60,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			border-radius:5px;
 		}
 
-		.btn:hover {
+		.btn1:hover {
 		background-color: rgb(135, 135, 135);
 		color: white;
 		}
@@ -79,13 +80,13 @@ $this->params['breadcrumbs'][] = $this->title;
 		<img id="pic" src="../../../frontend/web/img/0.jpg" />
 	</div>
 	<div>
-		<input type="button" class="btn"  value="上一张"/>
-		<input type="button" class="btn" value="下一张" />
+		<input type="button" class="btn1"  value="上一张"/>
+		<input type="button" class="btn1" value="下一张" />
 	</div>
 	<script>
 		var pic=document.getElementById("pic");
-		var preBtn=document.getElementsByClassName("btn")[0];
-		var nextBtn=document.getElementsByClassName("btn")[1];
+		var preBtn=document.getElementsByClassName("btn1")[0];
+		var nextBtn=document.getElementsByClassName("btn1")[1];
 //			
 		preBtn.onclick=function()
 		{
