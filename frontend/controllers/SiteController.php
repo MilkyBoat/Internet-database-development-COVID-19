@@ -178,6 +178,31 @@ class SiteController extends Controller
     {
         return $this->render('news');
     }
+
+    public function actionCovNews()
+    {
+        $query = CovNews::find();
+
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->count(),
+        ]);
+
+        $CovNewss = $query->orderBy('id')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+        return $this->render('news', [
+            'covnews' => $CovNewss,
+            'pagination' => $pagination,
+        ]);
+    }
+
+    public function actionNewsdetail()
+    {
+        return $this->render('newsdetail');
+    }
     
     /**
      * Displays research page.
