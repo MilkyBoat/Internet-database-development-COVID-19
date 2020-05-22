@@ -40,37 +40,9 @@ AppAsset::register($this);
         <?php echo $this->render('header') ?>
 
 
-        <main class="d-flex">
-            <aside class='shadow'>
-                <?php
-                $menuItems = [
-                    ['label' => 'Home', 'url' => ['/blog/blog']],
-                    ['label' => 'History', 'url' => ['/video/history']],
+        
 
-                ];
-                if (Yii::$app->user->isGuest) {
-                } else {
-                    $menuItems[] = [
-                        'label' => 'Create',
-                        'url' => ['/blog/create']
-                    ];
-                    $menuItems[] = ['label' => 'My blogs', 'url' => ['/blog/mypost']];
-                } ?>
-                <?php
-                echo \yii\bootstrap4\Nav::widget([
-                    'options' => [
-                        'class' => 'd-flex flex-column nav-pills'
-                    ],
-                    'items' => $menuItems,
-                ])
-                ?>
-            </aside>
-            <div class="content-wrapper p-3">
-
-                <?= Alert::widget() ?>
-                <?= $content ?>
-            </div>
-        </main>
+        <?= $content ?>
 
 
     </div>
