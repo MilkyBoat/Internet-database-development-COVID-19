@@ -26,16 +26,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		.box {
 			position: absolute;
-			left: 410px;
+			left: 450px;
 			top: 132px;
 			/*框在页面里的位置*/
-			border: 10px solid white;
-			box-shadow: 0px 0px 10px 5px #aaa;
+			border: 10px solid rgb(250, 252, 253);
 			margin: auto;
 			margin-top: 10px;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-size: 100% 100%;
+			z-index: -1;
 		}
 
 		/*.box img{
@@ -62,6 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			color: black;
 			border: 2px solid rgb(135, 135, 135);
 			border-radius: 5px;
+			z-index: 2;
 		}
 
 		.btn1:hover {
@@ -70,14 +71,15 @@ $this->params['breadcrumbs'][] = $this->title;
 		}
 	</style>
 </head>
+
 <head>
-<meta charset='UTF-8'>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-<meta name="description" content="description" />
-<meta name="keywords" content="keywords" />
-<meta name="author" content="Arcsin, www.arcsin.se" />
-<link rel="stylesheet" type="text/css" href="default.css" />
-<title>COVID</title>
+	<meta charset='UTF-8'>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="description" />
+	<meta name="keywords" content="keywords" />
+	<meta name="author" content="Arcsin, www.arcsin.se" />
+	<link rel="stylesheet" type="text/css" href="default.css" />
+	<title>COVID</title>
 </head>
 
 <body>
@@ -125,19 +127,16 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div>
 			<a href="../../../frontend/web/site/about" id="big">COVID</a>
 		</div>
-		<div class="header_right">
-			<div class="gfx_margin"><span></span></div>
-			<div class="gfx_header">
-				<h1></h1>
-			</div>
-		</div>
 		<div class="content">
 			<h1><span>如何正确戴口罩</span></h1>
+			<p> </p>
 			<p>(1)戴上并取下口罩之前都要洗手。</p>
 			<p>(2)佩戴时要注意正反面和上下面。口罩应覆盖鼻子和鼻子，并调整鼻夹以贴合脸部。</p>
 			<p>(3)避免在佩戴过程中用手触摸面罩的内部和外部。</p>
 			<p>(4)戴多个口罩并不能有效地提高防护效果，反而会增加呼吸阻力，并且有可能会损坏密合性。</p>
+			<p> </p>
 			<h1><span>个人日常预防</span></h1>
+			<p> </p>
 			<p>(1)居室勤开窗，经常通风</p>
 			<p>(2)家庭成员不共用毛巾</p>
 			<p>(3)不随地吐痰，口鼻分泌物用纸巾包好再弃置于有盖垃圾箱内</p>
@@ -145,13 +144,17 @@ $this->params['breadcrumbs'][] = $this->title;
 			<p>(5)不要接触、购买和食用野生动物</p>
 			<p>(6)尽量避免前往售卖活体动物的市场</p>
 			<p>(1)家庭备置体温计、医用外科口罩或N95口罩、家用消毒用品等物资</p>
+			<p> </p>
 			<h1><span>家庭成员出现可疑症状时的建议</span></h1>
+			<p> </p>
 			<p>(1)避免乘坐地铁、公共汽车等公共交通工具，避免前往人群密集的场所</p>
 			<p>(2)就诊时应主动告诉医生自己的相关疾病流行地区的旅行居住史，以及发病后接触过什么人，配合医生开展相关调查</p>
 			<p>(3)患者的家属应佩戴口罩，与无症状的其他家庭成员保持距离，避免近距离接触</p>
 			<p>(4)若家庭中有人被判定为新型冠状病毒感染的肺炎，其他家庭成员如果经判定为密切接触者，应接受14天医学观察</p>
 			<p>(5)对有症状的家庭成员经常接触的地方和物品进行消毒</p>
+			<p> </p>
 			<h1><span>七步洗手法</span></h1>
+			<p> </p>
 			<p>(1)掌心搓掌心</p>
 			<p>(2)手指交错掌心搓掌心</p>
 			<p>(3)手指交错掌心搓手背，两手互换</p>
@@ -159,8 +162,11 @@ $this->params['breadcrumbs'][] = $this->title;
 			<p>(5)指尖摩擦掌心两手互换</p>
 			<p>(6)拇指在掌中转动两手互换</p>
 			<p>(7)一手旋转揉搓另一手的腕部、前臂，直至肘部，交错进行</p>
+			<p> </p>
 		</div>
 	</div>
+	<script type="text/javascript" src="../../../frontend/web/js/canvas-nest.min.js"></script>　　
+	<script type="text/javascript" src="../../../frontend/web/js/emojiCursor.js"></script>　
 </body>
 
 </html>
