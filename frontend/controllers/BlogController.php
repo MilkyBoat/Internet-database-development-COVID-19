@@ -157,17 +157,22 @@ class BlogController extends Controller
         $this->layout='blog';
         $data = Article::getAll(5);
 
+        for($i=0,$j=0,$k=0;$i<sizeof($data);){
+            $data1[$j++]=$data['articles'][$i++];
+            $data2[$k++]=$data['articles'][$i++];
+        }
+
         $popular = Article::getPopular();
 
         $recent = Article::getRecent();
 
         $categories = Category::find()->all();
-
  
-        
 
         return $this->render("blog", [
             'articles' => $data['articles'],
+            'articles1' => $data1,
+            'articles2' => $data2,
             'pagination' => $data['pagination'],
             'popular' => $popular,
             'recent' => $recent,

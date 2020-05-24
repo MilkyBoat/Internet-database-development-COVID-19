@@ -17,8 +17,6 @@ class AppAsset extends AssetBundle
         'css/comment.css',
 
         'css/news.css',
-		
-      
 
         'css/news.css'
 
@@ -26,7 +24,17 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/jquery.min.js',
         // 'js/home.js',
-        'app.js'
+        'app.js',
+        'public/js/owl.carousel.min.js',
+        'public/js/jquery.sticky.js',
+        'public/js/jquery.tabs.min.js',
+        'public/js/parallax.min.js',        
+        'public/js/jquery.nice-select.min.js',
+        'public/js/jquery.ajaxchimp.min.js',
+        'public/js/jquery.magnific-popup.min.js',
+      #  'public/js/bootstrap-datepicker.js',
+        'public/js/main.js',
+        'public/js/jquery.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

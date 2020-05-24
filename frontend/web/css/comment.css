@@ -5,7 +5,7 @@ div {
     display: block;
 }
 
-section {
+/* section {
     padding: 45px 0;
     position: relative;
 }
@@ -20,7 +20,7 @@ section {
     section {
         padding: 65px 0;
     }
-}
+} */
 
 article,
 aside,

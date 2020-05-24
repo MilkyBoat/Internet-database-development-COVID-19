@@ -23,7 +23,6 @@ body,.image,h1,p {
 	height: 100%;
 	margin: 0 auto; 
 	border: 10px solid rgb(250, 252, 253);
-	box-shadow:0px 0px 10px 5px #aaa;
 	border-bottom: 0; 
 	border-top: 0; 
 	text-align: left;
@@ -31,11 +30,14 @@ body,.image,h1,p {
 
 .content {
 	float: right;
+	position: relative;
+	top:-1300px;
+	left: 40px;
 	width: 980px;
 	clear: both; 
 	border: 10px solid rgb(250, 252, 253); 
-	box-shadow:0px 0px 10px 5px #aaa;
 	color: #CCC;
+	z-index:0;
 }
 
 .content h1 {
@@ -45,7 +47,7 @@ body,.image,h1,p {
 	font-weight: bold;
 	color: #FFF;
 	border: 10px solid rgb(250, 252, 253);
-	
+	z-index: 0;
 }
 
 .content h1 span {
@@ -85,30 +87,36 @@ body,.image,h1,p {
 
 a#big {
 	font: normal 4em sans-serif, Arial;
-	background: rgb(250, 252, 253);
+	background: #fff;
 	display: block;
-	margin-top: 20px;
+	margin-top: 80px;
 }
 .gfx_nav {
-	height: 10px; 
-	width: 260px;
-	background: #FFF ;/*url(/Internet-database19/frontend/web/img/nav.gif);*/
+	height: 50px; 
+	width: 230px;
+	background: #fff;
 }
 
 .header_left {
 	float: left; 
-	width: 280px; 
-	height: 500px; 
+	position: relative;
+	top:-49px;
+	left:-28px;
+	width: 250px; 
+	height: 1800px; 
 	border: 10px solid rgb(250, 252, 253);
-	box-shadow:0px 0px 10px 5px #aaa;
+	border-top: 0px solid rgb(250, 252, 253);
 	background: #FFF;
+	z-index: 0;
 }
 
 .header_right {
+	position: relative;
+	left:700px;
 	float: left; 
 	width: 980px; 
 	height: 340px; 
-	background: #FFF;/* url(/Internet-database19/frontend/web/img/bgright.png);*/
+	background:#fff;
 }
 
 .menu a {
@@ -117,10 +125,10 @@ a#big {
 	background: rgb(250, 252, 253);
 	display: block; 
 	margin-top: 20px; 
-	width: 260px; 
+	width: 230px; 
 	height: 100%;
 	position:relative; /* 绝对定位，fixed是相对于浏览器窗口定位。 */
-    top:0; /* 距离窗口顶部距离 */
+    top:10px; /* 距离窗口顶部距离 */
 }
 
 .menu a span {
