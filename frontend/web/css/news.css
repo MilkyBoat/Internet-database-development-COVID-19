@@ -21,7 +21,7 @@ a {
 } 
 
 .container {
-	width: 1000px;
+	/* width: 1000px; */
 	margin: 0 auto;
 }
 .navbar .navbar-content a {
