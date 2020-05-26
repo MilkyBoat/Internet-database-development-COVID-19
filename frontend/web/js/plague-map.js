@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     var latestDate
     $.ajax({
-        url: "/covid-19/frontend/web/covid/covid-info",
+        url: "/COVID-19/frontend/web/covid/covid-info",
         type: "GET",
         data: { type: 'latest' },
         async: false,

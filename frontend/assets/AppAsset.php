@@ -17,7 +17,6 @@ class AppAsset extends AssetBundle
         'css/comment.css',
 
         'css/news.css',
-       
 		
       
 
@@ -27,7 +26,7 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/jquery.min.js',
         // 'js/home.js',
-        'app.js',
+        'app.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
