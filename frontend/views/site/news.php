@@ -44,8 +44,7 @@ use yii\widgets\LinkPager;
 	<section class="bg0">
 		<div class="container">
 			<div class="row m-rl--1">
-				<div class="col-12 p-rl-1 p-b-2">
-					<?php $CovNewss = CovNews::find()->orderBy('pubdate DESC')->all(); ?>
+				<div class="col-12 p-rl-1 p-b-2">					
 					<?php $count = CovNews::find()->count(); $pagination = new Pagination(['totalCount' => $count,'pageSize' => 10]);
 							$articles = CovNews::find()->offset($pagination->offset)->limit($pagination->limit)->all();?>
 					
