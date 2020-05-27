@@ -42,7 +42,7 @@ Table of contents
     elements
 --------------------------------------*/
 body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     background: #F4F4F4;
 }
 
@@ -564,7 +564,7 @@ subscribe newsletter
     letter-spacing: 1px;
     font-size: 12px;
     padding: 9px 0;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 .btn-subscribe:hover {
