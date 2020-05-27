@@ -24,7 +24,7 @@ use yii\widgets\LinkPager;
 <?= Html::cssFile('@web/news/css/main.css') ?>
 <?= Html::jsFile('@web/news/js/jquery-3.2.1.min.js') ?>
 <?= Html::jsFile('@web/news/js/animsition.min.js') ?>
-<?= Html::jsFile('@web/news/js/popper.js') ?>
+<?//= Html::jsFile('@web/news/js/popper.js') ?>
 <?= Html::jsFile('@web/news/js/bootstrap.min.js') ?>
 <?= Html::jsFile('@web/news/js/main.js') ?>
 
