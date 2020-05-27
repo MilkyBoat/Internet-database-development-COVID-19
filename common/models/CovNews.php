@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use yii\data\Pagination;
 
 use Yii;
 
@@ -61,5 +62,27 @@ class CovNews extends \yii\db\ActiveRecord
     {
         return new CovNewsQuery(get_called_class());
     }
-    //获得头像路径
+    
+    public static function getAll($pageSize = 5)
+    {
+        
+        $query = CovNews::find()->latest();
+
+    
+        $count = $query->count();
+
+
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>$pageSize]);
+
+  
+        $news = $query->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+        
+        $data['news'] = $news;
+        $data['pagination'] = $pagination;
+        
+        return $data;
+    }
+
 }

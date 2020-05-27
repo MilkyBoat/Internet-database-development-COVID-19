@@ -18,10 +18,8 @@ use yii\data\Pagination;
 use common\models\Article;
 use common\models\Category;
 use common\models\ArticleSearch;
-use common\models\ArticleTag;
 use common\models\CommentFormB;
 use yii\web\UploadedFile;
-use common\models\Tag;
 
 /**
  * Site controller
@@ -75,24 +73,17 @@ class BlogController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
-
-
     public function actionView($id)
     {
         $article = Article::findOne($id);
 
-        $popular = Article::getPopular();
+        $popular = Article::Popular();
 
-        $recent = Article::getRecent();
+        $recent = Article::Recent();
 
         $categories = Category::find()->all();
 
-        $comments=$article->getArticleComments();
+        $comments=$article->ArticleComments();
         $commentForm= new CommentFormB();
 
         $article->viewedCounter();
@@ -114,7 +105,6 @@ class BlogController extends Controller
         $dataProvider = new ActiveDataProvider([
             'query' => Article::find()->creator(Yii::$app->user->id)->latest(),
         ]);
-
         return $this->render('mypost', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -146,11 +136,6 @@ class BlogController extends Controller
     }
 
 
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
     public function actionBlog()
     {
 
@@ -162,9 +147,9 @@ class BlogController extends Controller
             $data2[$k++]=$data['articles'][$i++];
         }
 
-        $popular = Article::getPopular();
+        $popular = Article::Popular();
 
-        $recent = Article::getRecent();
+        $recent = Article::Recent();
 
         $categories = Category::find()->all();
  
@@ -184,9 +169,9 @@ class BlogController extends Controller
     {
         $data = Category::getArticlesByCategory($id);
 
-        $popular = Article::getPopular();
+        $popular = Article::Popular();
 
-        $recent = Article::getRecent();
+        $recent = Article::Recent();
 
         $categories = Category::find()->all();
 
@@ -256,26 +241,6 @@ class BlogController extends Controller
         ]);
     }
 
-    public function actionSetTags($id)
-    {
-        $this->layout='blog';
-        $article = $this->findModel($id);
-        var_dump($article->tags);die;
-
-        $selectedTags = $article->getSelectedTags();
-        $tags = ArrayHelper::map(Tag::find()->all(), 'id', 'title');
-
-        if (Yii::$app->request->isPost) {
-            $tags = Yii::$app->request->post('tags');
-            $article->saveTags($tags);
-            return $this->redirect(['info','id'=>$article->id]);
-        }
-
-        return $this->render('tags', [
-            'selectedTags' => $selectedTags,
-            'tags' => $tags
-        ]);
-    }
 
     public function actionDelete($id)
     {

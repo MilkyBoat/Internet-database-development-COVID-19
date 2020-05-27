@@ -167,55 +167,9 @@ class SiteController extends Controller
         return $this->render('about2');
     }
 
-    /**
-     * Displays news page.
-     *
-     * @return mixed
-     */
-    public function actionNews()
-    {
-        return $this->render('news');
-    }
 
-    public function actionCovNews()
-    {
-        $query = CovNews::find();
 
-        $pagination = new Pagination([
-            'defaultPageSize' => 5,
-            'totalCount' => $query->count(),
-        ]);
 
-        $CovNewss = $query->orderBy('id')
-            ->offset($pagination->offset)
-            ->limit($pagination->limit)
-            ->all();
-
-        return $this->render('news', [
-            'covnews' => $CovNewss,
-            'pagination' => $pagination,
-        ]);
-    }
-
-    public function actionNewscolumn()
-    {
-        return $this->render('newscolumn');
-    }
-
-    public function actionColumn01()
-    {
-        return $this->render('column01');
-    }
-
-    public function actionColumn02()
-    {
-        return $this->render('column02');
-    }
-
-    public function actionColumn03()
-    {
-        return $this->render('column03');
-    }
     
     /**
      * Displays research page.

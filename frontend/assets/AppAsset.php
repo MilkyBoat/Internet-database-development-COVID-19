@@ -18,7 +18,8 @@ class AppAsset extends AssetBundle
 
         'css/news.css',
 
-        'css/news.css'
+        'css/news.css',
+        'public/css/style_1.css',
 
     ];
     public $js = [
@@ -35,6 +36,10 @@ class AppAsset extends AssetBundle
       #  'public/js/bootstrap-datepicker.js',
         'public/js/main.js',
         'public/js/jquery.min.js',
+        'public/js/main2.js',
+        'public/js/waypoints.min.js',
+        'public/js/jquery.stellar.min.js',
+        'public/js/modernizr-3.5.0.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

@@ -218,6 +218,8 @@ use yii\helpers\Html;
                                     <input placeholder="Search Posts" name="search" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'">
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
+                                <button onclick="location.href='<?= Url::toRoute(['blog/create']);?>'" type="button"  class="btn btn-primary">
+         Create</button>
                             </div>
 
 

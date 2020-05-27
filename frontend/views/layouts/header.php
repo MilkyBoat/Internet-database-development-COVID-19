@@ -47,7 +47,7 @@ AppAsset::register($this);
         ['label'=>'Blog','url'=>['/blog/blog']],
         ['label'=>'Video','url'=>['/video/index']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
-        ['label' => 'News', 'url' => ['/site/newscolumn']],
+        ['label' => 'News', 'url' => ['/news/index']],
         ['label' => 'Research', 'url' => ['/site/research']]
     ];
     if (Yii::$app->user->isGuest) {
