@@ -67,6 +67,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav ml-auto'],
         'items' => $menuItems,
+        
     ]);
     NavBar::end();
     

@@ -33,6 +33,10 @@ echo \yii\bootstrap4\Nav::widget([
         [
             'label'=>'Contact Info',
             'url'=>['/contactform/index']
+        ],
+        [
+            'label'=>'Homework',
+            'url'=>['/site/homework']
         ]
     ]
 ])
