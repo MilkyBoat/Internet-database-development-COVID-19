@@ -18,8 +18,6 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-use frontend\models\NewsForm;
-use frontend\models\ResearchForm;
 
 /**
  * Site controller
@@ -199,9 +197,24 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionNewsdetail()
+    public function actionNewscolumn()
     {
-        return $this->render('newsdetail');
+        return $this->render('newscolumn');
+    }
+
+    public function actionColumn01()
+    {
+        return $this->render('column01');
+    }
+
+    public function actionColumn02()
+    {
+        return $this->render('column02');
+    }
+
+    public function actionColumn03()
+    {
+        return $this->render('column03');
     }
     
     /**
@@ -213,6 +226,8 @@ class SiteController extends Controller
     {
         return $this->render('research');
     }
+
+    
 
     /**
      * Signs user up.
