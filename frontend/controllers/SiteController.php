@@ -1,7 +1,8 @@
 <?php
 /**
  * Team:布里啾啾迪布里多,NKU
- * coding by huangjingzhi 1810729,20200509
+ * coding by huangjingzhi 1810729,袁嘉蔚 1810546，20200509
+ * actioncontact,naboutus,portfolio相关，袁嘉蔚
  */
 namespace frontend\controllers;
 
@@ -17,7 +18,9 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use common\models\ContactForm;
+use frontend\models\NewsForm;
+use frontend\models\ResearchForm;
 
 /**
  * Site controller
@@ -123,22 +126,35 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $this->layout = false;
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+        if ($model->load(Yii::$app->request->get())) {
+            if($model->save()) {
+            
                 Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+                return $this->goHome();
             }
-
-            return $this->refresh();
-        } else {
+            else {
+                print_r($model->getErrors());exit;
+                Yii::$app->session->setFlash('error', 'Sorry, there is an error occured when sending your message.');               
+            
+            }
+        }
             return $this->render('contact', [
                 'model' => $model,
             ]);
-        }
+    }
+    public function actionAboutus()
+    {
+        $this->layout = false;
+        return $this->render('aboutus');
     }
 
+    public function actionPortfolio()
+    {
+        $this->layout = false;
+        return $this->render('portfolio');
+    }
     /**
      * Displays about page.
      *
@@ -180,8 +196,6 @@ class SiteController extends Controller
     {
         return $this->render('research');
     }
-
-    
 
     /**
      * Signs user up.

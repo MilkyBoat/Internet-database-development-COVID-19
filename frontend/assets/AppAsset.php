@@ -17,6 +17,9 @@ class AppAsset extends AssetBundle
         'css/comment.css',
 
         'css/news.css',
+       
+		
+      
 
         'css/news.css',
         'public/css/style_1.css',

@@ -29,6 +29,14 @@ echo \yii\bootstrap4\Nav::widget([
         [
             'label'=>'Comments',
             'url'=>['/comment/index']
+        ],
+        [
+            'label'=>'Contact Info',
+            'url'=>['/contactform/index']
+        ],
+        [
+            'label'=>'Homework',
+            'url'=>['/site/homework']
         ]
     ]
 ])
