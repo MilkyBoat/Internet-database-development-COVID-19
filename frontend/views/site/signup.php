@@ -69,6 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 .btn:hover {
                     background-color: rgb(135, 135, 135);
                     color: white;
+                    border: 5px solid white;
                 }
 
                 .site-signup p {
@@ -79,7 +80,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     box-shadow: 0px 0px 10px 5px #aaa;
                     font-size: 40px;
                     top: 18px;
-                    left: 295px;
+                    left: 545px;
                     border-radius: 30px;
                     transition: .5s;
                     text-align: center;

@@ -22,10 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 			position: center;
 		}
-		
-
 	</style>
-	
+
 	<p>Login</p>
 	<div class="row">
 		<div class="col-lg-12">
@@ -50,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				width: 480px;
 				height: 480px;
 				position: relative;
-				z-index: 9999;
+				z-index: 999;
 				margin: 6% auto;
 				background: rgba(216, 216, 216, 0.5);
 				padding: 5px;
@@ -75,6 +73,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			.btn:hover {
 				background-color: rgb(135, 135, 135);
 				color: white;
+				border: 5px solid white;
 			}
 
 			.site-login p {
@@ -85,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				box-shadow: 0px 0px 10px 5px #aaa;
 				font-size: 40px;
 				top: 18px;
-				left: 295px;
+				left: 545px;
 				border-radius: 30px;
 				transition: .5s;
 				text-align: center;

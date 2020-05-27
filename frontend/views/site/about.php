@@ -26,16 +26,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		.box {
 			position: absolute;
-			left: 410px;
+			left: 450px;
 			top: 132px;
 			/*框在页面里的位置*/
-			border: 10px solid white;
-			box-shadow: 0px 0px 10px 5px #aaa;
+			border: 10px solid rgb(250, 252, 253);
 			margin: auto;
 			margin-top: 10px;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-size: 100% 100%;
+			z-index: -1;
 		}
 
 		/*.box img{
@@ -62,6 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			color: black;
 			border: 2px solid rgb(135, 135, 135);
 			border-radius: 5px;
+			z-index: 2;
 		}
 
 		.btn1:hover {
@@ -116,6 +117,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		}
 		setInterval(picLunH, 3000);
 	</script>
+
 	<div class="main">
 		<div class="header_left">
 			<div class="menu">
@@ -129,28 +131,38 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		<div class="content">
 			<h1><span>认识冠状病毒</span></h1>
+			<p> </p>
 			<p>这是一种新病毒，2019年12月，中国出现了肺炎聚集性病例，调查发现这是一种未知的病毒引起的，之后我们将之命名为“新型冠状病毒”。</p>
 			<p>冠状病毒是一个大型病毒家族，由遗传物质核心、包膜和棘蛋白构成。由于外表像皇冠。而皇冠在拉丁语中被称为Corona，因此这类病毒被命名为Coronavirus（冠状病毒）</p>
 			<p>冠状病毒有很多种，可导致呼吸道疾病，有时还会引起肠胃道症状</p>
 			<p>冠状病毒是一种单链正链RNA病毒，目前有六种已知的冠状病毒感染人类，包括229E，NL63，OC43，HKU1，中东呼吸综合征冠状病毒（MERSr-CoV）和严重急性呼吸综合征冠状病毒（SARSr-CoV）。</p>
+			<p> </p>
 			<h1><span>认识新型冠状病毒</span></h1>
+			<p> </p>
 			<p>新型冠状病毒首次在中国发现，它最初出现在武汉市一群肺炎患者中</p>
 			<p>患者都与一个海鲜及活畜市场有关</p>
 			<p>此后，病毒从患者传播到其他人，包括家人和医护人员</p>
 			<p>病毒一经发现便开始出现很多感染病例，病毒在中国逐渐传播开，也传到了一些其他的国家</p>
+			<p> </p>
 			<h1><span>新型冠状病毒来源</span></h1>
+			<p> </p>
 			<p>病毒可以在很多种动物中传播</p>
 			<p>因此，病毒渐渐开始可以从动物身上传播到人，这叫“溢出”，可由一系列因素引起</p>
 			<p>病毒的突变或者人与动物之间的接触增加可能就是其中的一些因素</p>
 			<p>具体例子可以参见MERS冠状病毒来自骆驼，SARS冠状病毒来自果子狸</p>
 			<p>但是，目前新型冠状病毒的动物宿主尚不明确</p>
+			<p> </p>
 			<h1><span>如何传播</span></h1>
+			<p> </p>
 			<p>病毒传播的具体动力学尚待确定</p>
 			<p>大体上说，呼吸道病毒通常是通过感染者咳嗽或打喷嚏时产生的飞沫传播，或者通过被病毒污染的物体传播</p>
 			<p>所以，最容易受到新型冠状病毒感染的是那些与动物有密切接触的人，例如活禽市场的工作人员</p>
 			<p>还有照顾患者的人，例如患者家人或医护人员</p>
+			<p> </p>
 		</div>
 	</div>
+	<script type="text/javascript" src="../../../frontend/web/js/canvas-nest.min.js"></script>　　
+	<script type="text/javascript" src="../../../frontend/web/js/emojiCursor.js"></script>　
 </body>
 
 </html>
