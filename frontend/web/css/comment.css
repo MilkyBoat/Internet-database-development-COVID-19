@@ -221,7 +221,7 @@ section.sectionDonate h2,
 .callout h4 {
     color: #4a0d66;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 22px;
     /* font-size: 1.625rem; */
     -webkit-font-smoothing: antialiased;
 }
@@ -250,7 +250,7 @@ section.sectionDonate .sliderCaption h2,
 .teaseBox .sliderCaption h4,
 .sliderCaption .callout h4,
 .callout .sliderCaption h4 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 
@@ -335,7 +335,7 @@ section.sectionDonate .sliderCaption h2,
 .teaseBox .sliderCaption h4,
 .sliderCaption .callout h4,
 .callout .sliderCaption h4 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 p,
