@@ -161,7 +161,7 @@ $this->title = 'Homework';
                     <div class="ftco-38-header">
                       <img src="../../../backend/web/images/yjw.jpg" alt="Image">
                       <h3 class="ftco-38-heading">Yuan Jiawei</h3>
-                      <p class="ftco-38-subheading"><a href="https://localhost/covid-19/data/personal/Yuanjiawei/test.pdf" download="test">Personal homework</a></p>
+                      <p class="ftco-38-subheading"><a href="../../../data/personal/Yuanjiawei/test.pdf" download="test">Personal homework</a></p>
                     </div>
                     <div class="ftco-38-body">
                       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>

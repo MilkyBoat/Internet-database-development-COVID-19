@@ -106,7 +106,7 @@ $this->title = 'Aboutus';
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a data-fancybox data-ratio="2" href="../../../frontend/web/videos/Week7-2.mp4" class="block__96788">
+            <a data-fancybox data-ratio="2" href="../../../frontend/web/videos/video.mp4" class="block__96788">
               <span class="play-icon"><span class="icon-play"></span></span>
               <img src="../../../frontend/web/img/aboutus/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow">
             </a>

@@ -1,11 +1,13 @@
 <?php
-
+use common\models\Visit;
 /**
  * Team:布里啾啾迪布里多,NKU
  * coding by huangjingzhi 1810729,20200505
  * This is the home page of frontend web
  */
+?>
 
+<?php
 /* @var $this yii\web\View */
 $this->registerCssFile('@web/css/home.css');
 $this->registerJsFile('@web/js/home.js');
@@ -93,4 +95,8 @@ $this->title = 'My Yii Application';
         </div>
         <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
     </div>
+</div>
+<div class="btn-group btn-group-justified">
+    <span><?=date(time())?> 日期</span>
+    <span><?=Visit::visitNum()?>人访问本网站</span>
 </div>
