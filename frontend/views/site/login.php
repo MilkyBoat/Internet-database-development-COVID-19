@@ -95,8 +95,6 @@ $this->params['breadcrumbs'][] = $this->title;
 		<?php ActiveForm::end(); ?>
 	</div>
 </div>
-</div>
-</div>
 <?php echo Html::cssFile('@web/css/bk.css'); ?>
 <div class="foreground"></div>
 

@@ -41,7 +41,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="sliderCaption" style="text-align:center;padding:20px 20px 0px">
                     <a href="<?= $news[0]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[0]->title?></a>
-                    <p style="font-size: 0.8rem;"><?=$news[0]->summary?></p>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[0]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -52,7 +52,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="sliderCaption">
                     <a href="<?= $news[1]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[1]->title?></a>
-                    <p style="font-size: 0.8rem;"><?=$news[1]->summary?></p>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[1]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -64,7 +64,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="sliderCaption">
                     <a href="<?= $news[2]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[2]->title?></a>
-                    <p style="font-size: 0.8rem;"><?=$news[2]->summary?></p>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[2]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -76,7 +76,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="sliderCaption">
                     <a href="<?= $news[3]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[3]->title?></a>
-                    <p style="font-size: 0.8rem;"><?=$news[3]->summary?></p>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[3]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -87,7 +87,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="sliderCaption">
                     <a href="<?= $news[4]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[4]->title?></a>
-                    <p style="font-size: 0.8rem;"><?=$news[4]->summary?></p>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[4]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
