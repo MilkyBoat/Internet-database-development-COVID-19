@@ -22,8 +22,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 			position: center;
 		}
+		
+		
 	</style>
-
+	
 	<p>Login</p>
 	<div class="row">
 		<div class="col-lg-12">
@@ -94,8 +96,6 @@ $this->params['breadcrumbs'][] = $this->title;
 		</style>
 		<?php ActiveForm::end(); ?>
 	</div>
-</div>
-</div>
 </div>
 <?php echo Html::cssFile('@web/css/bk.css'); ?>
 <div class="foreground"></div>
