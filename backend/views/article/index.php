@@ -11,6 +11,8 @@ use yii\helpers\Url;
 $this->title = 'Articles';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<link rel="stylesheet" href="../../../backend/web/css/main.css">
+<div class="contect-wrapper">
 <div class="article-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -59,5 +61,5 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-
+</div>
 </div>

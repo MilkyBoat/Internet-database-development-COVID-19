@@ -42,7 +42,7 @@ Table of contents
     elements
 --------------------------------------*/
 body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     background: #F4F4F4;
 }
 
@@ -267,8 +267,8 @@ header
     position: relative;
     display: block;
     padding: 15px 30px;
-    font-size: 12px;
-    letter-spacing: 1px;
+    /* font-size: 12px; */
+    /* letter-spacing: 1px; */
 }
 
 /* ===============

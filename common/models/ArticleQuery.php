@@ -49,4 +49,8 @@ class ArticleQuery extends \yii\db\ActiveQuery
         return $this->andWhere(['created_by'=>$userId]);
     }
 
+    public function byKeyword($keyword){
+        return $this->andWhere("MATCH(title,description)
+        AGAINST(:keyword)",['keyword'=>$keyword]);
+    }
 }
