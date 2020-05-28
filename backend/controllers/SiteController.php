@@ -70,7 +70,7 @@ class SiteController extends Controller
 
     public function actionHomework()
     {
-        $this->layout = false;
+        
         return $this->render('homework');
     }
 

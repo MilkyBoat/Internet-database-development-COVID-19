@@ -13,6 +13,8 @@ $this->title = 'Create Contactform';
 $this->params['breadcrumbs'][] = ['label' => 'Contactforms', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<link rel="stylesheet" href="../../../backend/web/css/main.css">
+<div class="contect-wrapper">
 <div class="contactform-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -20,5 +22,5 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
-
+</div>
 </div>

@@ -15,6 +15,8 @@ use yii\helpers\Url;
 $this->title = 'Comments';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<link rel="stylesheet" href="../../../backend/web/css/main.css">
+<div class="contect-wrapper">
 <div class="comment-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -52,4 +54,5 @@ $this->params['breadcrumbs'][] = $this->title;
         </table>
 
     <?php endif;?>
+</div>
 </div>

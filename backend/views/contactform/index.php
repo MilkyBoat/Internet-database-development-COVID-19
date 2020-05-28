@@ -14,6 +14,8 @@ use yii\grid\GridView;
 $this->title = 'Contactforms';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<link rel="stylesheet" href="../../../backend/web/css/main.css">
+<div class="contect-wrapper">
 <div class="contactform-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -42,5 +44,5 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-
+</div>
 </div>
