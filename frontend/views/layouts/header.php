@@ -46,7 +46,14 @@ AppAsset::register($this);
         ['label' => 'About', 'url' => ['/site/about']],
         ['label'=>'Blog','url'=>['/blog/blog']],
         ['label'=>'Video','url'=>['/video/index']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        [
+            'label' => 'Us',
+            'items' => [
+                 ['label' => 'Team Intro', 'url' => ['/site/aboutus']],               
+                 ['label' => 'Portfolio', 'url' => ['/site/portfolio']],
+                 ['label' => 'Contact Us', 'url' => ['/site/contact']],
+            ],
+        ],
         ['label' => 'News', 'url' => ['/news/index']],
         ['label' => 'Research', 'url' => ['/site/research']]
     ];

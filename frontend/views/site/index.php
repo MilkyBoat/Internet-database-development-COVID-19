@@ -97,7 +97,3 @@ $this->title = 'My Yii Application';
         <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
     </div>
 </div>
-<div class="btn-group btn-group-justified">
-    <span><?=date(time())?> 日期</span>
-    <span><?=Visit::visitNum()?>人访问本网站</span>
-</div>
