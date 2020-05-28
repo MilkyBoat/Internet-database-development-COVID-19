@@ -9,18 +9,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\CovNewsSearch */
+/* @var $searchModel common\models\CovResearchSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Cov News';
+$this->title = 'Cov Researches';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="cov-news-index">
+<div class="cov-research-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Cov News', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Cov Research', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -33,11 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'pubDate',
             'title',
             'summary',
-            'infoSource',
-            //'sourceUrl',
+            'url:url',
+            'date',
             //'image',
 
             ['class' => 'yii\grid\ActionColumn'],

@@ -1,7 +1,7 @@
 <?php
 /**
  * Team:布里啾啾迪布里多,NKU
- * coding by Sun Jiayi 1810756,202005010
+ * coding by 孙家宜 1810756,202005010
  */
 
 use yii\helpers\Html;
@@ -24,7 +24,7 @@ use yii\widgets\LinkPager;
 <?= Html::cssFile('@web/news/css/main.css') ?>
 <?= Html::jsFile('@web/news/js/jquery-3.2.1.min.js') ?>
 <?= Html::jsFile('@web/news/js/animsition.min.js') ?>
-<?//= Html::jsFile('@web/news/js/popper.js') ?>
+<?= Html::jsFile('@web/news/js/popper.js') ?>
 <?= Html::jsFile('@web/news/js/bootstrap.min.js') ?>
 <?= Html::jsFile('@web/news/js/main.js') ?>
 
@@ -48,8 +48,7 @@ use yii\widgets\LinkPager;
 					<?php $count = CovNews::find()->count(); $pagination = new Pagination(['totalCount' => $count,'pageSize' => 10]);
 							$articles = CovNews::find()->offset($pagination->offset)->limit($pagination->limit)->all();?>
 					
-					<?php foreach ($articles as $CovNews) : ?>
-						<div class="flex-col-e-s s-full p-rl-25 p-tb-20">
+					<?php foreach ($articles as $CovNews) : ?>						
 							<h3 class="how1-child2 m-t-14 m-b-10">
                                 <a class="how-txt1 size-a-6 f1-m-1 cl5 hov-cl10 trans-03" href="<?= Html::encode("{$CovNews->sourceUrl}") ?>">
                                     <?= Html::encode("·{$CovNews->title}·") ?>
@@ -71,8 +70,7 @@ use yii\widgets\LinkPager;
 								<span class="f1-s-3 cl11">
 									<?= Html::encode("{$CovNews->pubDate}") ?>
 								</span>
-							</span>
-						</div>
+							</span>						
 					<?php endforeach; ?>
 
 					<!-- Pagination -->

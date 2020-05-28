@@ -9,12 +9,12 @@ namespace common\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\CovNews;
+use common\models\CovResearch;
 
 /**
- * CovNewsSearch represents the model behind the search form of `common\models\CovNews`.
+ * CovResearchSearch represents the model behind the search form of `common\models\CovResearch`.
  */
-class CovNewsSearch extends CovNews
+class CovResearchSearch extends CovResearch
 {
     /**
      * {@inheritdoc}
@@ -23,7 +23,7 @@ class CovNewsSearch extends CovNews
     {
         return [
             [['id'], 'integer'],
-            [['pubDate', 'title', 'summary', 'infoSource', 'sourceUrl', 'image'], 'safe'],
+            [['title', 'summary', 'url', 'date', 'image'], 'safe'],
         ];
     }
 
@@ -45,7 +45,7 @@ class CovNewsSearch extends CovNews
      */
     public function search($params)
     {
-        $query = CovNews::find();
+        $query = CovResearch::find();
 
         // add conditions that should always apply here
 
@@ -66,11 +66,10 @@ class CovNewsSearch extends CovNews
             'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'pubDate', $this->pubDate])
-            ->andFilterWhere(['like', 'title', $this->title])
+        $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'summary', $this->summary])
-            ->andFilterWhere(['like', 'infoSource', $this->infoSource])
-            ->andFilterWhere(['like', 'sourceUrl', $this->sourceUrl])
+            ->andFilterWhere(['like', 'url', $this->url])
+            ->andFilterWhere(['like', 'date', $this->date])
             ->andFilterWhere(['like', 'image', $this->image]);
 
         return $dataProvider;

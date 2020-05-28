@@ -29,6 +29,14 @@ echo \yii\bootstrap4\Nav::widget([
         [
             'label'=>'Comments',
             'url'=>['/comment/index']
+        ],
+        [
+            'label'=>'News',
+            'url'=>['/cov-news/index']
+        ],
+        [
+            'label'=>'Research',
+            'url'=>['/cov-research/index']
         ]
     ]
 ])

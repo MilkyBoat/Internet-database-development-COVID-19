@@ -1,8 +1,9 @@
 <?php
 /**
  * Team:布里啾啾迪布里多,NKU
- * coding by Sun Jiayi 1810756,202005010
- */
+ * coding by 孙家宜 1810756,202005010
+ */   
+
 
 use yii\widgets\LinkPager;
 use common\models\CovNews;

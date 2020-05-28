@@ -10,24 +10,23 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "{{%cov_news}}".
+ * This is the model class for table "{{%cov_research}}".
  *
  * @property int $id
- * @property string|null $pubDate
  * @property string|null $title
  * @property string|null $summary
- * @property string|null $infoSource
- * @property string|null $sourceUrl
+ * @property string|null $url
+ * @property string|null $date
  * @property string|null $image
  */
-class CovNews extends \yii\db\ActiveRecord
+class CovResearch extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return '{{%cov_news}}';
+        return '{{%cov_research}}';
     }
 
     /**
@@ -37,8 +36,8 @@ class CovNews extends \yii\db\ActiveRecord
     {
         return [
             [['image'], 'string'],
-            [['pubDate', 'title', 'infoSource', 'sourceUrl'], 'string', 'max' => 255],
-            [['summary'], 'string', 'max' => 2000],
+            [['title', 'url', 'date'], 'string', 'max' => 255],
+            [['summary'], 'string', 'max' => 1000],
         ];
     }
 
@@ -49,22 +48,20 @@ class CovNews extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'pubDate' => 'Pub Date',
             'title' => 'Title',
             'summary' => 'Summary',
-            'infoSource' => 'Info Source',
-            'sourceUrl' => 'Source Url',
+            'url' => 'Url',
+            'date' => 'Date',
             'image' => 'Image',
         ];
     }
 
     /**
      * {@inheritdoc}
-     * @return CovNewsQuery the active query used by this AR class.
+     * @return CovResearchQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new CovNewsQuery(get_called_class());
+        return new CovResearchQuery(get_called_class());
     }
-    //获得头像路径
 }

@@ -9,14 +9,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\CovNews */
+/* @var $model common\models\CovResearch */
 
 $this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Cov News', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Cov Researches', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="cov-news-view">
+<div class="cov-research-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -35,11 +35,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'pubDate',
             'title',
             'summary',
-            'infoSource',
-            'sourceUrl',
+            'url:url',
+            'date',
             'image',
         ],
     ]) ?>

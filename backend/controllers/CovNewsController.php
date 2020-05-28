@@ -1,4 +1,10 @@
 <?php
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by 孙家宜 1810756,202005010
+ * 由gii生成
+ */
+
 
 namespace backend\controllers;
 

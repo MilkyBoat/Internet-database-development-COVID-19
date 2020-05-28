@@ -8,13 +8,13 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\CovNews */
+/* @var $model common\models\CovResearch */
 
-$this->title = 'Create Cov News';
-$this->params['breadcrumbs'][] = ['label' => 'Cov News', 'url' => ['index']];
+$this->title = 'Create Cov Research';
+$this->params['breadcrumbs'][] = ['label' => 'Cov Researches', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="cov-news-create">
+<div class="cov-research-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
