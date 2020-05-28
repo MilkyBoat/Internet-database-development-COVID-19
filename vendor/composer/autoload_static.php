@@ -285,6 +285,13 @@ class ComposerStaticInitc6ccc601ff2058fdea354619c8fd4fea
     );
 
     public static $prefixesPsr0 = array (
+        'c' => 
+        array (
+            'cebe\\gravatar\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/cebe/yii2-gravatar',
+            ),
+        ),
         'H' => 
         array (
             'HTMLPurifier' => 
