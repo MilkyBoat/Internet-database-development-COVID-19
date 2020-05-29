@@ -3,7 +3,7 @@ use common\models\Visit;
 use yii\helpers\Url;
 /**
  * Team:布里啾啾迪布里多,NKU
- * coding by huangjingzhi 1810729,20200505
+ * coding by huangjingzhi 1810729,20200505 & 徐云凯 1713667
  * This is the home page of frontend web
  */
 ?>
@@ -28,9 +28,7 @@ $this->title = '疫情资料站';
     <!-- 下面第3行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
     <!-- 下面第2行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
     <!-- 下面这行是疫情地图的占位符！！！！！！！注意别删了！！！！ -->
-    <div id="plague-map" >
-
-    </div>
+    <div id="plague-map"></div>
 
     <section class="slider"></section>
     <div class="container">

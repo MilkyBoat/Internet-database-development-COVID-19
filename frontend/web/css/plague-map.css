@@ -1,5 +1,7 @@
 #plague-map { 
-    width: 100%; 
+    display: flex;
+    margin: auto;
+    width: 95%; 
     height: 540px; 
 }
 .info { 
