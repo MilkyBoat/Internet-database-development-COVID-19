@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-size: 100% 100%;
-			z-index: -1;
+			z-index: 0;
 		}
 
 		/*.box img{
