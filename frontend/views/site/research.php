@@ -14,19 +14,11 @@ use yii\widgets\LinkPager;
 
 ?>
 
-<?= Html::cssFile('@web/news/css/font-awesome.min.css') ?>
-<?= Html::cssFile('@web/news/css/fontawesome-all.min.css') ?>
-<?= Html::cssFile('@web/news/css/material-design-iconic-font.min.css') ?>
-<?= Html::cssFile('@web/news/css/animate.css') ?>
-<?= Html::cssFile('@web/news/css/hamburgers.min.css') ?>
-<?= Html::cssFile('@web/news/css/animsition.min.css') ?>
-<?= Html::cssFile('@web/news/css/util.min.css') ?>
+
+
 <?= Html::cssFile('@web/news/css/main.css') ?>
 <?= Html::jsFile('@web/news/js/jquery-3.2.1.min.js') ?>
-<?= Html::jsFile('@web/news/js/animsition.min.js') ?>
-<?= Html::jsFile('@web/news/js/popper.js') ?>
-<?= Html::jsFile('@web/news/js/bootstrap.min.js') ?>
-<?= Html::jsFile('@web/news/js/main.js') ?>
+
 
 <div class="research-index">
 	<!-- Page heading -->
@@ -177,12 +169,14 @@ use yii\widgets\LinkPager;
 					
 					<?php foreach ($articles as $CovResearch) : ?>
 						<h3 class="how1-child2 m-t-14 m-b-10">
-							<a class="how-txt1 size-a-6 f1-m-1 cl5 hov-cl10 trans-03" href="<?= Html::encode("{$CovResearch->url}") ?>">
+							<a class="how-txt1 size-a-6 f1-m-4 cl1 hov-cl10 trans-03" href="<?= Html::encode("{$CovResearch->url}") ?>">
 								<?= Html::encode("·{$CovResearch->title}·") ?>
 							</a>
 						</h3>
-              			<h3 class="how1-child2 m-t-10 m-b-10">
-                  			<?= Html::encode("{$CovResearch->summary}") ?>
+              			<h3 class="how1-child2 m-t-14 m-b-10">
+						    <a class="how-txt1 size-a-6 f1-s-7 cl5 trans-03">
+							<?= Html::encode("{$CovResearch->summary}") ?>
+							</a>                  			
 						</h3>
 
 						<span class="how1-child2">
