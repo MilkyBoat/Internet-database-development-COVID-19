@@ -214,10 +214,16 @@ use yii\helpers\Html;
                     <div class="col-lg-4 sidebar-widgets">
                         <div class="widget-wrap">
                             <div class="single-sidebar-widget search-widget">
-                                <form class="search-form" action="#">
-                                    <input placeholder="Search Posts" name="search" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'">
+                                <form class="search-form" action="<?php echo Url::to(['/blog/search']) ?>">
+                                    <input class="form-control mr-sm-2" placeholder="Search Posts" name="keyword" type="search" onfocus="this.placeholder = ''" 
+                                    onblur="this.placeholder = 'Search Posts'"
+                                    value="<?php echo Yii::$app->request->get('keyword') ?>">
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
+                                <button onclick="location.href='<?= Url::toRoute(['blog/create']);?>'" type="button"  class="btn btn-primary">
+         分享</button>
+         <button onclick="location.href='<?= Url::toRoute(['blog/mypost']);?>'" type="button"  class="btn btn-info" style="margin-left: 10px;">
+         我的</button>
                             </div>
 
 
@@ -255,16 +261,6 @@ use yii\helpers\Html;
                                 <?php endforeach;?>
                             </div>
 
-                            <div class="single-sidebar-widget newsletter-widget">
-                                <h4 class="newsletter-title">Newsletter</h4>
-                                <div class="form-group mt-30">
-                                    <div class="col-autos">
-                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = 'Enter email'">
-                                    </div>
-                                </div>
-                                <button class="bbtns d-block mt-20 w-100">Subcribe</button>
-                            </div>
 
                             <div class="single-sidebar-widget share-widget">
                                 <h4 class="share-title">Share this post</h4>

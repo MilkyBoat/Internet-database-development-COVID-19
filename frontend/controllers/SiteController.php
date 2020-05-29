@@ -1,7 +1,8 @@
 <?php
 /**
  * Team:布里啾啾迪布里多,NKU
- * coding by huangjingzhi 1810729,20200509
+ * coding by huangjingzhi 1810729,袁嘉蔚 1810546，20200509
+ * actioncontact,naboutus,portfolio相关，袁嘉蔚
  */
 namespace frontend\controllers;
 
@@ -14,10 +15,13 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use common\models\CovNews;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use common\models\ContactForm;
+use frontend\models\NewsForm;
+use frontend\models\ResearchForm;
 
 /**
  * Site controller
@@ -78,7 +82,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $data=CovNews::getAll(5);
+        return $this->render('index',[
+            'news'=>$data['news'],
+        ]);
     }
 
     /**
@@ -97,7 +104,7 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             $model->password = '';
-
+            Yii::$app->user->setReturnUrl(Yii::$app->request->referrer);
             return $this->render('login', [
                 'model' => $model,
             ]);
@@ -123,22 +130,35 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $this->layout = false;
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+        if ($model->load(Yii::$app->request->get())) {
+            if($model->save()) {
+            
                 Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+                return $this->goHome();
             }
-
-            return $this->refresh();
-        } else {
+            else {
+                print_r($model->getErrors());exit;
+                Yii::$app->session->setFlash('error', 'Sorry, there is an error occured when sending your message.');               
+            
+            }
+        }
             return $this->render('contact', [
                 'model' => $model,
             ]);
-        }
+    }
+    public function actionAboutus()
+    {
+        $this->layout = false;
+        return $this->render('aboutus');
     }
 
+    public function actionPortfolio()
+    {
+        $this->layout = false;
+        return $this->render('portfolio');
+    }
     /**
      * Displays about page.
      *
@@ -180,45 +200,8 @@ class SiteController extends Controller
         return $this->render('news');
     }
 
-    public function actionCovNews()
-    {
-        $query = CovNews::find();
 
-        $pagination = new Pagination([
-            'defaultPageSize' => 5,
-            'totalCount' => $query->count(),
-        ]);
 
-        $CovNewss = $query->orderBy('id')
-            ->offset($pagination->offset)
-            ->limit($pagination->limit)
-            ->all();
-
-        return $this->render('news', [
-            'covnews' => $CovNewss,
-            'pagination' => $pagination,
-        ]);
-    }
-
-    public function actionNewscolumn()
-    {
-        return $this->render('newscolumn');
-    }
-
-    public function actionColumn01()
-    {
-        return $this->render('column01');
-    }
-
-    public function actionColumn02()
-    {
-        return $this->render('column02');
-    }
-
-    public function actionColumn03()
-    {
-        return $this->render('column03');
-    }
     
     /**
      * Displays research page.

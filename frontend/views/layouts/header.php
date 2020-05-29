@@ -46,8 +46,15 @@ AppAsset::register($this);
         ['label' => 'About', 'url' => ['/site/about']],
         ['label'=>'Blog','url'=>['/blog/blog']],
         ['label'=>'Video','url'=>['/video/index']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-        ['label' => 'News', 'url' => ['/site/newscolumn']],
+        [
+            'label' => 'Us',
+            'items' => [
+                 ['label' => 'Team Intro', 'url' => ['/site/aboutus']],               
+                 ['label' => 'Portfolio', 'url' => ['/site/portfolio']],
+                 ['label' => 'Contact Us', 'url' => ['/site/contact']],
+            ],
+        ],
+        ['label' => 'News', 'url' => ['/news/index']],
         ['label' => 'Research', 'url' => ['/site/research']]
     ];
     if (Yii::$app->user->isGuest) {
@@ -67,6 +74,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav ml-auto'],
         'items' => $menuItems,
+        
     ]);
     NavBar::end();
     

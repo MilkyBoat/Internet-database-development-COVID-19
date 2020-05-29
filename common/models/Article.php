@@ -100,10 +100,7 @@ class Article extends \yii\db\ActiveRecord
 
     public function getImage()
     {
-        // $imgurl='@web/img/no-image.png';
-        // return $imgurl;
         $imgurl = ($this->image) ? '../../../frontend/web/uploads/' . $this->image : '../../../frontend/web/img/no-image.png';
-        // echo $imgurl;die;
         return $imgurl;
     }
 
@@ -145,29 +142,6 @@ class Article extends \yii\db\ActiveRecord
         $this->link('category', $category);
     }
 
-    public function getTags()
-    {
-        return $this->hasMany(Tag::className(), ['id' => ['tag_id']])
-            ->viaTable('article_tag', ['article_id' => 'id']);
-    }
-
-    public function getSelectedTags()
-    {
-        $selectedTags = $this->getTags()->select('id')->asArray()->all();
-
-        return ArrayHelper::getColumn($selectedTags, 'id');
-    }
-
-    public function saveTags($tags)
-    {
-        if (is_array($tags)) {
-            foreach ($tags as $tag_id) {
-                $tag = Tag::findOne($tag_id);
-                $this->link('tags', $tag);
-            }
-        }
-    }
-
     public static function getAll($pageSize = 5)
     {
         
@@ -194,22 +168,20 @@ class Article extends \yii\db\ActiveRecord
         return Yii::$app->formatter->asDate($this->date); 
     }
 
-    public static function getPopular()
+    public static function Popular()
     {
         return Article::find()->published()->orderBy('viewed desc')->limit(3)->all();
     }
     
-    public static function getRecent()
+    public static function Recent()
     {
         return Article::find()->published()->orderBy('date asc')->limit(4)->all();
     }
 
-    public function getArticleComments()
+    public function ArticleComments()
     {
         return $this->getComments()->where(['status'=>1])->all();
     }
-
-
     /**
      * {@inheritdoc}
      * @return ArticleQuery the active query used by this AR class.

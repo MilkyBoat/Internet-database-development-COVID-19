@@ -13,7 +13,7 @@ use dosamigos\ckeditor\CKEditor;
 /* @var $form yii\bootstrap4\ActiveForm */
 ?>
 
-<div class="article-form">
+<div class="article-form" >
 
     <?php $form = ActiveForm::begin(); ?>
 

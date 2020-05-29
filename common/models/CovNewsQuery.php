@@ -36,4 +36,8 @@ class CovNewsQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
+
+    public function latest(){
+        return $this->orderBy(['pubDate'=>SORT_DESC]);
+    }
 }

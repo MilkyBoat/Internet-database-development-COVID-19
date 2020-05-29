@@ -18,6 +18,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\imagine\Image;
 use Imagine\Image\Box;
 use yii\helpers\Url;
+use yii\data\Pagination;
 /**
  * This is the model class for table "{{%video}}".
  *
@@ -232,5 +233,19 @@ class Video extends \yii\db\ActiveRecord
 
     public function getComments(){
         return $this->hasMany(Comment::className(),['video_id'=>'video_id']);
+    }
+
+    public static function getAll($pageSize = 5)
+    {
+        
+        $query = Video::find()->published()->latest();
+  
+        $videos = $query
+            ->limit($pageSize)
+            ->all();
+        
+        $data['videos'] = $videos;
+        
+        return $data;
     }
 }
