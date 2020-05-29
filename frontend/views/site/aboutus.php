@@ -329,15 +329,14 @@ $this->title = 'Aboutus';
   </div>
 
     <!-- SCRIPTS -->
-   <script src="../../../frontend/web/js/contact/jquery.min.js"></script>
+    <script src="../../../frontend/web/js/contact/jquery.min.js"></script>
     <script src="../../../frontend/web/js/contact/bootstrap.bundle.min.js"></script>
     <script src="../../../frontend/web/js/contact/isotope.pkgd.min.js"></script>
     <script src="../../../frontend/web/js/contact/stickyfill.min.js"></script>
     <script src="../../../frontend/web/js/contact/jquery.fancybox.min.js"></script>
-    
+    <script src="../../../frontend/web/js/contact/jquery.easing.1.3.js"></script>    
     <script src="../../../frontend/web/js/contact/jquery.waypoints.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.animateNumber.min.js"></script>
-    
+    <script src="../../../frontend/web/js/contact/jquery.animateNumber.min.js"></script>   
     <script src="../../../frontend/web/js/contact/custom.js"></script>
   </body>
 </html>

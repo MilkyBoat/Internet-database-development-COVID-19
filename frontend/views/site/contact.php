@@ -115,9 +115,9 @@ $this->title = 'Contact';
             <?= $form->field($model, 'phone') ?>
             <?= $form->field($model, 'message')->textarea(['rows'=>7])->hint('Please enter your message')?>
             <div class="form-group">
-                <div class="contact100-form-btn">
+
                 <?= Html::submitButton('Send', ['class' => 'btn', 'name' => 'contact-button']) ?>
-            </div>
+
         </div>
         </div>
 
@@ -208,10 +208,9 @@ $this->title = 'Contact';
     <script src="../../../frontend/web/js/contact/isotope.pkgd.min.js"></script>
     <script src="../../../frontend/web/js/contact/stickyfill.min.js"></script>
     <script src="../../../frontend/web/js/contact/jquery.fancybox.min.js"></script>
-    
+    <script src="../../../frontend/web/js/contact/jquery.easing.1.3.js"></script>    
     <script src="../../../frontend/web/js/contact/jquery.waypoints.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.animateNumber.min.js"></script>
-    
+    <script src="../../../frontend/web/js/contact/jquery.animateNumber.min.js"></script>   
     <script src="../../../frontend/web/js/contact/custom.js"></script>
 
   </body>
