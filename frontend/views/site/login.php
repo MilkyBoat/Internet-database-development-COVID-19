@@ -22,8 +22,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 			position: center;
 		}
+		
+		
 	</style>
-
+	
 	<p>Login</p>
 	<div class="row">
 		<div class="col-lg-12">

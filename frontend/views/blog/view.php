@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Team:布里啾啾迪布里多,NKU
  * coding by huangjingzhi 1810729,20200509
@@ -6,6 +7,7 @@
 
 use yii\helpers\Url;
 use yii\helpers\Html;
+use common\models\User;
 ?>
 
 <?= Html::cssFile('@web/public/index.css') ?>
@@ -50,7 +52,7 @@ use yii\helpers\Html;
                             <div class="entry-content">
                                 <?= $article->content ?>
                             </div>
-                            
+
 
                             <div class="social-share">
                                 <span class="social-share-title pull-left text-capitalize">By <?= $article->createdBy->username ?> <?= $article->getDate(); ?></span>
@@ -92,10 +94,20 @@ use yii\helpers\Html;
                         <?php foreach ($comments as $comment) : ?>
                             <div class="bottom-comment">
                                 <!--bottom comment-->
-
-
+                                <?php $user_id=$comment->user_id?>
+                                
+                                <?php $user=User::find()->where(['id'=>$user_id])->one()?>
+                                
                                 <div class="comment-img">
-                                    <img class="img-circle" src="<?= Yii::getAlias('@web'); ?>/public/images/comment-img.jpg" alt="">
+                                    <?= \cebe\gravatar\Gravatar::widget([
+                                        'email' => '<?=$user->email?>',
+                                        'options' => [
+                                            'alt' => '<?=$user->username>',
+                                            'class'=>'img-circle',
+                                        ],
+                                        'size' => 50,
+                                        
+                                    ]) ?>
                                 </div>
 
                                 <div class="comment-text">
@@ -118,74 +130,72 @@ use yii\helpers\Html;
                     <!-- end bottom comment-->
 
 
-                    
+
                 </div>
                 <div class="col-lg-4 sidebar-widgets">
-                        <div class="widget-wrap">
-                            <div class="single-sidebar-widget search-widget">
+                    <div class="widget-wrap">
+                        <div class="single-sidebar-widget search-widget">
                             <form class="search-form" action="<?php echo Url::to(['/blog/search']) ?>">
-                                    <input class="form-control mr-sm-2" placeholder="Search Posts" name="keyword" type="search" onfocus="this.placeholder = ''" 
-                                    onblur="this.placeholder = 'Search Posts'"
-                                    value="<?php echo Yii::$app->request->get('keyword') ?>">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
+                                <input class="form-control mr-sm-2" placeholder="Search Posts" name="keyword" type="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'" value="<?php echo Yii::$app->request->get('keyword') ?>">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
 
 
 
-                            <div class="single-sidebar-widget post-category-widget">
-                                <h4 class="category-title">Catgories</h4>
-                                <ul class="cat-list mt-20">
-                                    <?php foreach($categories as $category):?>
+                        <div class="single-sidebar-widget post-category-widget">
+                            <h4 class="category-title">Catgories</h4>
+                            <ul class="cat-list mt-20">
+                                <?php foreach ($categories as $category) : ?>
                                     <li>
-                                        <a href="<?= Url::toRoute(['blog/category','id'=>$category->id]);?>" class="d-flex justify-content-between">
-                                            <p><?= $category->title?></p>
+                                        <a href="<?= Url::toRoute(['blog/category', 'id' => $category->id]); ?>" class="d-flex justify-content-between">
+                                            <p><?= $category->title ?></p>
                                             <p><?= $category->getArticlesCount(); ?></p>
                                         </a>
                                     </li>
-                                    <?php endforeach;?>
-                                </ul>
-                            </div>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
 
-                            <div class="single-sidebar-widget popular-post-widget">
-                                <h4 class="popular-title">Popular Posts</h4>
-                                <?php foreach($popular as $article):?>
+                        <div class="single-sidebar-widget popular-post-widget">
+                            <h4 class="popular-title">Popular Posts</h4>
+                            <?php foreach ($popular as $article) : ?>
                                 <div class="popular-post-list">
                                     <div class="single-post-list">
                                         <div class="thumb">
-                                            <img class="img-fluid" src="<?=Url::to($article->getImage())?>" alt="">
+                                            <img class="img-fluid" src="<?= Url::to($article->getImage()) ?>" alt="">
                                         </div>
                                         <div class="details mt-20">
                                             <a href="blog-single.html">
-                                                <h6><?=$article->title?></h6>
+                                                <h6><?= $article->title ?></h6>
                                             </a>
-                                            <p><?=$article->getDate()?></p>
+                                            <p><?= $article->getDate() ?></p>
                                         </div>
                                     </div>
                                 </div>
-                                <?php endforeach;?>
-                            </div>
+                            <?php endforeach; ?>
+                        </div>
 
-                            
-                            <div class="single-sidebar-widget share-widget">
-                                <h4 class="share-title">Share this post</h4>
-                                <div class="social-icons mt-20">
-                                    <a href="#">
-                                        <span class="ti-facebook"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="ti-twitter"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="ti-pinterest"></span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="ti-instagram"></span>
-                                    </a>
-                                </div>
+
+                        <div class="single-sidebar-widget share-widget">
+                            <h4 class="share-title">Share this post</h4>
+                            <div class="social-icons mt-20">
+                                <a href="#">
+                                    <span class="ti-facebook"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="ti-twitter"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="ti-pinterest"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="ti-instagram"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>

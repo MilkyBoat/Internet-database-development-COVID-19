@@ -1,4 +1,9 @@
 <?php
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by 袁嘉蔚 1810546,20200509
+ * add usercounter component
+ */
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
