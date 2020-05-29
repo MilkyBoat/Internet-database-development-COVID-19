@@ -35,6 +35,14 @@ echo \yii\bootstrap4\Nav::widget([
             'url'=>['/contactform/index']
         ],
         [
+            'label'=>'User Info',
+            'url'=>['/pcounter-users/index']
+        ],
+        [
+            'label'=>'Web Traffic Info',
+            'url'=>['/pcounter-save/index']
+        ],
+        [
             'label'=>'Homework',
             'url'=>['/site/homework']
         ]

@@ -11,7 +11,6 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -43,6 +42,15 @@ return [
             'showScriptName' => false,
             'rules' => [
             ],
+        ],
+        'userCounter' => [
+            'class' => 'backend\components\UserCounter',
+
+            // You can setup these options:
+            'tableUsers' => 'pcounter_users',
+            'tableSave' => 'pcounter_save',
+            'autoInstallTables' => true,
+            'onlineTime' => 10, // min
         ],
         
     ],

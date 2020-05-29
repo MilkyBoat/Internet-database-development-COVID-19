@@ -1,7 +1,12 @@
 {
     "name": "yiisoft/yii2-app-advanced",
     "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "keywords": [
+        "yii2",
+        "framework",
+        "advanced",
+        "project template"
+    ],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -20,6 +25,7 @@
         "yiisoft/yii2-bootstrap4": "^2.0",
         "yiisoft/yii2-imagine": "^2.2",
         "2amigos/yii2-ckeditor-widget": "*"
+
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -33,15 +39,19 @@
         "symfony/browser-kit": ">=2.7 <=4.2.4"
     },
     "config": {
-        "process-timeout": 1800,
-        "fxp-asset": {
-            "enabled": false
+        "secure-http": false,
+        "fxp-asset":{
+            "enabled":false
         }
     },
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.huaweicloud.com/repository/php/"
         }
-    ]
+    }
 }

@@ -31,9 +31,8 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
-<div class="wrap">
     <?php
+    echo "<table>";
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -77,4 +76,3 @@ AppAsset::register($this);
         
     ]);
     NavBar::end();
-    

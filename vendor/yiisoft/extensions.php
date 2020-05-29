@@ -66,4 +66,13 @@ return array (
       '@dosamigos/ckeditor' => $vendorDir . '/2amigos/yii2-ckeditor-widget/src',
     ),
   ),
+  'johnsnook/yii2-visitors' => 
+  array (
+    'name' => 'johnsnook/yii2-visitors',
+    'version' => '0.9.4.0',
+    'alias' => 
+    array (
+      '@johnsnook/ipFilter' => $vendorDir . '/johnsnook/yii2-visitors',
+    ),
+  ),
 );

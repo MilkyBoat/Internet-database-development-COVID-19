@@ -139,7 +139,7 @@ class SiteController extends Controller
                 return $this->goHome();
             }
             else {
-                print_r($model->getErrors());exit;
+                //print_r($model->getErrors());exit;
                 Yii::$app->session->setFlash('error', 'Sorry, there is an error occured when sending your message.');               
             
             }
