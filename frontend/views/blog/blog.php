@@ -12,6 +12,7 @@ use yii\helpers\Html;
 
 
 <?= Html::cssFile('@web/public/css/font-awesome.min.css') ?>
+
 <?= Html::cssFile('@web/public/css/animate.min.css') ?>
 <?= Html::cssFile('@web/public/css/owl.theme.css') ?>
 <?= Html::cssFile('@web/public/css/owl.transitions.css') ?>
@@ -19,7 +20,7 @@ use yii\helpers\Html;
 <?= Html::cssFile('@web/public/css/responsive.css') ?>
 <?= Html::cssFile('@web/public/css/main.css') ?>
 <?= Html::cssFile('@web/public/css/owl.carousel1.css') ?>
-<?= Html::cssFile('@web/public/css/owl.linearicons.css') ?>
+<?= Html::cssFile('@web/public/css/linearicons.css') ?>
 <?= Html::cssFile('@web/public/css/themify-icons.css') ?>
 <?= Html::cssFile('@web/public/css/magnific-popup.css') ?>
 <?= Html::cssFile('@web/public/css/nice-select.css') ?>

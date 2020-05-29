@@ -34,9 +34,9 @@ class AppAsset extends AssetBundle
         'public/js/jquery.magnific-popup.min.js',
       #  'public/js/bootstrap-datepicker.js',
         'public/js/main.js',
-        'public/js/jquery.min.js',
+        // 'public/js/jquery.min.js',
         'public/js/main2.js',
-        'public/js/waypoints.min.js',
+        'public/js/jquery.waypoints.min.js',
         'public/js/jquery.stellar.min.js',
         'public/js/modernizr-3.5.0.min.js'
     ];
