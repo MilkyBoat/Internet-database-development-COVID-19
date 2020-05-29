@@ -38,8 +38,8 @@ EOF;
      {{doc}}
      * @see \{{module}}::{{method}}()
      */
-    public function {{action}}({{params}}) {
-        return \$this->getScenario()->runStep(new \Codeception\Step\{{step}}('{{method}}', func_get_args()));
+    public function {{action}}({{params}}){{return_type}} {
+        {{return}}\$this->getScenario()->runStep(new \Codeception\Step\{{step}}('{{method}}', func_get_args()));
     }
 EOF;
 
@@ -109,10 +109,13 @@ EOF;
         if (!$doc) {
             $doc = "*";
         }
+        $returnType = $this->createReturnTypeHint($refMethod);
 
         $methodTemplate = (new Template($this->methodTemplate))
             ->place('module', $module)
             ->place('method', $refMethod->name)
+            ->place('return_type', $returnType)
+            ->place('return', $returnType === ': void' ? '' : 'return ')
             ->place('params', $params);
 
         if (0 === strpos($refMethod->name, 'see')) {
@@ -204,5 +207,30 @@ EOF;
     public function getNumMethods()
     {
         return $this->numMethods;
+    }
+
+    private function createReturnTypeHint(\ReflectionMethod $refMethod)
+    {
+        if (PHP_VERSION_ID < 70000) {
+            return '';
+        }
+
+        $returnType = $refMethod->getReturnType();
+
+        if ($returnType === null) {
+            return '';
+        }
+
+        if (PHP_VERSION_ID < 70100) {
+            $returnTypeString = (string)$returnType;
+        } else {
+            $returnTypeString = $returnType->getName();
+        }
+        return sprintf(
+            ': %s%s%s',
+            $returnType->allowsNull() ? '?' : '',
+            $returnType->isBuiltin() ? '' : '\\',
+            $returnTypeString
+        );
     }
 }

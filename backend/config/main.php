@@ -1,4 +1,9 @@
 <?php
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by 袁嘉蔚 1810546,20200509
+ * add usercounter component
+ */
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -11,7 +16,6 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -43,6 +47,15 @@ return [
             'showScriptName' => false,
             'rules' => [
             ],
+        ],
+        'userCounter' => [
+            'class' => 'backend\components\UserCounter',
+
+            // You can setup these options:
+            'tableUsers' => 'pcounter_users',
+            'tableSave' => 'pcounter_save',
+            'autoInstallTables' => true,
+            'onlineTime' => 10, // min
         ],
         
     ],

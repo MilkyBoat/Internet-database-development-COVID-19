@@ -38,6 +38,10 @@ class ComposerStaticInitc6ccc601ff2058fdea354619c8fd4fea
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'j' => 
+        array (
+            'johnsnook\\ipFilter\\' => 19,
+        ),
         'd' => 
         array (
             'dosamigos\\ckeditor\\' => 19,
@@ -147,6 +151,10 @@ class ComposerStaticInitc6ccc601ff2058fdea354619c8fd4fea
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'johnsnook\\ipFilter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/johnsnook/yii2-visitors',
         ),
         'dosamigos\\ckeditor\\' => 
         array (
@@ -543,6 +551,7 @@ class ComposerStaticInitc6ccc601ff2058fdea354619c8fd4fea
         'PHPUnit\\Util\\TestDox\\XmlResultPrinter' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TestDox/XmlResultPrinter.php',
         'PHPUnit\\Util\\TextTestListRenderer' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TextTestListRenderer.php',
         'PHPUnit\\Util\\Type' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Type.php',
+        'PHPUnit\\Util\\VersionComparisonOperator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/VersionComparisonOperator.php',
         'PHPUnit\\Util\\XdebugFilterScriptGenerator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XdebugFilterScriptGenerator.php',
         'PHPUnit\\Util\\Xml' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml.php',
         'PHPUnit\\Util\\XmlTestListRenderer' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XmlTestListRenderer.php',

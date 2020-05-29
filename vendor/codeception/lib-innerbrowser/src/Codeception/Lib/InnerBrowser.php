@@ -753,7 +753,7 @@ class InnerBrowser extends Module implements Web, PageSourceSaver, ElementLocato
         }
         return [
             'Contains',
-            $value,
+            (string)$value,
             $testValues,
             sprintf(
                 'Failed asserting that `%s` is in %s\'s value: %s',
@@ -865,11 +865,13 @@ class InnerBrowser extends Module implements Web, PageSourceSaver, ElementLocato
             if ($values === true) {
                 $params[$fieldName] = $box->hasAttribute('value') ? $box->getAttribute('value') : 'on';
                 $chFoundByName[$fieldName] = $pos + 1;
-            } elseif ($values[$pos] === true) {
-                $params[$fieldName][$pos] = $box->hasAttribute('value') ? $box->getAttribute('value') : 'on';
-                $chFoundByName[$fieldName] = $pos + 1;
             } elseif (is_array($values)) {
-                array_splice($params[$fieldName], $pos, 1);
+                if ($values[$pos] === true) {
+                    $params[$fieldName][$pos] = $box->hasAttribute('value') ? $box->getAttribute('value') : 'on';
+                    $chFoundByName[$fieldName] = $pos + 1;
+                } else {
+                    array_splice($params[$fieldName], $pos, 1);
+                }
             } else {
                 unset($params[$fieldName]);
             }
@@ -2031,5 +2033,30 @@ class InnerBrowser extends Module implements Web, PageSourceSaver, ElementLocato
         $content = preg_replace('/\s{2,}/', ' ', $content);
 
         return $content;
+    }
+
+    /**
+     * Sets SERVER parameters valid for all next requests.
+     * this will remove old ones.
+     *
+     * ```php
+     * $I->setServerParameters([]);
+     * ```
+     */
+    public function setServerParameters(array $params)
+    {
+        $this->client->setServerParameters($params);
+    }
+
+    /**
+     * Sets SERVER parameter valid for all next requests.
+     *
+     * ```php
+     * $I->haveServerParameter('name', 'value');
+     * ```
+     */
+    public function haveServerParameter($name, $value)
+    {
+        $this->client->setServerParameter($name, $value);
     }
 }

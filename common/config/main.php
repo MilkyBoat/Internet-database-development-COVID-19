@@ -10,4 +10,6 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
     ],
+    
+
 ];
