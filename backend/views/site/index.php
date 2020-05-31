@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Team:布里啾啾迪布里多,NKU
+ * coding by 袁嘉蔚 1810546,20200509
+ * a view of backend home page
+ */
 /* @var $this yii\web\View */
 
 $this->title = '疫情资料站后台';

@@ -2,7 +2,7 @@
 /**
  * Team:布里啾啾迪布里多,NKU
  * coding by huangjingzhi 1810729,袁嘉蔚 1810546，20200509
- * actioncontact,naboutus,portfolio相关，袁嘉蔚
+ * actioncontact相关，袁嘉蔚
  */
 namespace frontend\controllers;
 
