@@ -15,7 +15,8 @@ use common\models\CovNews;
 use common\models\Video;
 
 
-class NewsController extends Controller{
+class NewsController extends Controller
+{
     public function behaviors()
     {
         return [
@@ -63,29 +64,28 @@ class NewsController extends Controller{
 
     public function actionIndex()
     {
-        $this->layout='blog';
-        $data=CovNews::getAll(16);
+        $this->layout = 'blog';
+        $data = CovNews::getAll(16);
 
-        $data1=$data['news'][0];
-        for($i=1,$j=0;$i<5;){
-            $data2[$j++]=$data['news'][$i++];
+        $data1 = $data['news'][0];
+        for ($i = 1, $j = 0; $i < 5;) {
+            $data2[$j++] = $data['news'][$i++];
         }
-        for($i=5,$j=0;$i<10;){
-            $data3[$j++]=$data['news'][$i++];
+        for ($i = 5, $j = 0; $i < 10;) {
+            $data3[$j++] = $data['news'][$i++];
         }
-        for($i=10,$j=0;$i<16;){
-            $data4[$j++]=$data['news'][$i++];
+        for ($i = 10, $j = 0; $i < 16;) {
+            $data4[$j++] = $data['news'][$i++];
         }
-        $videos=Video::getAll(5);
+        $videos = Video::getAll(5);
         return $this->render("index", [
             'news1' => $data1,
             'news2' => $data2,
             'news3' => $data3,
             'news4' => $data4,
-            'videos'=>$videos['videos'],
+            'videos' => $videos['videos'],
             'pagination' => $data['pagination'],
         ]);
-        
     }
+    
 }
-

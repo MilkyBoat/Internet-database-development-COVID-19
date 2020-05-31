@@ -15,8 +15,9 @@ use yii\helpers\Html;
 <div class="main-content">
     <div class="container-fluid paddding mb-5">
         <div class="row mx-0">
-            <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
-                <div class="fh5co_suceefh5co_height"><img src="images/nick-karvounis-78711.jpg" alt="img" />
+        
+        <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
+                <div class="fh5co_suceefh5co_height"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($news1->image).'"/>';?>
                     <div class="fh5co_suceefh5co_height_position_absolute"></div>
                     <div class="fh5co_suceefh5co_height_position_absolute_font">
                         <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<?= $news1->pubDate ?>
@@ -29,7 +30,7 @@ use yii\helpers\Html;
                 <div class="row">
                     <?php foreach ($news2 as $news) : ?>
                         <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                            <div class="fh5co_suceefh5co_height_2"><img src="images/science-578x362.jpg" alt="img" />
+                            <div class="fh5co_suceefh5co_height_2"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($news->image).'"/>';?>
                                 <div class="fh5co_suceefh5co_height_position_absolute"></div>
                                 <div class="fh5co_suceefh5co_height_position_absolute_font_2">
                                     <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<?= $news->pubDate ?></a></div>
@@ -51,7 +52,7 @@ use yii\helpers\Html;
                 <?php foreach ($news3 as $news) : ?>
                     <div class="item px-2">
                         <div class="fh5co_latest_trading_img_position_relative">
-                            <div class="fh5co_latest_trading_img"><img src="images/allef-vinicius-108153.jpg" alt="" class="fh5co_img_special_relative" /></div>
+                            <div class="fh5co_latest_trading_img"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($news->image).'" class="fh5co_img_special_relative" />';?> </div>
                             <div class="fh5co_latest_trading_img_position_absolute"></div>
                             <div class="fh5co_latest_trading_img_position_absolute_1">
                                 <a href="<?= $news->sourceUrl ?>" class="text-white"> <?= $news->title ?> </a>
@@ -103,7 +104,7 @@ use yii\helpers\Html;
                             <div class="row pb-4">
                                 <div class="col-md-5">
                                     <div class="fh5co_hover_news_img">
-                                        <div class="fh5co_news_img"><img src="images/nathan-mcbride-229637.jpg" alt="" /></div>
+                                        <div class="fh5co_news_img"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($news->image).'" />';?></div>
                                         <div></div>
                                     </div>
                                 </div>
