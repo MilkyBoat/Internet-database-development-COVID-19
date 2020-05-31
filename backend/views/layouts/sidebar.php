@@ -15,7 +15,7 @@ echo \yii\bootstrap4\Nav::widget([
     ],
     'items' => [
         [
-            'label' => 'Dashboard',
+            'label' => 'Home',
             'url' => ['/site/index']
         ],
         [
