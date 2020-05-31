@@ -49,8 +49,8 @@ $this->title = '疫情资料站';
                 <div class="sliderThumb" style=" background:url(<?= $url ?>feizhou.png) 50% 50% no-repeat; background-size:cover;height:60%;width:100%">
                 </div>
                 <div class="sliderCaption">
-                    <a href="<?= $news[2]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[1]->title?></a>
-                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[1]->summary?></p>
+                    <a href="<?= $news[2]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[2]->title?></a>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[2]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -61,8 +61,8 @@ $this->title = '疫情资料站';
 
                 </div>
                 <div class="sliderCaption">
-                    <a href="<?= $news[3]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[2]->title?></a>
-                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[2]->summary?></p>
+                    <a href="<?= $news[3]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[3]->title?></a>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[3]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -73,8 +73,8 @@ $this->title = '疫情资料站';
 
                 </div>
                 <div class="sliderCaption">
-                    <a href="<?= $news[4]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[3]->title?></a>
-                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[3]->summary?></p>
+                    <a href="<?= $news[4]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[4]->title?></a>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[4]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
@@ -84,8 +84,8 @@ $this->title = '疫情资料站';
                 <div class="sliderThumb" style="background: url(<?= $url ?>mei.png) 50% 50% no-repeat;background-size:cover;height:60%;width:100%" <div class="sliderCaption">
                 </div>
                 <div class="sliderCaption">
-                    <a href="<?= $news[5]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[4]->title?></a>
-                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[4]->summary?></p>
+                    <a href="<?= $news[5]->sourceUrl ?>" style="font-size: 22px;font-weight:600;color:#4a0d66"><?=$news[5]->title?></a>
+                    <p style="font-size: 0.8rem;padding-top: 10px;"><?=$news[5]->summary?></p>
                     <p>
                         <a href="<?=Url::toRoute(['news/index']);?>" class="btn btn-secondary">更多新闻</a>
                     </p>
