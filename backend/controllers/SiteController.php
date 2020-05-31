@@ -70,9 +70,14 @@ class SiteController extends Controller
 
     public function actionHomework()
     {
-        
+        if (Yii::$app->user->isGuest) {
+            return $this->actionLogin();
+        }
+        else{
         return $this->render('homework');
     }
+    }
+
 
     /**
      * Login action.

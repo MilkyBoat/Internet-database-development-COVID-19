@@ -9,6 +9,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\PcounterSave;
 use backend\models\PcounterSaveSearch;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -24,6 +25,15 @@ class PcounterSaveController extends Controller
     public function behaviors()
     {
         return [
+            'access'=>[
+              'class'=>AccessControl::class,
+              'rules'=>[
+                  [
+                      'allow'=>true,
+                      'roles'=>['@']
+                  ]
+              ]
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

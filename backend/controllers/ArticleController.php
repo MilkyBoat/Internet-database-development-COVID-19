@@ -10,6 +10,7 @@ use Yii;
 use common\models\Article;
 use common\models\ArticleSearch;
 use common\models\Category;
+use yii\filters\AccessControl;
 use common\models\Tag;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -23,6 +24,15 @@ class ArticleController extends Controller
     public function behaviors()
     {
         return [
+            'access'=>[
+              'class'=>AccessControl::class,
+              'rules'=>[
+                  [
+                      'allow'=>true,
+                      'roles'=>['@']
+                  ]
+              ]
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

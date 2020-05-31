@@ -10,9 +10,11 @@ namespace backend\controllers;
 use Yii;
 use common\models\contactform;
 use backend\models\ContactformSearch;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\LoginForm;
 
 /**
  * ContactformController implements the CRUD actions for contactform model.
@@ -25,6 +27,15 @@ class ContactformController extends Controller
     public function behaviors()
     {
         return [
+            'access'=>[
+              'class'=>AccessControl::class,
+              'rules'=>[
+                  [
+                      'allow'=>true,
+                      'roles'=>['@']
+                  ]
+              ]
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -40,6 +51,7 @@ class ContactformController extends Controller
      */
     public function actionIndex()
     {
+
         $searchModel = new ContactformSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
