@@ -79,10 +79,10 @@ $this->title = 'Contact';
             <h3 class="section-title-sub text-primary">Who are we?</h3>
             <h2 class="section-title mb-3">我们是谁？</h2>
             <p class="lead">我们是五个来自南开大学的学生。</p>
-            <p>我们开发这个网页是为了让人们更加了解新型冠状病毒的相关信息</br>
-            我们通过收集全球各地的感染患者数量，将其制作为疫情地图直观的反映出来</br>
-            我们收集来自各个媒体和机构对于这种病毒的报导，将其汇总、分类，形成了About, Research, News三个类目。</br>
-            我们更制作了相关的博客系统，希望人们能在此分享他们的抗疫感想和Vlog视频。</br>
+            <p>我们开发这个网页是为了让人们更加了解新型冠状病毒的相关信息；</br>
+            我们通过收集全球各地的感染患者数量，将其制作为疫情地图直观的反映出来；</br>
+            我们收集来自各个媒体和机构对于这种病毒的报导，将其汇总、分类，形成了About, Research, News三个类目；</br>
+            我们更制作了相关的博客系统，希望人们能在此分享他们的抗疫感想和Vlog视频；</br>
             最后，希望人们能通过联系页面讲自己的信息及时反馈给我们。</p>
           </div>
         </div>
@@ -239,7 +239,7 @@ $this->title = 'Contact';
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary">Contect Us</h3>
+            <h3 class="section-title-sub text-primary">Contact Us</h3>
             <h2 class="section-title mb-3">联系我们</h2>
           </div>
         </div>
