@@ -14,6 +14,7 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
+    'name'=>'COVID-19',
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'components' => [

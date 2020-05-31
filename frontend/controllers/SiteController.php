@@ -82,7 +82,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $data=CovNews::getAll(5);
+        $data=CovNews::getAll(6);
         return $this->render('index',[
             'news'=>$data['news'],
         ]);
