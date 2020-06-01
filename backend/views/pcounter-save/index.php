@@ -14,14 +14,7 @@ use yii\grid\GridView;
 $this->title = 'Web Traffic Information';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div>
-online: <?php echo Yii::$app->userCounter->getOnline(); ?><br />
-today: <?php echo Yii::$app->userCounter->getToday(); ?><br />
-yesterday: <?php echo Yii::$app->userCounter->getYesterday(); ?><br />
-total: <?php echo Yii::$app->userCounter->getTotal(); ?><br />
-maximum: <?php echo Yii::$app->userCounter->getMaximal(); ?><br />
-date for maximum: <?php echo date('Y.m.d', Yii::$app->userCounter->getMaximalTime()); ?>
-</div>
+
 <div class="pcounter-save-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
