@@ -32,7 +32,7 @@ class PcounterUsers extends \yii\db\ActiveRecord
         return [
             [['user_ip', 'user_time'], 'required'],
             [['user_time'], 'integer'],
-            [['user_ip'], 'string', 'max' => 255],
+            [['user_ip'], 'string', 'max' => 64],
             [['user_ip'], 'unique'],
         ];
     }
