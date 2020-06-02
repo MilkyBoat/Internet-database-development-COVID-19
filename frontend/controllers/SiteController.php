@@ -95,8 +95,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-
-    
+		$this->layout="sl";
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -245,6 +244,7 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
+		$this->layout="sl";
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
@@ -288,6 +288,7 @@ class SiteController extends Controller
      */
     public function actionResetPassword($token)
     {
+		$this->layout="sl";
         try {
             $model = new ResetPasswordForm($token);
         } catch (InvalidArgumentException $e) {
@@ -314,6 +315,7 @@ class SiteController extends Controller
      */
     public function actionVerifyEmail($token)
     {
+		$this->layout="sl";
         try {
             $model = new VerifyEmailForm($token);
         } catch (InvalidArgumentException $e) {
@@ -337,6 +339,7 @@ class SiteController extends Controller
      */
     public function actionResendVerificationEmail()
     {
+		$this->layout="sl";
         $model = new ResendVerificationEmailForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {

@@ -1,7 +1,7 @@
 # yii console commands
-# /yii
-# /yii_test
-# /yii_test.bat
+/yii
+/yii_test
+/yii_test.bat
 
 # phpstorm project files
 .idea
@@ -18,10 +18,10 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-# /vendor
+/vendor
 
 # composer itself is not needed
-# composer.phar
+composer.phar
 
 # Mac DS_Store Files
 .DS_Store
@@ -32,12 +32,12 @@ Thumbs.db
 # /phpunit.xml
 
 # vagrant runtime
-# /.vagrant
+/.vagrant
 
 # ignore generated files
-# /frontend/web/index.php
-# /frontend/web/index-test.php
-# /frontend/web/robots.txt
-# /backend/web/index.php
-# /backend/web/index-test.php
-# /backend/web/robots.txt
+/frontend/web/index.php
+/frontend/web/index-test.php
+/frontend/web/robots.txt
+/backend/web/index.php
+/backend/web/index-test.php
+/backend/web/robots.txt
