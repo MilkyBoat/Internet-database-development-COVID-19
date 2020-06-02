@@ -208,7 +208,8 @@ $this->title = 'Contact';
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
             
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p>一只挑剔狗粮的纯种柴犬，最喜欢喝名叫Java的咖啡，不太喜欢JavaScript这种山寨咖啡，
+            跟隔壁名叫Python的宠物蛇是好朋友，对用php这种材料做的狗狗玩具过敏，尤其不能闻到yii的味道，一闻就吐。</p>
             <div class="social mt-4">
               <a href="#"><span class="icon-facebook"></span></a>
               <a href="#"><span class="icon-twitter"></span></a>
