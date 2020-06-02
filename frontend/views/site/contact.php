@@ -17,18 +17,18 @@ $this->title = 'Contact';
 <link rel="stylesheet" href="../../../frontend/web/public/css/style_1.css">
 <nav id="w0" class="shadow-sm navbar-expand-lg navbar-light bg-light navbar">
 <div class="container">
-<a class="navbar-brand" href="/covid19/frontend/web/">COVID-19</a>
+<a class="navbar-brand" href="../../web/site/index">COVID-19</a>
 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#w0-collapse" aria-controls="w0-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 <div id="w0-collapse" class="collapse navbar-collapse">
-    <ul id="w1" class="navbar-nav ml-auto nav"><li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/index">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/about">About</a></li>
-<li class="nav-item"><a class="nav-link " href="/covid19/frontend/web/blog/blog">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/video/index">Video</a></li>
-<li class="nav-item"><a class="nav-link active" href="/covid19/frontend/web/site/contact">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/news/index">News</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/research">Research</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/signup">Signup</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/login">Login</a></li></ul></div>
+    <ul id="w1" class="navbar-nav ml-auto nav"><li class="nav-item"><a class="nav-link" href="../../web/site/index">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="../../web/site/about">About</a></li>
+<li class="nav-item"><a class="nav-link " href="../../web/blog/blog">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="../../web/video/index">Video</a></li>
+<li class="nav-item"><a class="nav-link active" href="../../web/site/contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="../../web/news/index">News</a></li>
+<li class="nav-item"><a class="nav-link" href="../../web/site/research">Research</a></li>
+<li class="nav-item"><a class="nav-link" href="../../web/site/signup">Signup</a></li>
+<li class="nav-item"><a class="nav-link" href="../..web/site/login">Login</a></li></ul></div>
 </div>
 </nav>
   <head>
@@ -72,7 +72,7 @@ $this->title = 'Contact';
           <div class="col-lg-6 mb-5 mb-lg-0">
             
               
-              <img src="../../../frontend/web/img/aboutus/sq_img_10.jpg" alt="Image" class="img-fluid img-shadow">
+              <img src="../../../frontend/web/img/aboutus/sq_img_10.JPG" alt="Image" class="img-fluid img-shadow">
             </a>
           </div>
           <div class="col-lg-5 ml-auto">
@@ -104,7 +104,7 @@ $this->title = 'Contact';
           </div>
           <div class="col-md-5 ml-auto img-overlap">
             <div class="img-1"><img src="../../../frontend/web/img/aboutus/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow"></div>
-            <div class="img-2"><img src="../../../frontend/web/img/aboutus/123456.jpg" alt="Image" class="img-fluid img-shadow"></div>
+            <div class="img-2"><img src="../../../frontend/web/img/aboutus/123456.JPG" alt="Image" class="img-fluid img-shadow"></div>
           </div>
         </div>
 
@@ -159,7 +159,7 @@ $this->title = 'Contact';
 
         <div class="row align-items-center block__69944">
           <div class="col-lg-6 mb-5">
-            <img src="../../../frontend/web/img/aboutus/person_01.jpg" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_01.JPG" alt="Image" class="img-fluid mb-4 rounded">
 
             <h3>黄璟知</h3>
             <p class="text-muted">组长</p>
@@ -174,7 +174,7 @@ $this->title = 'Contact';
 
           </div>
           <div class="col-lg-6 mb-5">
-            <img src="../../../frontend/web/img/aboutus/person_02.jpg" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_02.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
             <p class="lead">Odio nihil facilis vitae laudantium provident magni alias veniam quidem voluptatum</p>
@@ -189,7 +189,7 @@ $this->title = 'Contact';
 
 
           <div class="col-lg-4">
-            <img src="../../../frontend/web/img/aboutus/person_03.jpg" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_03.JPG" alt="Image" class="img-fluid mb-4 rounded">
 
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
@@ -204,7 +204,7 @@ $this->title = 'Contact';
 
           </div>
           <div class="col-lg-4">
-            <img src="../../../frontend/web/img/aboutus/person_04.jpg" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_04.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
             
