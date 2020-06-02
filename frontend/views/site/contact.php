@@ -164,7 +164,7 @@ $this->title = 'Contact';
 
             <h3>黄璟知</h3>
             <p class="text-muted">组长</p>
-            <p class="lead">主要负责成员分工、博客和视频分享模块</p>
+            <p class="lead">指导小组工作、博客和视频分享前后台</p>
             <p>motto:</p>
             <div class="social mt-4">
               <a href="https://github.com/NebulaJZ"target="_blank"><span class="icon-github"></span></a>
@@ -177,7 +177,7 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_02.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">主要负责关于页面和用户登录模块</p>
+            <p class="lead">关于页面和用户登录前后台</p>
             <p>motto:</p>
             <div class="social mt-4">
               <a href="https://github.com/Liyx55"target="_blank"><span class="icon-github"></span></a>
@@ -192,7 +192,7 @@ $this->title = 'Contact';
 
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">主要负责关于研究和新闻模块</p>
+            <p class="lead">研究和新闻前后台</p>
             <p>motto:</p>
             <div class="social mt-4">
               <a href="https://github.com/Guru759"target="_blank"><span class="icon-github"></span></a>
@@ -205,7 +205,7 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_04.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">主要负责首页疫情地图数据爬虫与前后台，以及项目部署</p>
+            <p class="lead">疫情地图数据爬虫、前后台及项目部署</p>
             <p>一只挑剔狗粮的纯种柴犬，最喜欢喝名叫Java的咖啡，不太喜欢JavaScript这种山寨咖啡，
             跟隔壁名叫Python的宠物蛇是好朋友，对用php这种材料做的狗狗玩具过敏，尤其不能闻到yii的味道，一闻就吐。</p>
             <div class="social mt-4">
@@ -219,10 +219,10 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_05.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>袁嘉蔚</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">主要负责联系页面、流量统计和团队页面模块</p>
+            <p class="lead">联系、流量统计前后台和团队页面</p>
             <p>I always wanted to be a part of a small rebellion.</br>
             そのままの君だ。いつまでも幸せに。</br>
-            喜欢七爷，苏打，雅人叔，十元，最喜欢Gakki~</br>
+            喜欢八爷、苏打、雅人叔、十元，最喜欢Gakki~</br>
             -オレンジうつ</p>
             <div class="social mt-4">
               <a href="https://github.com/tenkinoko" target="_blank"><span class="icon-github"></span></a>
