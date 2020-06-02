@@ -10,6 +10,9 @@ use common\models\Video;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
+$this->title = 'Video View';
+$this->params['breadcrumbs'][] = $this->title;
+
 /** @var $model Video */
 /** @var $similarVideos Video[] */
 

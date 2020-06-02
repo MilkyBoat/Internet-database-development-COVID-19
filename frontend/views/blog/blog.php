@@ -8,6 +8,9 @@
 use yii\widgets\LinkPager;
 use yii\helpers\Url;
 use yii\helpers\Html;
+
+$this->title = 'Blog';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
