@@ -205,7 +205,7 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_04.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">主要负责首页疫情地图的全数据链实现（爬虫与前后台），以及项目部署</p>
+            <p class="lead">主要负责首页疫情地图数据爬虫与前后台，以及项目部署</p>
             <p>一只挑剔狗粮的纯种柴犬，最喜欢喝名叫Java的咖啡，不太喜欢JavaScript这种山寨咖啡，
             跟隔壁名叫Python的宠物蛇是好朋友，对用php这种材料做的狗狗玩具过敏，尤其不能闻到yii的味道，一闻就吐。</p>
             <div class="social mt-4">
