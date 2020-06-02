@@ -222,7 +222,7 @@ $this->title = 'Contact';
             <p class="lead">主要负责联系页面、流量统计和团队页面模块</p>
             <p>I always wanted to be a part of a small rebellion.</br>
             そのままの君だ。いつまでも幸せに。</br>
-            喜欢七爷，苏打，雅人叔，十元，最喜欢Gakki~</br>
+            喜欢八爷、苏打、雅人叔、十元，最喜欢Gakki~</br>
             -オレンジうつ</p>
             <div class="social mt-4">
               <a href="https://github.com/tenkinoko" target="_blank"><span class="icon-github"></span></a>
