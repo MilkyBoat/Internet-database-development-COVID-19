@@ -3,7 +3,7 @@ return [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'zGwfEbdD7sRWiKUhFgXEzu6jeJc1yI_O',
+            'cookieValidationKey' => 'd_iA9NVVmSfYnNScvRJzaWztyXQ1ViAl',
         ],
     ],
 ];
