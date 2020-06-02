@@ -13,13 +13,15 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php echo Html::cssFile('@web/css/style.css'); ?>
 <div class="site-signup">
     <style>
+        
         .site-signup {
             height: 450px;
             width: 100%;
+            text-align: center;
             background-position: center;
-            background-size: cover;
-
-            position: center;
+            background-size: 50%;
+            position: relative;
+            
         }
     </style>
 
@@ -43,20 +45,23 @@ $this->params['breadcrumbs'][] = $this->title;
                     width: 480px;
                     height: 480px;
                     position: relative;
-                    z-index: 9999;
+                    z-index: 999;
+                    text-align: center;
                     margin: 6% auto;
                     background: rgba(216, 216, 216, 0.5);
                     padding: 5px;
                     overflow: hidden;
                     border: 10px solid white;
                     box-shadow: 0px 0px 10px 5px #aaa;
+                    display: flex;
                 }
 
                 .btn {
+                    text-align: center;
                     top: 15px;
-                    left: 150px;
+                    left: 160px;
                     position: relative;
-                    width: 110px;
+                    width: 125px;
                     height: 50px;
                     background: white;
                     color: #000;
@@ -64,28 +69,22 @@ $this->params['breadcrumbs'][] = $this->title;
                     box-shadow: 0px 0px 10px 5px #aaa;
                     border-radius: 30px;
                     transition: .5s;
+                    display: flex;
                 }
 
                 .btn:hover {
                     background-color: rgb(135, 135, 135);
                     color: white;
                     border: 5px solid white;
+                    display: flex;
                 }
 
                 .site-signup p {
-                    width: 400px;
-                    color: #000;
-                    background: white;
-                    border: 5px solid white;
-                    box-shadow: 0px 0px 10px 5px #aaa;
-                    font-size: 40px;
-                    top: 18px;
-                    left: 545px;
-                    border-radius: 30px;
-                    transition: .5s;
+                    font-size: 50px;
                     text-align: center;
                     font-weight: bolder;
                     position: relative;
+                    
                 }
             </style>
             <?php ActiveForm::end(); ?>

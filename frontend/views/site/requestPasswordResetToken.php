@@ -18,8 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
             height: 450px;
             width: 100%;
             background-position: center;
-            background-size: cover;
-
+            background-size: 50%;
+            text-align: center;
             position: center;
         }
     </style>
@@ -47,6 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     overflow: hidden;
                     border: 10px solid white;
                     box-shadow: 0px 0px 10px 5px #aaa;
+                    display: flex;
                 }
 
                 .btn {
@@ -61,25 +62,18 @@ $this->params['breadcrumbs'][] = $this->title;
                     box-shadow: 0px 0px 10px 5px #aaa;
                     border-radius: 30px;
                     transition: .5s;
+                    display: flex;
                 }
 
                 .btn:hover {
                     background-color: rgb(135, 135, 135);
                     color: white;
                     border: 5px solid white;
+                    display: flex;
                 }
 
                 .site-request-password-reset p {
-                    width: 400px;
-                    color: #000;
-                    background: white;
-                    border: 5px solid white;
-                    box-shadow: 0px 0px 10px 5px #aaa;
-                    font-size: 40px;
-                    top: 18px;
-                    left: 545px;
-                    border-radius: 30px;
-                    transition: .5s;
+                    font-size: 50px;
                     text-align: center;
                     font-weight: bolder;
                     position: relative;
