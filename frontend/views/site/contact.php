@@ -206,7 +206,8 @@ $this->title = 'Contact';
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
             <p class="lead">主要负责首页疫情地图的完全实现</p>
-            <p>motto:</p>
+            <p>一只挑剔狗粮的纯种柴犬，最喜欢喝名叫Java的咖啡，不太喜欢JavaScript这种山寨咖啡，
+            跟隔壁名叫Python的宠物蛇是好朋友，对用php这种材料做的狗狗玩具过敏，尤其不能闻到yii的味道，一闻就吐。</p>
             <div class="social mt-4">
               <a href="https://github.com/MilkyBoat"target="_blank"><span class="icon-github"></span></a>
               <a href="mailto:xuyunkai@mail.nankai.edu.cn"target="_blank"><span class="icon-envelope-o"></span></a>
@@ -220,7 +221,9 @@ $this->title = 'Contact';
             <p class="text-muted">组员</p>
             <p class="lead">主要负责联系页面、流量统计和团队页面模块</p>
             <p>I always wanted to be a part of a small rebellion.</br>
-            そのままの君だ。いつまでも幸せに。-オレンジうつ</p>
+            そのままの君だ。いつまでも幸せに。</br>
+            喜欢七爷，苏打，雅人叔，十元，最喜欢Gakki~</br>
+            -オレンジうつ</p>
             <div class="social mt-4">
               <a href="https://github.com/tenkinoko" target="_blank"><span class="icon-github"></span></a>
               <a href="mailto:1013198002@qq.com"target="_blank"><span class="icon-envelope-o"></span></a>
