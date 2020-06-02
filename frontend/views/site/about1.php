@@ -25,16 +25,15 @@ $this->params['breadcrumbs'][] = $this->title;
 		}
 
 		.box {
-			position: absolute;
-			left: 450px;
-			top: 132px;
+			position: relative;
+			width: 1300px;
+			height: 640px;
 			/*框在页面里的位置*/
 			border: 10px solid rgb(250, 252, 253);
-			margin: auto;
-			margin-top: 10px;
+			margin: 0px auto;
 			background-repeat: no-repeat;
-			background-size: cover;
-			background-size: 100% 100%;
+			overflow: hidden;
+			background-size: 50%;
 			z-index: 0;
 		}
 
@@ -43,8 +42,8 @@ $this->params['breadcrumbs'][] = $this->title;
 			height: 340px;
 		}*/
 		#pic {
-			width: 960px;
-			height: 480px;
+			width: 1300px;
+			height: 640px;
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 		}
@@ -53,8 +52,8 @@ $this->params['breadcrumbs'][] = $this->title;
 			position: relative;
 			width: 100px;
 			height: 35px;
-			left: 165px;
-			top: 530px;
+			left: 35.7%;
+			top: 45%;
 			-webkit-transition-duration: 0.4s;
 			transition-duration: 0.4s;
 			text-align: center;

@@ -32,7 +32,7 @@
 .foreground, .midground, .background {
   width: 100%;
   height: 799px;
-  position: relative;
+  position: absolute;
   top: 35px; left: 0px;
   -webkit-transform: translate3d(0, 0, 0);
 }
