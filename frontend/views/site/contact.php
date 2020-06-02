@@ -13,8 +13,27 @@ use yii\helpers\Html;
 use yii\bootstrap4\ActiveForm;
 $this->title = 'Contact';
 ?>
+<?= Html::cssFile('@web/public/css/style_1.css') ?>
+<?= Html::cssFile('@web/css/custom-bs.css') ?>
+<?= Html::cssFile('@web/css/main.css') ?>
+<?= Html::cssFile('@web/css/style1.css') ?>
+<?= Html::cssFile('@web/css/jquery.fancybox.min.css') ?>
+<?= Html::cssFile('@web/public/css/font-awesome.min.css') ?>
+<?= Html::cssFile('@web/public/fonts/line-icons/style.css') ?>
+<?= Html::cssFile('@web/public/fonts/icomoon/style.css') ?>
+
+<?= Html::jsFile('@web/js/contact/jquery.min.js') ?>
+<?= Html::jsFile('@web/js/contact/bootstrap.bundle.min.js') ?>
+<?= Html::jsFile('@web/js/contact/isotope.pkgd.min.js') ?>
+<?= Html::jsFile('@web/js/contact/stickyfill.min.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.fancybox.min.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.easing.1.3.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.waypoints.min.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.animateNumber.min.js') ?>
+<?= Html::jsFile('@web/js/contact/custom.js') ?>
+
 <html lang="en">
-<link rel="stylesheet" href="../../../frontend/web/public/css/style_1.css">
+
 <nav id="w0" class="shadow-sm navbar-expand-lg navbar-light bg-light navbar">
 <div class="container">
 <a class="navbar-brand" href="../../web/site/index">COVID-19</a>
@@ -36,15 +55,7 @@ $this->title = 'Contact';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="../../../frontend/web/css/custom-bs.css">
-    <link rel="stylesheet" href="../../../frontend/web/css/main.css">
-    <link rel="stylesheet" href="../../../frontend/web/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="../../../frontend/web/public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../frontend/web/public/fonts/icomoon/style.css">
-    <link rel="stylesheet" href="../../../frontend/web/public/fonts/line-icons/style.css">
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="../../../frontend/web/css/style1.css">    
   </head>
   <body>
     
@@ -177,7 +188,7 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_02.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">关于页面和用户登录前后台</p>
+            <p class="lead">关于页面和用户注册登录前后台</p>
             <p>motto:</p>
             <div class="social mt-4">
               <a href="https://github.com/Liyx55"target="_blank"><span class="icon-github"></span></a>
@@ -298,16 +309,7 @@ $this->title = 'Contact';
   
   </div>
 
-    <!-- SCRIPTS -->
-    <script src="../../../frontend/web/js/contact/jquery.min.js"></script>
-    <script src="../../../frontend/web/js/contact/bootstrap.bundle.min.js"></script>
-    <script src="../../../frontend/web/js/contact/isotope.pkgd.min.js"></script>
-    <script src="../../../frontend/web/js/contact/stickyfill.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.fancybox.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.easing.1.3.js"></script>    
-    <script src="../../../frontend/web/js/contact/jquery.waypoints.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.animateNumber.min.js"></script>   
-    <script src="../../../frontend/web/js/contact/custom.js"></script>
+
 
   </body>
 </html>
