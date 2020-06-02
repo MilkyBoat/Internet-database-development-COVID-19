@@ -13,17 +13,12 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
-        // 'css/home.css',
         'css/comment.css',
-
-        'css/news.css',
-        'css/news.css',
         'public/css/style_1.css',
 
     ];
     public $js = [
         'js/jquery.min.js',
-        // 'js/home.js',
         'app.js',
         'public/js/owl.carousel.min.js',
         'public/js/jquery.sticky.js',
@@ -32,9 +27,7 @@ class AppAsset extends AssetBundle
         'public/js/jquery.nice-select.min.js',
         'public/js/jquery.ajaxchimp.min.js',
         'public/js/jquery.magnific-popup.min.js',
-      #  'public/js/bootstrap-datepicker.js',
         'public/js/main.js',
-        // 'public/js/jquery.min.js',
         'public/js/main2.js',
         'public/js/jquery.waypoints.min.js',
         'public/js/jquery.stellar.min.js',
