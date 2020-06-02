@@ -39,6 +39,7 @@ $this->title = 'Contact';
     <link rel="stylesheet" href="../../../frontend/web/css/custom-bs.css">
     <link rel="stylesheet" href="../../../frontend/web/css/main.css">
     <link rel="stylesheet" href="../../../frontend/web/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../../../frontend/web/public/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../frontend/web/public/fonts/icomoon/style.css">
     <link rel="stylesheet" href="../../../frontend/web/public/fonts/line-icons/style.css">
 
@@ -97,10 +98,10 @@ $this->title = 'Contact';
           <div class="col-md-6 align-self-center">
             <h3 class="section-title-sub text-primary">Key Feautures</h3>
             <h2 class="section-title mb-4">网站特点</h2>
-
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.</p>
-            <p class="mt-4"><a href="#" class="spepcial_link">返回页面顶端</a></p>
+            <p class="lead">这是一个疫情资料站。</p>
+            <p>我们提供了各种关于COVID-19的信息，您可以在这里获取国内外关于疫情的最新研究和新闻资料，您也可以分享您的抗疫日记，将疫情期间拍摄的影像上传于本站，与更多人分享自己的生活。</p>
+            <p>同时，如果您对本网站的内容有任何疑问，或者有与新冠病毒有关的一切信息和内容，欢迎通过本页最下方的表格联系我们，您也可以获取我们的联络方式，以便在第一时间找到我们，真诚感谢您的支持！</p>
+            <p class="mt-4"><a href="#contactformanchor" class="spepcial_link">跳转到联系表格</a></p>
           </div>
           <div class="col-md-5 ml-auto img-overlap">
             <div class="img-1"><img src="../../../frontend/web/img/aboutus/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow"></div>
@@ -113,7 +114,7 @@ $this->title = 'Contact';
           <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="d-flex align-items-center justify-content-center mb-2">
               <span class="icon-line-mobile mr-3"></span>
-              <strong class="number" data-number="12345">0</strong>
+              <strong class="number" data-number="18625">0</strong>
             </div>
             <span class="caption">Lines of Codes</span>
           </div>
@@ -163,13 +164,12 @@ $this->title = 'Contact';
 
             <h3>黄璟知</h3>
             <p class="text-muted">组长</p>
-            <p class="lead">Odio nihil facilis vitae laudantium provident magni alias veniam quidem voluptatum</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">主要负责成员分工、博客和视频分享模块</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/NebulaJZ"target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:13687978877@163.com"target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/"target="_blank"><span class="icon-institution"></span></a>
             </div>
 
           </div>
@@ -177,13 +177,12 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_02.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">Odio nihil facilis vitae laudantium provident magni alias veniam quidem voluptatum</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">主要负责关于页面和用户登录模块</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/Liyx55"target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:962417405@qq.com"target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/"target="_blank"><span class="icon-institution"></span></a>
             </div>
           </div>
 
@@ -193,13 +192,12 @@ $this->title = 'Contact';
 
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
-            
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">主要负责关于研究和新闻模块</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/Guru759"target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:2878271548@qq.com"target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/"target="_blank"><span class="icon-institution"></span></a>
             </div>
 
           </div>
@@ -207,13 +205,12 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_04.JPG" alt="Image" class="img-fluid mb-4 rounded">
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
-            
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">主要负责首页疫情地图的完全实现</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/MilkyBoat"target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:xuyunkai@mail.nankai.edu.cn"target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="http://milkyship.cn/"target="_blank"><span class="icon-institution"></span></a>
             </div>
           </div>
 
@@ -221,13 +218,13 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_05.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>袁嘉蔚</h3>
             <p class="text-muted">组员</p>
-            
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">主要负责联系页面、流量统计和团队页面模块</p>
+            <p>I always wanted to be a part of a small rebellion.</br>
+            そのままの君だ。いつまでも幸せに。-オレンジうつ</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/tenkinoko" target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:1013198002@qq.com"target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/"target="_blank"><span class="icon-institution"></span></a>
             </div>
           </div>
 
@@ -236,9 +233,11 @@ $this->title = 'Contact';
 
       </div>
     </section>
+    
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
+          	<a name="contactformanchor"></a>
             <h3 class="section-title-sub text-primary">Contact Us</h3>
             <h2 class="section-title mb-3">联系我们</h2>
           </div>
@@ -258,8 +257,9 @@ $this->title = 'Contact';
             <?= $form->field($model, 'phone') ?>
             <?= $form->field($model, 'message')->textarea(['rows'=>7])->hint('Please enter your message')?>
             <div class="form-group">
-
-                <?= Html::submitButton('Send', ['class' => 'btn', 'name' => 'contact-button']) ?>
+<div class="social mt-4">
+                <?= Html::submitButton('Send', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+            </div>
 
         </div>
         </div>
@@ -273,10 +273,18 @@ $this->title = 'Contact';
               <p class="mb-4">中国天津市津南区同砚路38号南开大学津南校区</p>
 
               <p class="mb-0 font-weight-bold">微信</p>
-              <p class="mb-4"><a href="#">Niepeng_is_very_handsome</a></p>
+              <p class="mb-4">y543184823</a></p>
 
               <p class="mb-0 font-weight-bold">邮箱</p>
-              <p class="mb-0"><a href="#">Niepeng@handsome.com</a></p>
+              <p class="mb-0"><a href="mailto:1020546@hust.edu.cn">1020546@hust.edu.cn</a></p>
+              <p> &nbsp;  </p>
+              <p> &nbsp;  </p>
+              <p> &nbsp;  </p>
+              <p> &nbsp;  </p>
+              <p> &nbsp;  </p>
+              <p> &nbsp;  </p>
+              <img src="../../../frontend/web/img/aboutus/jinnan.png" alt="Image" class="img-fluid mb-4 rounded"> </a>
+              
 
             </div>
           </div>
