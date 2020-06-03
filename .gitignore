@@ -3,6 +3,9 @@
 /yii_test
 /yii_test.bat
 
+# vscode files
+/.vscode
+
 # phpstorm project files
 .idea
 
