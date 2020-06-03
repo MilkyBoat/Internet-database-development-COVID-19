@@ -167,6 +167,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+		$this->layout="ab";
         return $this->render('about');
     }
     /**
@@ -176,6 +177,7 @@ class SiteController extends Controller
      */
     public function actionAbout1()
     {
+		$this->layout="ab";
         return $this->render('about1');
     }
     /**
@@ -185,6 +187,7 @@ class SiteController extends Controller
      */
     public function actionAbout2()
     {
+		$this->layout="ab";
         return $this->render('about2');
     }
 
@@ -263,6 +266,7 @@ class SiteController extends Controller
      */
     public function actionRequestPasswordReset()
     {
+		$this->layout="sl";
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {

@@ -22,6 +22,9 @@ $this->params['breadcrumbs'][] = $this->title;
             position: center;
         }
     </style>
+
+    <p>Verification Email</p>
+
     <div class="row">
         <div class="col-lg-12">
             <?php $form = ActiveForm::begin(['id' => 'resend-verification-email-form']); ?>
@@ -66,6 +69,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     color: white;
                     border: 5px solid white;
                     display: flex;
+                }
+
+                .site-resend-verification-email p {
+                    font-size: 50px;
+                    text-align: center;
+                    font-weight: bolder;
+                    position: relative;
                 }
             </style>
             <?php ActiveForm::end(); ?>
