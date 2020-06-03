@@ -11,6 +11,8 @@
 
 use yii\data\ActiveDataProvider;
 use yii\helpers\Url;
+$this->title = 'Video';
+$this->params['breadcrumbs'][] = $this->title;
 
 ?>
     <form action="<?php echo Url::to(['/video/search']) ?>"

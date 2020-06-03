@@ -12,7 +12,7 @@ use yii\rest\IndexAction;
     <?php
     $menuItems = [
         ['label' => 'Home', 'url' => ['/video/index']],
-        ['label' => 'History', 'url' => ['/video/history']],
+        
 
     ];
     if (Yii::$app->user->isGuest) {

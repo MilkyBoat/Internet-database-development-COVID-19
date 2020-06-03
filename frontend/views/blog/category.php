@@ -6,6 +6,8 @@
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 use yii\helpers\Html;
+$this->title = 'Blog Category';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?= Html::cssFile('@web/public/index.css') ?>

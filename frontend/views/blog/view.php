@@ -8,6 +8,8 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use common\models\User;
+$this->title = 'Blog Detail';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?= Html::cssFile('@web/public/index.css') ?>

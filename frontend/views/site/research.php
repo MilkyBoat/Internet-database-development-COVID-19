@@ -11,6 +11,9 @@ use yii\web\Response;
 use yii\web\Controller;
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
+$this->title = 'Research';
+$this->params['breadcrumbs'][] = $this->title;
+
 
 ?>
 

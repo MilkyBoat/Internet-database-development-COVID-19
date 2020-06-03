@@ -12,10 +12,10 @@ use yii\helpers\Url;
 /* @var $searchModel app\models\ArticleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Articles';
+$this->title = ' My articles';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="blog-mypost">
+<div style="padding-left: 100px;" class="blog-mypost">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
