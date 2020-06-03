@@ -37,7 +37,7 @@ AppAsset::register($this);
 
     <div class="wrap h-100 d-flex flex-column">
         <?php echo $this->render('header') ?>
-            <div class="content-wrapper p-3" style="height:600px">
+            <div class="content-wrapper p-3" style="height:1000px">
                 <?= Alert::widget() ?>
                 <?= $content ?>
             </div>

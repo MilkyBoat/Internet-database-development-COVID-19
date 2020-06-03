@@ -24,6 +24,9 @@ $this->params['breadcrumbs'][] = $this->title;
             
         }
     </style>
+
+
+    <p>Signup</p>
     <div class="row">
         <div class="col-lg-12">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
@@ -74,6 +77,14 @@ $this->params['breadcrumbs'][] = $this->title;
                     color: white;
                     border: 5px solid white;
                     display: flex;
+                }
+
+                .site-signup p {
+                    font-size: 50px;
+                    text-align: center;
+                    font-weight: bolder;
+                    position: relative;
+                    
                 }
             </style>
             <?php ActiveForm::end(); ?>
