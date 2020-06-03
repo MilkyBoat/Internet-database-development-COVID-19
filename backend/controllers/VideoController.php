@@ -53,7 +53,7 @@ class VideoController extends Controller
     {
         $unlisted='unlisted';
         $dataProvider = new ActiveDataProvider([
-            'query' => Video::find()->where(['status'=>$unlisted])->latest(),
+            'query' => Video::find()->latest(),
         ]);
 
         return $this->render('index', [

@@ -3,6 +3,8 @@
 use yii\widgets\LinkPager;
 use yii\helpers\Url;
 use yii\helpers\Html;
+$this->title = 'News';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?= Html::cssFile('@web/public/css/media_query.css') ?>
