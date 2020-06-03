@@ -8,6 +8,8 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use common\models\User;
+$this->title = 'Blog Detail';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?= Html::cssFile('@web/public/index.css') ?>
@@ -166,7 +168,7 @@ use common\models\User;
                                             <img class="img-fluid" src="<?= Url::to($article->getImage()) ?>" alt="">
                                         </div>
                                         <div class="details mt-20">
-                                            <a href="blog-single.html">
+                                            <a href="<?=Url::toRoute(['blog/view','id'=>$article->id]);?>">
                                                 <h6><?= $article->title ?></h6>
                                             </a>
                                             <p><?= $article->getDate() ?></p>

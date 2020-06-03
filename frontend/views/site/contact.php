@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Team:布里啾啾迪布里多,NKU
  * coding by 袁嘉蔚 1810546,20200509
@@ -11,39 +12,55 @@
 
 use yii\helpers\Html;
 use yii\bootstrap4\ActiveForm;
+
 $this->title = 'Contact';
 ?>
+<?= Html::cssFile('@web/public/css/style_1.css') ?>
+<?= Html::cssFile('@web/css/custom-bs.css') ?>
+<?= Html::cssFile('@web/css/main.css') ?>
+<?= Html::cssFile('@web/css/style1.css') ?>
+<?= Html::cssFile('@web/css/jquery.fancybox.min.css') ?>
+<?= Html::cssFile('@web/public/css/font-awesome.min.css') ?>
+<?= Html::cssFile('@web/public/fonts/line-icons/style.css') ?>
+<?= Html::cssFile('@web/public/fonts/icomoon/style.css') ?>
+
+<?= Html::jsFile('@web/js/contact/jquery.min.js') ?>
+<?= Html::jsFile('@web/js/contact/bootstrap.bundle.min.js') ?>
+<?= Html::jsFile('@web/js/contact/isotope.pkgd.min.js') ?>
+<?= Html::jsFile('@web/js/contact/stickyfill.min.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.fancybox.min.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.easing.1.3.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.waypoints.min.js') ?>
+<?= Html::jsFile('@web/js/contact/jquery.animateNumber.min.js') ?>
+<?= Html::jsFile('@web/js/contact/custom.js') ?>
+
 <html lang="en">
-<link rel="stylesheet" href="../../../frontend/web/public/css/style_1.css">
+
 <nav id="w0" class="shadow-sm navbar-expand-lg navbar-light bg-light navbar">
-<div class="container">
-<a class="navbar-brand" href="/covid19/frontend/web/">COVID-19</a>
-<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#w0-collapse" aria-controls="w0-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div id="w0-collapse" class="collapse navbar-collapse">
-    <ul id="w1" class="navbar-nav ml-auto nav"><li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/index">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/about">About</a></li>
-<li class="nav-item"><a class="nav-link " href="/covid19/frontend/web/blog/blog">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/video/index">Video</a></li>
-<li class="nav-item"><a class="nav-link active" href="/covid19/frontend/web/site/contact">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/news/index">News</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/research">Research</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/signup">Signup</a></li>
-<li class="nav-item"><a class="nav-link" href="/covid19/frontend/web/site/login">Login</a></li></ul></div>
-</div>
+  <div class="container">
+    <a class="navbar-brand" href="../../web/site/index">COVID-19</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#w0-collapse" aria-controls="w0-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div id="w0-collapse" class="collapse navbar-collapse">
+      <ul id="w1" class="navbar-nav ml-auto nav">
+        <li class="nav-item"><a class="nav-link" href="../../web/site/index">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../../web/site/about">About</a></li>
+        <li class="nav-item"><a class="nav-link " href="../../web/blog/blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../../web/video/index">Video</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../../web/site/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="../../web/news/index">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="../../web/site/research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="../../web/site/signup">Signup</a></li>
+        <li class="nav-item"><a class="nav-link" href="../..web/site/login">Login</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
   <head>
     <title>Contact Us！</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="../../../frontend/web/css/custom-bs.css">
-    <link rel="stylesheet" href="../../../frontend/web/css/main.css">
-    <link rel="stylesheet" href="../../../frontend/web/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="../../../frontend/web/public/fonts/icomoon/style.css">
-    <link rel="stylesheet" href="../../../frontend/web/public/fonts/line-icons/style.css">
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="../../../frontend/web/css/style1.css">    
   </head>
   <body>
     
@@ -54,7 +71,7 @@ $this->title = 'Contact';
     </div>
   </div>
 
-<div class="site-wrap">
+  <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -64,15 +81,15 @@ $this->title = 'Contact';
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
+
 
     <section class="site-section" id="next-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            
-              
-              <img src="../../../frontend/web/img/aboutus/sq_img_10.jpg" alt="Image" class="img-fluid img-shadow">
+
+
+            <img src="../../../frontend/web/img/aboutus/sq_img_10.jpg" alt="Image" class="img-fluid img-shadow">
             </a>
           </div>
           <div class="col-lg-5 ml-auto">
@@ -80,27 +97,27 @@ $this->title = 'Contact';
             <h2 class="section-title mb-3">我们是谁？</h2>
             <p class="lead">我们是五个来自南开大学的学生。</p>
             <p>我们开发这个网页是为了让人们更加了解新型冠状病毒的相关信息；</br>
-            我们通过收集全球各地的感染患者数量，将其制作为疫情地图直观的反映出来；</br>
-            我们收集来自各个媒体和机构对于这种病毒的报导，将其汇总、分类，形成了About, Research, News三个类目；</br>
-            我们更制作了相关的博客系统，希望人们能在此分享他们的抗疫感想和Vlog视频；</br>
-            最后，希望人们能通过联系页面讲自己的信息及时反馈给我们。</p>
+              我们通过收集全球各地的感染患者数量，将其制作为疫情地图直观的反映出来；</br>
+              我们收集来自各个媒体和机构对于这种病毒的报导，将其汇总、分类，形成了About, Research, News三个类目；</br>
+              我们更制作了相关的博客系统，希望人们能在此分享他们的抗疫感想和Vlog视频；</br>
+              最后，希望人们能通过联系页面讲自己的信息及时反馈给我们。</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT US -->
-    <section class="site-section about-us-section" >
+    <section class="site-section about-us-section">
       <div class="container">
-        
+
         <div class="row mb-5 pt-0 site-section">
           <div class="col-md-6 align-self-center">
             <h3 class="section-title-sub text-primary">Key Feautures</h3>
             <h2 class="section-title mb-4">网站特点</h2>
-
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.</p>
-            <p class="mt-4"><a href="#" class="spepcial_link">返回页面顶端</a></p>
+            <p class="lead">这是一个疫情资料站。</p>
+            <p>我们提供了各种关于COVID-19的信息，您可以在这里获取国内外关于疫情的最新研究和新闻资料，您也可以分享您的抗疫日记，将疫情期间拍摄的影像上传于本站，与更多人分享自己的生活。</p>
+            <p>同时，如果您对本网站的内容有任何疑问，或者有与新冠病毒有关的一切信息和内容，欢迎通过本页最下方的表格联系我们，您也可以获取我们的联络方式，以便在第一时间找到我们，真诚感谢您的支持！</p>
+            <p class="mt-4"><a href="#contactformanchor" class="spepcial_link">跳转到联系表格</a></p>
           </div>
           <div class="col-md-5 ml-auto img-overlap">
             <div class="img-1"><img src="../../../frontend/web/img/aboutus/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow"></div>
@@ -113,7 +130,7 @@ $this->title = 'Contact';
           <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="d-flex align-items-center justify-content-center mb-2">
               <span class="icon-line-mobile mr-3"></span>
-              <strong class="number" data-number="12345">0</strong>
+              <strong class="number" data-number="18625">0</strong>
             </div>
             <span class="caption">Lines of Codes</span>
           </div>
@@ -142,7 +159,7 @@ $this->title = 'Contact';
             <span class="caption">Meetings</span>
           </div>
 
-            
+
         </div>
 
       </div>
@@ -163,13 +180,12 @@ $this->title = 'Contact';
 
             <h3>黄璟知</h3>
             <p class="text-muted">组长</p>
-            <p class="lead">Odio nihil facilis vitae laudantium provident magni alias veniam quidem voluptatum</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">指导小组工作、博客和视频分享前后台</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/NebulaJZ" target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:13687978877@163.com" target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/" target="_blank"><span class="icon-institution"></span></a>
             </div>
 
           </div>
@@ -177,13 +193,12 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_02.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">Odio nihil facilis vitae laudantium provident magni alias veniam quidem voluptatum</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">关于页面和用户注册登录前后台</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/Liyx55" target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:962417405@qq.com" target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/" target="_blank"><span class="icon-institution"></span></a>
             </div>
           </div>
 
@@ -193,13 +208,12 @@ $this->title = 'Contact';
 
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
-            
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">研究和新闻前后台</p>
+            <p>motto:</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/Guru759" target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:2878271548@qq.com" target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/" target="_blank"><span class="icon-institution"></span></a>
             </div>
 
           </div>
@@ -207,13 +221,13 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_04.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
-            
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">疫情地图数据爬虫、前后台及项目部署</p>
+            <p>一只挑剔狗粮的纯种柴犬，最喜欢喝名叫Java的咖啡，不太喜欢JavaScript这种山寨咖啡，
+              跟隔壁名叫Python的宠物蛇是好朋友，对用php这种材料做的狗狗玩具过敏，尤其不能闻到yii的味道，一闻就吐。</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/MilkyBoat" target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:xuyunkai@mail.nankai.edu.cn" target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="http://milkyship.cn/" target="_blank"><span class="icon-institution"></span></a>
             </div>
           </div>
 
@@ -221,13 +235,15 @@ $this->title = 'Contact';
             <img src="../../../frontend/web/img/aboutus/person_05.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>袁嘉蔚</h3>
             <p class="text-muted">组员</p>
-            
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p class="lead">联系、流量统计前后台和团队页面</p>
+            <p>I always wanted to be a part of a small rebellion.</br>
+            そのままの君だ。いつまでも幸せに。</br>
+            喜欢八爷、苏打、雅人叔、十元，最喜欢Gakki~</br>
+            -オレンジうつ</p>
             <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://github.com/tenkinoko" target="_blank"><span class="icon-github"></span></a>
+              <a href="mailto:1013198002@qq.com" target="_blank"><span class="icon-envelope-o"></span></a>
+              <a href="https://cc.nankai.edu.cn/" target="_blank"><span class="icon-institution"></span></a>
             </div>
           </div>
 
@@ -236,67 +252,69 @@ $this->title = 'Contact';
 
       </div>
     </section>
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary">Contact Us</h3>
-            <h2 class="section-title mb-3">联系我们</h2>
-          </div>
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <a name="contactformanchor"></a>
+          <h3 class="section-title-sub text-primary">Contact Us</h3>
+          <h2 class="section-title mb-3">联系我们</h2>
         </div>
-    <section class="site-section" id="next-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <form action="#" class="">
+      </div>
+      <section class="site-section" id="next-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <form action="#" class="">
 
-         <div class="col-lg-12">
-            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-            <?= $form->field($model, 'firstname') ?>
-            <?= $form->field($model, 'lastname') ?>
-            <?= $form->field($model, 'sex')->radioList(['1'=>'Male','0'=>'Female']) ?>
-            <?= $form->field($model, 'wechatid') ?>
-            <?= $form->field($model, 'phone') ?>
-            <?= $form->field($model, 'message')->textarea(['rows'=>7])->hint('Please enter your message')?>
-            <div class="form-group">
+                <div class="col-lg-12">
+                  <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+                  <?= $form->field($model, 'firstname') ?>
+                  <?= $form->field($model, 'lastname') ?>
+                  <?= $form->field($model, 'sex')->radioList(['1' => 'Male', '0' => 'Female']) ?>
+                  <?= $form->field($model, 'wechatid') ?>
+                  <?= $form->field($model, 'phone') ?>
+                  <?= $form->field($model, 'message')->textarea(['rows' => 7])->hint('Please enter your message') ?>
+                  <div class="form-group">
+                    <div class="social mt-4">
+                      <?= Html::submitButton('Send', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                    </div>
 
-                <?= Html::submitButton('Send', ['class' => 'btn', 'name' => 'contact-button']) ?>
+                  </div>
+                </div>
 
-        </div>
-        </div>
 
-  
-            </form>
-          </div>
-          <div class="col-lg-5 ml-auto">
-            <div class="p-4 mb-3 bg-white">
-              <p class="mb-0 font-weight-bold">地址</p>
-              <p class="mb-4">中国天津市津南区同砚路38号南开大学津南校区</p>
+              </form>
+            </div>
+            <div class="col-lg-5 ml-auto">
+              <div class="p-4 mb-3 bg-white">
+                <p class="mb-0 font-weight-bold">地址</p>
+                <p class="mb-4">中国天津市津南区同砚路38号南开大学津南校区</p>
 
-              <p class="mb-0 font-weight-bold">微信</p>
-              <p class="mb-4"><a href="#">Niepeng_is_very_handsome</a></p>
+                <p class="mb-0 font-weight-bold">微信</p>
+                <p class="mb-4">y543184823</a></p>
 
-              <p class="mb-0 font-weight-bold">邮箱</p>
-              <p class="mb-0"><a href="#">Niepeng@handsome.com</a></p>
+                <p class="mb-0 font-weight-bold">邮箱</p>
+                <p class="mb-0"><a href="mailto:1020546@hust.edu.cn">1020546@hust.edu.cn</a></p>
+                <p> &nbsp; </p>
+                <p> &nbsp; </p>
+                <p> &nbsp; </p>
+                <p> &nbsp; </p>
+                <p> &nbsp; </p>
+                <p> &nbsp; </p>
+                <img src="../../../frontend/web/img/aboutus/jinnan.jpg" alt="Image" class="img-fluid mb-4 rounded"> </a>
 
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  
-  </div>
 
-    <!-- SCRIPTS -->
-    <script src="../../../frontend/web/js/contact/jquery.min.js"></script>
-    <script src="../../../frontend/web/js/contact/bootstrap.bundle.min.js"></script>
-    <script src="../../../frontend/web/js/contact/isotope.pkgd.min.js"></script>
-    <script src="../../../frontend/web/js/contact/stickyfill.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.fancybox.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.easing.1.3.js"></script>    
-    <script src="../../../frontend/web/js/contact/jquery.waypoints.min.js"></script>
-    <script src="../../../frontend/web/js/contact/jquery.animateNumber.min.js"></script>   
-    <script src="../../../frontend/web/js/contact/custom.js"></script>
+    </div>
 
-  </body>
+
+</body>
+
 </html>

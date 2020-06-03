@@ -10,6 +10,7 @@ a#big {
 body {
 	background: #FFF ;/*大的背景颜色*/ 
 	text-align: center;
+	height: 100%;
 }
 
 body,.image,h1,p {
@@ -20,7 +21,6 @@ body,.image,h1,p {
 .main {
 	background: #FFF; 
 	width: 1280px; 
-	height: 1px;
 	margin: 0 auto; 
 	border-bottom: 0; 
 	border-top: 0; 
@@ -28,11 +28,11 @@ body,.image,h1,p {
 }
 
 .content {
-	float: right;
+	float: left;
 	position: relative;
-	top:-1300px;
-	left: 40px;
-	width: 980px;
+	top:-1840px;
+	left: 21%;
+	width: 80%;
 	clear: both; 
 	border: 10px solid rgb(250, 252, 253); 
 	color: #CCC;
@@ -69,21 +69,6 @@ body,.image,h1,p {
 	font-weight: bold;
 }
 
-.footer {
-	height: 10px; 
-	background: #FFF ;
-	border-top: 10px solid rgb(250, 252, 253); 
-	margin: 0 auto; 
-	width: 1280px; 
-	text-align: center; 
-	font: bold 0.7em Verdana,Arial; 
-	color: rgb(117, 113, 113);
-}
-
-.footer a {
-	color: #FFF;
-}
-
 a#big {
 	font: normal 4em sans-serif, Arial;
 	background: #fff;
@@ -99,12 +84,11 @@ a#big {
 .header_left {
 	float: left; 
 	position: relative;
-	top:-49px;
-	left:-28px;
+	top:-39px;
 	width: 250px; 
 	height: 1800px; 
 	border: 10px solid rgb(250, 252, 253);
-	border-top: 0px solid rgb(250, 252, 253);
+	border-top: 10px solid rgb(250, 252, 253);
 	background: #FFF;
 	z-index: 0;
 }
