@@ -89,7 +89,7 @@ $this->title = 'Contact';
           <div class="col-lg-6 mb-5 mb-lg-0">
 
 
-            <img src="../../../frontend/web/img/aboutus/sq_img_10.JPG" alt="Image" class="img-fluid img-shadow">
+            <img src="../../../frontend/web/img/aboutus/sq_img_10.jpg" alt="Image" class="img-fluid img-shadow">
             </a>
           </div>
           <div class="col-lg-5 ml-auto">
@@ -121,7 +121,7 @@ $this->title = 'Contact';
           </div>
           <div class="col-md-5 ml-auto img-overlap">
             <div class="img-1"><img src="../../../frontend/web/img/aboutus/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow"></div>
-            <div class="img-2"><img src="../../../frontend/web/img/aboutus/123456.JPG" alt="Image" class="img-fluid img-shadow"></div>
+            <div class="img-2"><img src="../../../frontend/web/img/aboutus/123456.jpg" alt="Image" class="img-fluid img-shadow"></div>
           </div>
         </div>
 
@@ -176,7 +176,7 @@ $this->title = 'Contact';
 
         <div class="row align-items-center block__69944">
           <div class="col-lg-6 mb-5">
-            <img src="../../../frontend/web/img/aboutus/person_01.JPG" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_01.jpg" alt="Image" class="img-fluid mb-4 rounded">
 
             <h3>黄璟知</h3>
             <p class="text-muted">组长</p>
@@ -190,7 +190,7 @@ $this->title = 'Contact';
 
           </div>
           <div class="col-lg-6 mb-5">
-            <img src="../../../frontend/web/img/aboutus/person_02.JPG" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_02.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
             <p class="lead">关于页面和用户注册登录前后台</p>
@@ -204,7 +204,7 @@ $this->title = 'Contact';
 
 
           <div class="col-lg-4">
-            <img src="../../../frontend/web/img/aboutus/person_03.JPG" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_03.jpg" alt="Image" class="img-fluid mb-4 rounded">
 
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
@@ -218,7 +218,7 @@ $this->title = 'Contact';
 
           </div>
           <div class="col-lg-4">
-            <img src="../../../frontend/web/img/aboutus/person_04.JPG" alt="Image" class="img-fluid mb-4 rounded">
+            <img src="../../../frontend/web/img/aboutus/person_04.jpg" alt="Image" class="img-fluid mb-4 rounded">
             <h3>徐云凯</h3>
             <p class="text-muted">组员</p>
             <p class="lead">疫情地图数据爬虫、前后台及项目部署</p>
@@ -302,7 +302,7 @@ $this->title = 'Contact';
                 <p> &nbsp; </p>
                 <p> &nbsp; </p>
                 <p> &nbsp; </p>
-                <img src="../../../frontend/web/img/aboutus/jinnan.png" alt="Image" class="img-fluid mb-4 rounded"> </a>
+                <img src="../../../frontend/web/img/aboutus/jinnan.jpg" alt="Image" class="img-fluid mb-4 rounded"> </a>
 
 
               </div>
