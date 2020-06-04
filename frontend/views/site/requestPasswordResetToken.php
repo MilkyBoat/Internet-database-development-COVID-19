@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Team:布里啾啾迪布利多,NKU
+ * coding by LiYanxin 1813265,20200504
+ * This is the display of video
+ */
+
+
+
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap4\ActiveForm */
 /* @var $model \frontend\models\PasswordResetRequestForm */
