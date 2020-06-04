@@ -80,7 +80,7 @@ $this->title = 'Homework';
                 <span class="lnr lnr-file-empty"></span>
                 <a href="../../data/team/布利啾啾迪布利多_设计文档(1810729_1810756_1813265_1713667_1810546).pdf" download="布利啾啾迪布利多_设计文档(1810729_1810756_1813265_1713667_1810546)"><h4>设计文档</h4></a>
                 <p>
-                  Made by 孙佳宜, 1810756
+                  Made by 孙家宜, 1810756
                 </p>
               </div>  
             </div>

@@ -149,17 +149,6 @@ class SiteController extends Controller
                 'model' => $model,
             ]);
     }
-    // public function actionAboutus()
-    // {
-    //     $this->layout = false;
-    //     return $this->render('aboutus');
-    // }
-
-    // public function actionPortfolio()
-    // {
-    //     $this->layout = false;
-    //     return $this->render('portfolio');
-    // }
     /**
      * Displays about page.
      *
