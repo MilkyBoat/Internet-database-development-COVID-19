@@ -37,9 +37,7 @@ $this->title = 'Homework';
     <title>Personal</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-      <!--
-      CSS
-      ============================================= -->
+
       <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
       <link rel="stylesheet" href="../../../backend/web/css/main.css">
@@ -47,7 +45,7 @@ $this->title = 'Homework';
     <body>  
  
           
-      <!-- Start services Area -->
+
       <section class="services-area section-gap">
         <div class="container">
                 <div class="row d-flex justify-content-center">
@@ -143,9 +141,7 @@ $this->title = 'Homework';
           </div>
         </div>  
       </section>
-      <!-- End services Area -->        
 
-      <!-- Start fact Area -->
       <section class="facts-area section-gap" id="facts-area">
         <div class="container">       
           <div class="row">
@@ -168,9 +164,7 @@ $this->title = 'Homework';
           </div>
         </div>  
       </section>
-      <!-- end fact Area -->        
 
-      <!-- Start price Area -->
       <section class="price-area section-gap">
         <div class="container">
           <div class="row d-flex justify-content-center">
@@ -257,7 +251,6 @@ $this->title = 'Homework';
           </div>
         </div>  
       </section>
-      <!-- End price Area -->     
 
     
     </body>

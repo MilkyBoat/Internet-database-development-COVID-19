@@ -95,6 +95,3 @@ $this->title = '疫情资料站';
         <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
     </div>
 </div>
-<body>
-	<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278955653'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1278955653%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-</body>

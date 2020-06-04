@@ -4,54 +4,7 @@
  * coding by 袁嘉蔚 1810546,20200509
  * a component used to count users
  */
-/**
- * UserCounter for Yii 2.0
- *
- * This component is complete reworked port of pCounter, originally written by
- * Andreas "Pr0g" Droesch. It uses MySQL for counting the number of visitors.
- * Following information is provided by UserCounter.
- *
- * - users online
- * - total users of today
- * - total users of yesterday
- * - total users overall
- * - maximum users at a day
- * - date for the maximum
- *
- * No cookies or sessions are used. The count is only based on the IP address
- * of users, but this information is stored as md5-hash in database.
- *
- *
- * USAGE
- *
- * For installation, have a look at the extension page on yiiframework.com or
- * on GitHub. There you can find all information about this component:
- * http://www.yiiframework.com/extension/yii-usercounter/
- * https://github.com/armin-pfaeffle/yii-usercounter/
- *
- * Provides methods:
- * - Yii::$app->userCounter->getOnline()
- * - Yii::$app->userCounter->getToday()
- * - Yii::$app->userCounter->getYesterday()
- * - Yii::$app->userCounter->getTotal()
- * - Yii::$app->userCounter->getMaximal()
- * - date('d.m.Y', Yii::$app->userCounter->getMaximalTime())
- *
- *
- * LICENSE
- *
- * UserCounter is freeware and you are allowed to distribute it, but only in case
- * it is not commercial and the script does not get modified.
- *
- *
- * @author Armin Pfäffle <mail@armin-pfaeffle.de>
- * @author Andreas "Pr0g" Droesch
- * @copyright Copyright (c) 2015, Armin Pfäffle <mail@armin-pfaeffle.de>
- * @link https://github.com/armin-pfaeffle/yii-usercounter/
- * @link http://www.yiiframework.com/extension/yii-usercounter/
- * @link http://andreas.droesch.de
- * @version 1.3.0
- */
+
 
 namespace backend\components;
 
