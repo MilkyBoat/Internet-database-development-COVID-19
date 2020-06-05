@@ -209,7 +209,7 @@ $this->title = 'Contact';
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
             <p class="lead">研究和新闻前后台</p>
-            <p>只要你喜欢迪奥张，我们就是朋友
+            <p>只要你喜欢迪奥张，我们就是朋友</br>
                 不然，喜欢静香也行</p>
             <div class="social mt-4">
               <a href="https://github.com/Guru759" target="_blank"><span class="icon-github"></span></a>
