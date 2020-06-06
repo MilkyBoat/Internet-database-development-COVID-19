@@ -27,7 +27,6 @@ return [
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
         'session' => [
-            // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
         ],
         'log' => [
@@ -51,8 +50,6 @@ return [
         ],
         'userCounter' => [
             'class' => 'backend\components\UserCounter',
-
-            // You can setup these options:
             'tableUsers' => 'pcounter_users',
             'tableSave' => 'pcounter_save',
             'autoInstallTables' => true,
