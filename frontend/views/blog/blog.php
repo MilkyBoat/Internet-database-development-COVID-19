@@ -40,10 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
         integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"
 ></script>
-<script
-        type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
-></script>
+
 
 <div class="site-blog">
     <!--main content start-->

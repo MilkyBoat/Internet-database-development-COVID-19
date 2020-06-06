@@ -54,8 +54,8 @@ $(document).ready(function() {
         responsiveClass: true,
         stagePadding: 140,
         navText: [
-          "<img src='http://covid19.test/img/prev.png' alt='' />",
-          "<img src='http://covid19.test/img/next.png' alt='' />"
+          // "<img src='http://covid19.test/img/prev.png' alt='' />",
+          // "<img src='http://covid19.test/img/next.png' alt='' />"
         ],
         responsive: {
           0: {
