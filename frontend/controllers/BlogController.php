@@ -146,10 +146,13 @@ class BlogController extends Controller
         $this->layout = 'blog';
         $data = Article::getAll(5);
 
-        for ($i = 0, $j = 0, $k = 0; $i < sizeof($data);) {
-            $data1[$j++] = $data['articles'][$i++];
-            $data2[$k++] = $data['articles'][$i++];
+        for ($i = 0, $j = 0; $i <= sizeof($data); $i += 2,$j++) {
+            $data1[$j] = $data['articles'][$i];
         }
+        for ($i = 1, $k = 0; $i <= sizeof($data); $i += 2) {
+            $data2[$k++] = $data['articles'][$i];
+        }
+        
 
         $popular = Article::Popular();
 
