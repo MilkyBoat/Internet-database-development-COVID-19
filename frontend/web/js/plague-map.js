@@ -68,10 +68,10 @@ $(document).ready(function () {
             from = grades[i];
             to = grades[i + 1];
 
-            labels.push('<i style="background:' + getColor(from + 1) + '"></i> ' +
-                from + (to ? '&ndash;' + to : '+'));
+            labels.push('<p class="info-p"><i style="background:' + getColor(from + 1) + '"></i> ' +
+                from + (to ? '-' + to : '+') + '</p>');
         }
-        div.innerHTML = labels.join('<br>');
+        div.innerHTML = labels.join("<br>");
         return div;
     };
     legend.addTo(mymap);
@@ -130,63 +130,4 @@ $(document).ready(function () {
             click: zoomToFeature
         });
     }
-
-    // var popup = L.popup();
-
-    // function onMapClick(e) {
-    //     popup
-    //         .setLatLng(e.latlng)
-    //         .setContent(e.latlng.toString())
-    //         .openOn(mymap);
-    // }
-
-    // mymap.on('click', onMapClick);
 })
-
-// $(document).ready(function () {
-
-// var normalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
-//     maxZoom: 18,
-//     minZoom: 1,
-//     id: 'google/light-v9'
-// });
-// var satelliteMap = L.tileLayer.chinaProvider('Google.Satellite.Map', {
-//     maxZoom: 18,
-//     minZoom: 1
-// });
-// var routeMap = L.tileLayer.chinaProvider('Google.Satellite.Annotion', {
-//     maxZoom: 18,
-//     minZoom: 1
-// });
-
-// var baseLayers = {
-//     "普通地图": normalMap,
-//     "卫星地图": satelliteMap,
-//     "标注": routeMap
-// }
-
-// var overlayLayers = {
-
-// }
-
-// L.control.layers(baseLayers, overlayLayers).addTo(map);
-
-// L.control.zoom({
-//     zoomInTitle: '放大',
-//     zoomOutTitle: '缩小'
-// }).addTo(map);
-
-// L.marker([51.5, -0.09]).addTo(mymap)
-//     .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-// L.circle([51.508, -0.11], 500, {
-//     color: 'red',
-//     fillColor: '#f03',
-//     fillOpacity: 0.5
-// }).addTo(mymap).bindPopup("I am a circle.");
-
-// L.polygon([
-//     [51.509, -0.08],
-//     [51.503, -0.06],
-//     [51.51, -0.047]
-// ]).addTo(mymap).bindPopup("I am a polygon.");
