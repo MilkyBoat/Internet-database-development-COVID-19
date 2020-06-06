@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Team:布里啾啾迪布里多,NKU
- * coding by huangjingzhi 1810729,20200504
- * 基本layout
+ * Team:布里啾啾迪布利多,NKU
+ * coding by LiYanxin 1813265,20200504
  */
+
 
 /* @var $this \yii\web\View */
 /* @var $content string */

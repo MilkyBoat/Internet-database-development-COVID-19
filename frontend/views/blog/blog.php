@@ -53,46 +53,46 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="row">
                     <div class="owl-carousel home-banner-owl">
                         <div class="banner-img">
-                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b1.jpg')?>" alt="" />
+                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b4.jpg')?>" alt="" />
                             <div class="text-wrapper">
                                 <a href="#" class="d-flex">
                                     <h1>
-                                        标题 <br />
-                                        标题
+                                        驰援 <br />
+                                        
                                     </h1>
                                 </a>
                             </div>
                         </div>
                         <div class="banner-img">
-                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b2.jpg')?>" alt="" />
+                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b5.jpg')?>" alt="" />
+                            <div class="text-wrapper">
+                                <a href="#" class="d-flex">
+                                    <h2 style="color: #fff;">
+                                        如何靠对外甩锅并且挑动种族矛盾<br />
+                                        来掩盖自己的无能
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-img">
+                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b6.jpg')?>" alt="" />
                             <div class="text-wrapper">
                                 <a href="#" class="d-flex">
                                     <h1>
-                                        标题<br />
-                                        标题
+                                        哀思中，凝聚慨然前行的力量 <br />
+                                        
                                     </h1>
                                 </a>
                             </div>
                         </div>
                         <div class="banner-img">
-                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b1.jpg')?>" alt="" />
+                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b7.jpg')?>" alt="" />
                             <div class="text-wrapper">
                                 <a href="#" class="d-flex">
-                                    <h1>
-                                        标题 <br />
-                                        标题
-                                    </h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner-img">
-                            <img class="img-fluid" src="<?=Url::to('@web/img/banner/b2.jpg')?>" alt="" />
-                            <div class="text-wrapper">
-                                <a href="#" class="d-flex">
-                                    <h1>
-                                        标题 <br />
-                                        标题
-                                    </h1>
+                                    <h3 style="color:#fff;">
+                                        1月30日，武汉同济医院外，挂在花枝上的吊瓶。 <br />
+                                        因发热门诊空间有限，许多患者在门外的花园里打点滴
+                                    </h3>
                                 </a>
                             </div>
                         </div>

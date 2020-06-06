@@ -14,6 +14,7 @@ $this->title = 'Create Video';
 $this->params['breadcrumbs'][] = ['label' => 'Videos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<link rel="stylesheet" href="../../../backend/web/css/main.css">
 <div class="video-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
