@@ -99,13 +99,13 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="social-icons">
                 <ul>
                     <li>
-                        <a href="index.html"><i class="fa fa-facebook"></i></a>
+                        <a href="<?= Url::toRoute(['blog/blog']);?>"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa fa-twitter"></i></a>
+                        <a href="<?= Url::toRoute(['blog/blog']);?>"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa fa-pinterest"></i></a>
+                        <a href="<?= Url::toRoute(['blog/blog']);?>"><i class="fa fa-pinterest"></i></a>
                     </li>
                     <li class="diffrent">sharre now</li>
                 </ul>
@@ -149,7 +149,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                                         <div class="d-flex justify-content-between mt-20">
                                             <div>
-                                                <a href="#" class="blog-post-btn">
+                                                <a href="<?= Url::toRoute(['blog/blog']);?>" class="blog-post-btn">
                                                     Read More <span class="ti-arrow-right"></span>
                                                 </a>
                                             </div>
@@ -193,7 +193,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                                         <div class="d-flex justify-content-between mt-20">
                                             <div>
-                                                <a href="#" class="blog-post-btn">
+                                                <a href="<?= Url::toRoute(['blog/blog']);?>" class="blog-post-btn">
                                                     Read More <span class="ti-arrow-right"></span>
                                                 </a>
                                             </div>
