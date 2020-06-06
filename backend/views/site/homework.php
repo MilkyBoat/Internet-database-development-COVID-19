@@ -145,15 +145,15 @@ $this->title = 'Homework';
         <div class="container">       
           <div class="row">
             <div class="col-lg-3 col-md-6 single-fact">
-              <h1 class="counter">2536</h1>
+              <h1 class="counter">131801</h1>
               <p>Lines of Code</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
-              <h1 class="counter">6784</h1>
+              <h1 class="counter">170</h1>
               <p>Commits</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
-              <h1 class="counter">2239</h1>
+              <h1 class="counter">7</h1>
               <p>Meetings</p>
             </div>  
             <div class="col-lg-3 col-md-6 single-fact">
