@@ -15,7 +15,7 @@ $this->registerJsFile('@web/js/home.js');
 
 $this->registerCssFile('@web/css/leaflet.css');
 $this->registerCssFile('@web/css/plague-map.css');
-$this->registerJsFile("@web/js/jquery.min.js");
+$this->registerJsFile("@web/js/jquery-3.4.1.min.js");
 $this->registerJsFile("@web/js/leaflet.js");
 $this->registerJsFile("@web/js/plague-map.js");
 
