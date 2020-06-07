@@ -194,7 +194,7 @@ $this->title = 'Contact';
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
             <p class="lead">关于页面和用户注册登录前后台</p>
-            <p>motto:</p>
+            <p>motto:人类的悲欢并不相通，但困、不想上学和戒不掉奶茶却是相通的。</p>
             <div class="social mt-4">
               <a href="https://github.com/Liyx55" target="_blank"><span class="icon-github"></span></a>
               <a href="mailto:962417405@qq.com" target="_blank"><span class="icon-envelope-o"></span></a>
