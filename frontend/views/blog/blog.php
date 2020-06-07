@@ -222,7 +222,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
                                 <button onclick="location.href='<?= Url::toRoute(['blog/create']);?>'" type="button"  class="btn btn-primary">
-         分享</button>
+         发表</button>
          <button onclick="location.href='<?= Url::toRoute(['blog/mypost']);?>'" type="button"  class="btn btn-info" style="margin-left: 10px;">
          我的</button>
                             </div>

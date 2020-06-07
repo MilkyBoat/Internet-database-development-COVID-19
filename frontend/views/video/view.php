@@ -9,7 +9,7 @@
 use common\models\Video;
 use yii\helpers\Html;
 use yii\helpers\Url;
-
+use common\models\User;
 $this->title = 'Video View';
 $this->params['breadcrumbs'][] = $this->title;
 
@@ -72,11 +72,23 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php endif; ?>
         <?php if (!empty($comments)) : ?>
             <?php foreach ($comments as $comment) : ?>
-                <div class="bottom-comment" style="background:#f7f7f7">
-                    <!--bottom comment-->
-                    <div class="comment-img">
-                        <img class="img-circle" src="<?= Yii::getAlias('@web'); ?>/public/images/comment-img.jpg" alt="">
-                    </div>
+                <div class="bottom-comment">
+                                <!--bottom comment-->
+                                <?php $user_id=$comment->user_id?>
+                                
+                                <?php $user=User::find()->where(['id'=>$user_id])->one()?>
+                                
+                                <div class="comment-img">
+                                    <?= \cebe\gravatar\Gravatar::widget([
+                                        'email' => '<?=$user->email?>',
+                                        'options' => [
+                                            'alt' => '<?=$user->username>',
+                                            'class'=>'img-circle',
+                                        ],
+                                        'size' => 50,
+                                        
+                                    ]) ?>
+                                </div>
 
                     <div class="comment-text">
                         <a href="#" class="replay btn pull-right"> 回复</a>
