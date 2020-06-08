@@ -54,7 +54,7 @@ db_pwd = "NiePeng_niubi"
 db_name = "covid19"
 
 spider_dir = os.getcwd()
-db_setting_file = open(spider_dir + "/common/config/main-local.php")
+db_setting_file = open(spider_dir + "/../common/config/main-local.php")
 main_local = db_setting_file.readlines()
 db_setting_file.close()
 
@@ -94,14 +94,14 @@ else:
             print('error in execute sql: ', sql)
     print('Database write complete')
 
-    # 清理数据库陈旧数据，提升查询速度
-    sql = "DELETE FROM covid_map WHERE NOT date = '" + last_date + "' "
-    try:
-        cursor.execute(sql)
-        db.commit()
-        print('Old data has been cleaned up')
-    except:
-        db.rollback()
-        print('error in execute sql: ', sql)
+# 清理数据库陈旧数据，提升查询速度
+sql = "DELETE FROM covid_map WHERE NOT date = '" + last_date + "' "
+try:
+    cursor.execute(sql)
+    db.commit()
+    print('Old data has been cleaned up')
+except:
+    db.rollback()
+    print('error in execute sql: ', sql)
 
 db.close()
