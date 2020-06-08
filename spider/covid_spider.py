@@ -1,6 +1,7 @@
 import json
 import requests
 import pymysql
+import os
 
 # Team: 布里啾啾迪布里多, NKU
 # coding by 徐云凯 1713667
@@ -46,7 +47,27 @@ c_list_file.close()
 for line in lines:
     country_name_list.append(line.split('\t'))
 
-db = pymysql.connect("49.233.130.58", "db_user_proj", "NiePeng_niubi", "covid19")
+# 从本地 yii 配置文件读取数据库配置信息
+db_url = "localhost"
+db_user = "db_user_proj"
+db_pwd = "NiePeng_niubi"
+db_name = "covid19"
+
+spider_dir = os.getcwd()
+db_setting_file = open(spider_dir + "/../common/config/main-local.php")
+main_local = db_setting_file.readlines()
+db_setting_file.close()
+
+for line in main_local:
+    if line.find('dsn') >= 0:
+        db_url = line[line.find("mysql:host=") + 11 : line.find(";dbname=")]
+        db_name = line[line.find(";dbname=") + 8 : line.find("',")]
+    elif line.find("db_user") >= 0:
+        db_user = line[line.find("'username' => '") + 15 : line.find("',")]
+    elif line.find("password") >= 0:
+        db_pwd = line[line.find("'password' => '") + 15: line.find("',")]
+
+db = pymysql.connect(db_url, db_user, db_pwd, db_name)
 cursor = db.cursor()
 
 try:
@@ -72,4 +93,15 @@ else:
             db.rollback()        # 发生错误时回滚
             print('error in execute sql: ', sql)
     print('Database write complete')
+
+# 清理数据库陈旧数据，提升查询速度
+sql = "DELETE FROM covid_map WHERE NOT date = '" + last_date + "' "
+try:
+    cursor.execute(sql)
+    db.commit()
+    print('Old data has been cleaned up')
+except:
+    db.rollback()
+    print('error in execute sql: ', sql)
+
 db.close()
