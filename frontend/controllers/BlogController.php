@@ -146,10 +146,10 @@ class BlogController extends Controller
         $this->layout = 'blog';
         $data = Article::getAll(5);
 
-        for ($i = 0, $j = 0; $i <= sizeof($data); $i += 2,$j++) {
+        for ($i = 0, $j = 0; $i < sizeof($data); $i += 2,$j++) {
             $data1[$j] = $data['articles'][$i];
         }
-        for ($i = 1, $k = 0; $i <= sizeof($data); $i += 2) {
+        for ($i = 1, $k = 0; $i < sizeof($data); $i += 2) {
             $data2[$k++] = $data['articles'][$i];
         }
         
@@ -193,6 +193,7 @@ class BlogController extends Controller
 
     public function actionCreate()
     {
+        if (!Yii::$app->user->isGuest) { 
         $this->layout = 'blog';
         $model = new Article();
 
@@ -202,7 +203,8 @@ class BlogController extends Controller
 
         return $this->render('create', [
             'model' => $model,
-        ]);
+        ]);}
+        return $this->redirect(['site/login']);
     }
 
     public function actionSetImage($id)

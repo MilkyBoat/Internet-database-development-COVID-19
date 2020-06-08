@@ -180,12 +180,12 @@ $this->title = 'Contact';
 
             <h3>黄璟知</h3>
             <p class="text-muted">组长</p>
-            <p class="lead">指导小组工作、博客和视频分享前后台</p>
-            <p>motto:</p>
+            <p class="lead">指导小组工作、博客和视频分享前后台、新闻前台</p>
+            <p>一只快乐的柠檬精</p>
             <div class="social mt-4">
               <a href="https://github.com/NebulaJZ" target="_blank"><span class="icon-github"></span></a>
               <a href="mailto:13687978877@163.com" target="_blank"><span class="icon-envelope-o"></span></a>
-              <a href="https://cc.nankai.edu.cn/" target="_blank"><span class="icon-institution"></span></a>
+              <a href="https://nebulajz.github.io/" target="_blank"><span class="icon-institution"></span></a>
             </div>
 
           </div>
@@ -194,7 +194,7 @@ $this->title = 'Contact';
             <h3>李彦欣</h3>
             <p class="text-muted">组员</p>
             <p class="lead">关于页面和用户注册登录前后台</p>
-            <p>motto:</p>
+            <p>人类的悲欢并不相通，但困、不想上学和戒不掉奶茶却是相通的。</p>
             <div class="social mt-4">
               <a href="https://github.com/Liyx55" target="_blank"><span class="icon-github"></span></a>
               <a href="mailto:962417405@qq.com" target="_blank"><span class="icon-envelope-o"></span></a>
@@ -208,7 +208,7 @@ $this->title = 'Contact';
 
             <h3>孙家宜</h3>
             <p class="text-muted">组员</p>
-            <p class="lead">研究和新闻前后台</p>
+            <p class="lead">研究前后台，新闻后台和数据库</p>
             <p>只要你喜欢迪奥张，我们就是朋友</br>
                 不然，喜欢静香也行</p>
             <div class="social mt-4">
@@ -270,7 +270,7 @@ $this->title = 'Contact';
 
                 <div class="col-lg-12">
                   <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-                  <?= $form->field($model, 'firstname') ?>
+                  <?= $form->field($model, 'firstname') ?> 
                   <?= $form->field($model, 'lastname') ?>
                   <?= $form->field($model, 'sex')->radioList(['1' => 'Male', '0' => 'Female']) ?>
                   <?= $form->field($model, 'wechatid') ?>
