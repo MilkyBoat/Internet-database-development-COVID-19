@@ -14,6 +14,11 @@ if ! [ -x "$(command -v python3)" ]; then
   exit 1
 fi
 
+if ! [ -x "$(command -v pip3)" ]; then
+  echo 'Error: pip3 is not installed.' >&2
+  exit 1
+fi
+
 user=root
 read -p "Please input your MySQL user name:" name
 if [ ! -n "$name" ] ;then
@@ -62,6 +67,7 @@ EOF
 echo Initiating database: covid19
 php yii migrate
 
+pip3 install pymysql
 chmod +x /spider/spider.sh
 # crontab -e 
 # service cron restart
