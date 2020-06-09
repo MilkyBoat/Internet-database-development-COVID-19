@@ -28,7 +28,7 @@ else
   echo "Using the user $name"
 fi
 
-password="12345678"
+password=""
 stty -echo
 read -p "Please enter your MySQL password:" psd
 stty echo
