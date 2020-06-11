@@ -2,7 +2,7 @@
 
 
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,20200424
  * This is the home page of blog
  */

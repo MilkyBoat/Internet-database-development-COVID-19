@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by 袁嘉蔚 1810546,20200509
  * a view of contact us page
  */
@@ -138,7 +138,7 @@ $this->title = 'Contact';
           <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="d-flex align-items-center justify-content-center mb-2">
               <span class="icon-line-lightbulb mr-3"></span>
-              <strong class="number" data-number="170">0</strong>
+              <strong class="number" data-number="200">0</strong>
             </div>
             <span class="caption">Commits</span>
           </div>
