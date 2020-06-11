@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+# Team:布里啾啾迪布利多,NKU
+# coding by 徐云凯 1713667
+# 一键部署脚本
+
 if ! [ -x "$(command -v php)" ]; then
   echo 'Error: php is not installed.' >&2
   exit 1

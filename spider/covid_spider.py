@@ -3,7 +3,7 @@ import requests
 import pymysql
 import os
 
-# Team: 布里啾啾迪布里多, NKU
+# Team: 布里啾啾迪布利多, NKU
 # coding by 徐云凯 1713667
 # 爬虫，调用api得到每日最新的记录信息，并写入数据库
 

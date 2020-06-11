@@ -1,6 +1,6 @@
 
 /**
- * Team:布里啾啾迪布里多,NKU
+ * Team:布里啾啾迪布利多,NKU
  * coding by 徐云凯 1713667
  * This is the main control unit of plague-map
  */

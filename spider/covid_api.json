@@ -1,9 +1,10 @@
 {
-    "info":["Team:布里啾啾迪布里多,NKU",
+    "info":["Team:布里啾啾迪布利多,NKU",
             "coding by 徐云凯 1713667",
-            "本文件数据源是2020年5月19日爬取的某开源api的世界疫情数据",
+            "本文件数据源是2020年5月19日爬取的某开源api的世界疫情数据，链接后附",
             "经过人工数据标注，整理api中的国家与地区对应到geojson中的国家与地区id",
-            "用于在 json_id_list_process.py 中生成api到geojson的id映射表 "
+            "用于在 json_id_list_process.py 中生成api到geojson的id映射表 id_list.txt",
+            "数据来自于 https://coronavirus-tracker-api.herokuapp.com 该开源API未标注所使用的开源协议"
         ],
     "date":"2020-05-19",
     "latest":{

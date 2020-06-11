@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布里多,NKU
+ * Team:布里啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,袁嘉蔚 1810546，20200509
  * actioncontact相关，袁嘉蔚
  */
@@ -239,7 +239,7 @@ class SiteController extends Controller
 		$this->layout="sl";
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            Yii::$app->session->setFlash('success', 'Thank you for registration. Welcome to our website.');
             return $this->goHome();
         }
 

@@ -1,6 +1,6 @@
 import json
 
-# Team: 布里啾啾迪布里多, NKU
+# Team: 布里啾啾迪布利多, NKU
 # coding by 徐云凯 1713667
 # 对api中国家列表与geojson国家与地区列表进行映射，给出映射表
 

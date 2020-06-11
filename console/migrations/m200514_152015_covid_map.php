@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Team:布里啾啾迪布里多,NKU
+ * Team:布里啾啾迪布利多,NKU
  * coding by 徐云凯 1713667,20200514
  * This is the home page of blog
  */
@@ -9,7 +9,7 @@
 use yii\db\Migration;
 
 /**
- * Team:布里啾啾迪布里多,NKU
+ * Team:布里啾啾迪布利多,NKU
  * coding by 徐云凯 1713667
  * 疫情地图数据库表生成器
  */
