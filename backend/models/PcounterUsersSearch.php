@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布里多,NKU
+ * Team:布里啾啾迪布利多,NKU
  * coding by 袁嘉蔚 1810546,20200529
  * a search model for PcounterSave
  */

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Team:布里啾啾迪布里多,NKU
+ * Team:布里啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,20200505
  */
 
