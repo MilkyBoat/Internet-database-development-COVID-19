@@ -211,6 +211,8 @@ $this->title = 'Contact';
             <p class="lead">研究前后台，新闻后台和数据库</p>
             <p>只要你喜欢迪奥张，我们就是朋友</br>
                 不然，喜欢静香也行</p>
+                <p> &nbsp; </p>
+                <p> &nbsp; </p>
             <div class="social mt-4">
               <a href="https://github.com/Guru759" target="_blank"><span class="icon-github"></span></a>
               <a href="mailto:2878271548@qq.com" target="_blank"><span class="icon-envelope-o"></span></a>
