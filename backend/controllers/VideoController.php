@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,20200505
  */
 
@@ -62,7 +62,6 @@ class VideoController extends Controller
     }
 
     /**
-     * Displays a single Video model.
      * @param string $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -75,8 +74,6 @@ class VideoController extends Controller
     }
 
     /**
-     * Creates a new Video model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
@@ -95,11 +92,9 @@ class VideoController extends Controller
     }
 
     /**
-     * Updates an existing Video model.
-     * If update is successful, the browser will be redirected to the 'view' page.
      * @param string $id
      * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
+     * @throws NotFoundHttpException 
      */
     public function actionUpdate($id)
     {
@@ -116,8 +111,6 @@ class VideoController extends Controller
     }
 
     /**
-     * Deletes an existing Video model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param string $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -130,8 +123,6 @@ class VideoController extends Controller
     }
 
     /**
-     * Finds the Video model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
      * @param string $id
      * @return Video the loaded model
      * @throws NotFoundHttpException if the model cannot be found

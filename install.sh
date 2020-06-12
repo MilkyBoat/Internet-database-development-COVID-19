@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Team:布里啾啾迪布利多,NKU
+# Team:布利啾啾迪布利多,NKU
 # coding by 徐云凯 1713667
 # 一键部署脚本
 

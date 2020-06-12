@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,20200504
  */
 
@@ -14,11 +14,6 @@ use common\models\Video;
  */
 class VideoQuery extends \yii\db\ActiveQuery
 {
-    /*public function active()
-    {
-        return $this->andWhere('[[status]]=1');
-    }*/
-
     /**
      * {@inheritdoc}
      * @return Video[]|array

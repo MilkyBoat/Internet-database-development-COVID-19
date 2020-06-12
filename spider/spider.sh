@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Team:布里啾啾迪布利多,NKU
+# Team:布利啾啾迪布利多,NKU
 # coding by 徐云凯 1713667
 # 用于 Linux 定时任务自动运行爬虫刷新数据库
 

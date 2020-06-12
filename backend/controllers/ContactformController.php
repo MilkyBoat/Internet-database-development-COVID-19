@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by 袁嘉蔚 1810546,20200509
  * a controller for contactform
  */

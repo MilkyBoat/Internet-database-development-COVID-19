@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,20200509
  */
 
@@ -46,8 +46,6 @@ class ArticleSearch extends Article
     {
         $query = Article::find();
 
-        // add conditions that should always apply here
-
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -55,12 +53,9 @@ class ArticleSearch extends Article
         $this->load($params);
 
         if (!$this->validate()) {
-            // uncomment the following line if you do not want to return any records when validation fails
-            // $query->where('0=1');
             return $dataProvider;
         }
 
-        // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
             'date' => $this->date,

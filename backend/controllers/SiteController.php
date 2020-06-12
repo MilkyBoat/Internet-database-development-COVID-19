@@ -1,8 +1,4 @@
 <?php
-/**
- * Team:布里啾啾迪布利多,NKU
- * coding by huangjingzhi 1810729,20200509
- */
 namespace backend\controllers;
 
 use Yii;

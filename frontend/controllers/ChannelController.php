@@ -1,6 +1,6 @@
 <?php
 /**
- * Team:布里啾啾迪布利多,NKU
+ * Team:布利啾啾迪布利多,NKU
  * coding by huangjingzhi 1810729,20200505
  * This is the  controller of channel
  */
@@ -59,16 +59,6 @@ class ChannelController extends Controller
             $subscriber->user_id = $userId;
             $subscriber->created_at = time();
             $subscriber->save();
-//            \Yii::$app->mailer->compose([
-//                'html' => 'subscriber-html', 'text' => 'subscriber-text'
-//            ], [
-//                'channel' => $channel,
-//                'user' => \Yii::$app->user->identity
-//            ])
-//                ->setFrom(\Yii::$app->params['senderEmail'])
-//                ->setTo($channel->email)
-//                ->setSubject('You have new subscriber')
-//                ->send();
 
         } else {
             $subscriber->delete();
