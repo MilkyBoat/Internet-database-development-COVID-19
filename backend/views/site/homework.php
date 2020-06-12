@@ -131,7 +131,7 @@ $this->title = 'Homework';
             <div class="col-lg-4 col-md-6">
               <div class="single-services">
                 <span class="lnr lnr-rocket"></span>
-                <a href="#"><h4>待补充</h4></a>
+                <a href="#"><h4>More...</h4></a>
                 <p>
                   complementing...
                 </p>
@@ -149,7 +149,7 @@ $this->title = 'Homework';
               <p>Lines of Code</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
-              <h1 class="counter">170</h1>
+              <h1 class="counter">200</h1>
               <p>Commits</p>
             </div>
             <div class="col-lg-3 col-md-6 single-fact">
@@ -190,7 +190,7 @@ $this->title = 'Homework';
               </div>
               <div class="bottom-part">
                 <h1>下载全部</h1>
-                <a class="price-btn text-uppercase" href="#" download="test">点击此处下载</a>
+                <a class="price-btn text-uppercase" href="../../../data/personal/全部成员所有作业.zip" download="全部成员所有作业">点击此处下载</a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 single-price">
@@ -208,7 +208,7 @@ $this->title = 'Homework';
               </div>
               <div class="bottom-part">
                 <h1>下载</h1>
-                <a class="price-btn text-uppercase" href="#" download="test">点击此处下载</a>
+                <a class="price-btn text-uppercase" href="../../../data/personal/全部成员作业1.zip" download="全部成员作业1">点击此处下载</a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 single-price">
@@ -226,7 +226,7 @@ $this->title = 'Homework';
               </div>
               <div class="bottom-part">
                 <h1>下载</h1>
-                <a class="price-btn text-uppercase" href="#" download="test">点击此处下载</a>
+                <a class="price-btn text-uppercase" href="../../../data/personal/全部成员作业2.zip" download="全部成员作业2">点击此处下载</a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 single-price">
@@ -244,7 +244,7 @@ $this->title = 'Homework';
               </div>
               <div class="bottom-part">
                 <h1>下载</h1>
-                <a class="price-btn text-uppercase" href="#">点击此处下载</a>
+                <a class="price-btn text-uppercase" href="../../../data/personal/全部成员作业3.zip" download="全部成员作业3">点击此处下载</a>
               </div>
             </div>                                    
           </div>
