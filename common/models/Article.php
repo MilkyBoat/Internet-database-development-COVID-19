@@ -154,13 +154,13 @@ class Article extends \yii\db\ActiveRecord
         $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>$pageSize]);
 
   
-        $articles = $query->offset($pagination->offset)
+        $articles = $query
+        ->offset($pagination->offset)
             ->limit($pagination->limit)
             ->all();
         
         $data['articles'] = $articles;
         $data['pagination'] = $pagination;
-        
         return $data;
     }
 
