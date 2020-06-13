@@ -4,9 +4,13 @@
 For *Internet Datebase Development* 2020 Spring @Nankai University,
 By [Jingzhi Huang](https://github.com/NebulaJZ), [Yanxin Li](https://github.com/Liyx55), [Jiayi Sun](https://github.com/Guru759), [Yunkai Xu](https://github.com/MilkyBoat), [Jiawei Yuan](https://github.com/tenkinoko)
 <br>
+
 >[前台](http://covid.milkyship.cn) [后台](http://covid.milkyship.cn/backend/web)
->作业存储于data文件夹下
-###网站简介😄
+
+>作业可在[这里](http://covid.milkyship.cn/backend/web/site/homework)下载，存储于data文件夹下
+
+网站简介😄
+----------
 
 本网站以“COVID-19”为主题，主要分为前台、后台两个部分。
 用户可以进入前台进行登陆注册，来获得后台的访问权限，在前台可以进行查看新冠肺炎在全球各国的当日最新确诊数量、了解关于新冠肺炎的基本信息以及相关的热点新闻；在blog和video页面还可以看到疫情相关的视频和文章。
